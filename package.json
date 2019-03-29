@@ -1,0 +1,18 @@
+{
+  "name": "english-study",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:wangkaiwd/Englist-Study.git",
+  "author": "wangkaiwd <1162486176@qq.com>",
+  "license": "MIT",
+  "scripts": {
+    "docs:dev": "vuepress dev docs",
+    "docs:build": "vuepress build docs"
+  },
+  "devDependencies": {
+    "vuepress": "^0.14.10"
+  },
+  "resolutions": {
+    "webpack-dev-middleware": "3.6.0"
+  }
+}
