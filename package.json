@@ -10,6 +10,8 @@
     "docs:build": "vuepress build docs"
   },
   "devDependencies": {
+    "node-sass": "^4.11.0",
+    "sass-loader": "^7.1.0",
     "vuepress": "^0.14.10"
   },
   "resolutions": {
