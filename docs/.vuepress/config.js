@@ -15,10 +15,21 @@ module.exports = {
         ]
       }
     ],
-    // sidebar: [
-    //   '/',
-    //   '/page-a',
-    //   ['/test', 'Explicit link text']
-    // ]
+    sidebar: [
+      {
+        title: '基础',
+        collapsable: false,
+        children: [
+          '/components/test'
+        ]
+      },
+      {
+        title: '高级',
+        collapsable: false,
+        children: [
+          '/components/advance'
+        ]
+      }
+    ]
   }
 };
