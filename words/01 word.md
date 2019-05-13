@@ -13,5 +13,13 @@
   <details>
     <summary>view the definition</summary>
     英[aɪˈdentɪfaɪə(r)] n. 识别符；检验人；鉴别器；编号
+
     ![identifier](./screenshots/identifiter.png)
+  </details>
+* reference(ref in react and vue is this means)
+  <details>
+    <summary>view the definition</summary>
+    英[ˈrefrəns] n. 参考；谈到；引用
+
+    ![reference](./screenshots/reference.png)
   </details>
