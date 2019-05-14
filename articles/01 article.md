@@ -78,3 +78,14 @@ Tip: Use Bit to organize and share React components. Share components your team 
     <summary>view the definition</summary>
     英 [ˈɔ:gənaɪz] v. 组织；安排；规划
   </details>
+
+### Four
+React itself provides some useful methods for setting component states using setState() and adding a “local state” to a class.
+
+With this option, you can call these methods for your components. setState() tells React that this component and its children (sometimes delayed and grouped into a single batch) should be re-rendered with the most updated state, often bases on user-triggered events. setState() will always lead to a re-render as long as an update is available (shouldComponentUpdate()). By adding a “local state” to a class, you can move data from the props themselves onto a state which can be updated
+
+### Five
+Managing States with nothing but React itself is entirely possible, but can quickly become ineffective due to scaling complexity and performance issues (dependancies, redundant props, complex trees, etc). So, let’s move on to review React’s Context API- a feature built to solve exactly that
+
+### Six
+The new React Context API, officially recommended from version React’s version 16.3.0, solves a major problem when setting component states: it lets you pass data through the component tree without having to manually pass props at every level of the tree even when not needed (prop drilling)
