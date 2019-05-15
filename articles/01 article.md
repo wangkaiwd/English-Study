@@ -1,15 +1,19 @@
-### [State of React State Management fro 2019](https://blog.bitsrc.io/state-of-react-state-management-in-2019-779647206bbc)
+## [State of React State Management fro 2019](https://blog.bitsrc.io/state-of-react-state-management-in-2019-779647206bbc)
 
-#### One
+### One
 
 State management has always been a vital yet somewhat dreadful aspect for working with React. Recently I’ve had the pleasure of talking to a few R&D teams, each of whom had an entirely different opinion about this topic.   
 
 译著者：R&D资源指的是从事科研与试验发展活动所必需的人力、物力、财力等，R&D teams: 这里指技术开发团队
 
 <details>
-<summary>view the definition</summary>
+  <summary>view the definition</summary>
+  使用`React`开发，状态管理总是一个至关重要但是还让人有些畏惧的方面。最近我有辛和一些开发团队谈论这个问题，关于这个话题他们每个人有完全不同的看法。
+
+  ![pleasure](./screenshots/01_pleasure.png)
 </details>
 
+#### words
 * vital
   <details>
     <summary>view the definition</summary>
@@ -30,13 +34,14 @@ State management has always been a vital yet somewhat dreadful aspect for workin
     <summary>view the definition</summary>
     英 [ˈæspekt]   n. 方面；方向；形式
   </details>
-#### Two
+### Two
 From complaints about Redux making it hard to keep components self-contained to experimenting with the new Context API, most are constantly evaluating for the right solution to pick for their team
 <details>
   <summary>view the definition</summary>
-  从关于`Redux`使组件难以维护独立状态的抱怨到尝试新的`Context API`，大多数的人都在不段的评估来为他们的团队选择合适的解决方案。
+  从关于`Redux`使组件难以维护独立状态的抱怨到尝试新的`Context API`，大多数的人都在不断的评估来为他们的团队选择合适的解决方案。
 </details>
 
+#### words
 * complaint
   <details>
     <summary>view the definition</summary>
@@ -57,7 +62,14 @@ From complaints about Redux making it hard to keep components self-contained to 
 In this post, I’ll review the state of React state management for the upcoming year, and some popular ways for managing your component states in React. Hopefully, this can help your team save some valuable time, dig deeper and make the right choice. Let’s dive in!
 
 Tip: Use Bit to organize and share React components. Share components your team can use and develop in all your apps and build faster together. Try it out
+<details>
+  <summary>view the definition</summary>
+  在这篇文章中，我将会回顾最近一年中的`React`状态管理，以及一些流行的管理`React`组件中状态的方法。希望这件事能帮助你的团队节省一些有价值的时间，深挖技术并作出正确的选择。让我们继续深入！
 
+  提示： 使用`Bit`来进行`React`组件的组织和分享。为你的团队分享组件并且一起在你们所有的开发应用中使用组件来更快的构建应用。试试看。
+</details>
+
+#### words
 * review
   <details>
     <summary>view the definition</summary>
