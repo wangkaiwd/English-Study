@@ -35,3 +35,19 @@
     <summary>view the definition</summary>
     英 [ˈtrɪgə(r)] n. (枪)扳机；启动装置；[电子学]触发器，触发电器  vt. 引发，触发
   </details>
+* optimize
+  <details>
+    <summary>view the definition</summary>
+    英[ˈɒptɪmaɪz] vt. 使最优化，使尽可能有效
+  </details>
+* purpose
+  <details>
+    <summary>view the definition</summary>
+    英[ˈɒptɪmaɪz] n. 意志；目的；作用；（进行中）的行动 vt. 打算，企图
+  </details>
+
+* interceptor
+  <details>
+    <summary>view the definition</summary>
+    英 [ˌɪntəˈseptə(r)] n. 拦截器
+  </details>
