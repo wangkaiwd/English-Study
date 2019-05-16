@@ -45,9 +45,13 @@
     <summary>view the definition</summary>
     英[ˈɒptɪmaɪz] n. 意志；目的；作用；（进行中）的行动 vt. 打算，企图
   </details>
-
 * interceptor
   <details>
     <summary>view the definition</summary>
     英 [ˌɪntəˈseptə(r)] n. 拦截器
+  </details>
+* unexpected
+  <details>
+    <summary>view the definition</summary>
+    英 [ˌʌnɪkˈspektɪd] adj. 想不到的，意外的，忽然的
   </details>
