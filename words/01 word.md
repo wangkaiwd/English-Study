@@ -55,3 +55,18 @@
     <summary>view the definition</summary>
     英 [ˌʌnɪkˈspektɪd] adj. 想不到的，意外的，忽然的
   </details>
+* token
+  <details>
+    <summary>view the definition</summary>
+    英 [ˌʌnɪkˈspektɪd] n. 象征；记号 adj.象征性的；作为标志的 vt. 预兆；预示或象征
+  </details>
+* built-in
+  <details>
+    <summary>view the definition</summary>
+    英 [bɪlt ɪn] adj. 嵌入的；内置的；固有的 n. 嵌入式家具；内置
+  </details>
+* reserve
+  <details>
+    <summary>view the definition</summary>
+    英 [rɪˈzɜ:v] n. 储备；保护区；保留；替补队员 vi. 预定
+  </details>
