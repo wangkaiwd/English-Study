@@ -70,3 +70,15 @@
     <summary>view the definition</summary>
     英 [rɪˈzɜ:v] n. 储备；保护区；保留；替补队员 vi. 预定
   </details>
+* convert
+  <details>
+    <summary>view the definition</summary>
+    英 [kənˈvɜ:t] vt. 转变；换算；侵占
+  </details>
+* digest
+  <details>
+    <summary>view the definition</summary>
+    英 [daɪˈdʒest] vt. 消化；整理；吸收；领悟 n. 文摘；摘要
+  </details>
+
+
