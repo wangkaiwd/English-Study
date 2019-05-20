@@ -93,7 +93,10 @@ Tip: Use Bit to organize and share React components. Share components your team 
 
 ### Four
 React itself provides some useful methods for setting component states using setState() and adding a “local state” to a class.
-
+<details>
+  <summary>view the definition</summary>
+  `React`自己提供了一些有用的方法使用`setState()`来设置组件状态并为一个`class`添加一个本地的状态。
+</details>
 With this option, you can call these methods for your components. setState() tells React that this component and its children (sometimes delayed and grouped into a single batch) should be re-rendered with the most updated state, often bases on user-triggered events. setState() will always lead to a re-render as long as an update is available (shouldComponentUpdate()). By adding a “local state” to a class, you can move data from the props themselves onto a state which can be updated
 
 ### Five
@@ -101,3 +104,22 @@ Managing States with nothing but React itself is entirely possible, but can quic
 
 ### Six
 The new React Context API, officially recommended from version React’s version 16.3.0, solves a major problem when setting component states: it lets you pass data through the component tree without having to manually pass props at every level of the tree even when not needed (prop drilling)
+
+### Eight
+Using the context API you can share values between components without having to pass props. So far, the React team recommends using it to “share data that can be considered “global” for a tree of React components, such as the current authenticated user, theme, or preferred language”. You might still need to add some code to compose providers and consumers (see this library), but no doubt this new “first-class” feature in React is a game changer.
+#### Words
+* authenticate
+  <details>
+    <summary>view the definition</summary>
+    英 [ɔ:ˈθentɪkeɪt]  vt. 鉴定；使生效；证明是真实的
+  </details>
+* prefer
+  <details>
+    <summary>view the definition</summary>
+    英 [ɔ:ˈθentɪkeɪt]  vt. 更喜欢；提升；偏爱；优先权  变形：n.preference, 过去式：preferred
+  </details>
+* compose
+  <details>
+    <summary>view the definition</summary>
+    英 [kəmˈpəʊz]  vt. 组成，构成；创作（乐曲、诗歌等）；为...谱曲
+  </details>
