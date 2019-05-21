@@ -1,5 +1,5 @@
 ## [State of React State Management fro 2019](https://blog.bitsrc.io/state-of-react-state-management-in-2019-779647206bbc)
-
+> Observing state management in the wild… and the Store is open for business!
 ### One
 
 State management has always been a vital yet somewhat dreadful aspect for working with React. Recently I’ve had the pleasure of talking to a few R&D teams, each of whom had an entirely different opinion about this topic.   
@@ -98,6 +98,10 @@ React itself provides some useful methods for setting component states using set
   `React`自己提供了一些有用的方法使用`setState()`来设置组件状态并为一个`class`添加一个本地的状态。
 </details>
 With this option, you can call these methods for your components. setState() tells React that this component and its children (sometimes delayed and grouped into a single batch) should be re-rendered with the most updated state, often bases on user-triggered events. setState() will always lead to a re-render as long as an update is available (shouldComponentUpdate()). By adding a “local state” to a class, you can move data from the props themselves onto a state which can be updated
+<details>
+  <summary>view the definition</summary>
+  你可以为这些组件调用这些方法。`setState()`告诉`React`组件及其子组件应该用最新的状态重新渲染（有时会延迟并和其它最近的更新分组到一批来进行处理）。
+</details>
 
 ### Five
 Managing States with nothing but React itself is entirely possible, but can quickly become ineffective due to scaling complexity and performance issues (dependancies, redundant props, complex trees, etc). So, let’s move on to review React’s Context API- a feature built to solve exactly that
