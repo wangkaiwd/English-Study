@@ -100,7 +100,7 @@ React itself provides some useful methods for setting component states using set
 With this option, you can call these methods for your components. setState() tells React that this component and its children (sometimes delayed and grouped into a single batch) should be re-rendered with the most updated state, often bases on user-triggered events. setState() will always lead to a re-render as long as an update is available (shouldComponentUpdate()). By adding a “local state” to a class, you can move data from the props themselves onto a state which can be updated
 <details>
   <summary>view the definition</summary>
-  你可以为这些组件调用这些方法。`setState()`告诉`React`组件及其子组件应该用最新的状态重新渲染（有时会延迟并和其它最近的更新分组到一批来进行处理）。
+  你可以为这些组件调用这些方法。在大多数用户事件触发的时候，`setState()`会告诉`React`组件及其子组件应该用最新的状态重新渲染（有时会延迟并和其它最近的更新分组到一批来进行处理）。只要更新是可用的(没有被`shouldComponentUpdate()`禁止)，`setState()`将总是会导致一次页面的重新渲染。通过为一个`class`添加一个本地状态，在组件被更新的时候，你能将他们`props`中的数据移动到`state`中。
 </details>
 
 ### Five
@@ -126,4 +126,18 @@ Using the context API you can share values between components without having to 
   <details>
     <summary>view the definition</summary>
     英 [kəmˈpəʊz]  vt. 组成，构成；创作（乐曲、诗歌等）；为...谱曲
+  </details>
+
+### Nine
+A replacement to Redux? maybe. Here’s are a couple of short intros and tutorials to Context API and how to convert from Redux:
+
+We’ve finally arrived to the very (very) popular, sometimes dreaded, always to be talked about Redux. Above all, Redux favors predictability and control over your component states, making it a great choice for building consistent, cross-environment, testable applications with React.
+
+#### Words
+* couple
+  <details>
+    <summary>view the definition</summary>
+    英 [ˈkʌpl]  n. 对，双；配偶；几个，俩三个 
+
+    a couple of: 俩个，几个
   </details>
