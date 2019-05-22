@@ -141,3 +141,6 @@ We’ve finally arrived to the very (very) popular, sometimes dreaded, always to
 
     a couple of: 俩个，几个
   </details>
+
+### Ten
+We’ve finally arrived to the very (very) popular, sometimes dreaded, always to be talked about Redux. Above all, Redux favors predictability and control over your component states, making it a great choice for building consistent, cross-environment, testable applications with React
