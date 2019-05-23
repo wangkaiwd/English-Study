@@ -67,3 +67,8 @@ If you prefer to use your own text editor, you can also download this HTML file,
   
   ![try React](../screenshots/runtimeCode.png)
 </details>
+
+## Add React to a Website
+You can add React to an HTML page in one minute. You can then either gradually expand its presence, or keep it contained to a few dynamic widgets.
+
+
