@@ -70,5 +70,29 @@ If you prefer to use your own text editor, you can also download this HTML file,
 
 ## Add React to a Website
 You can add React to an HTML page in one minute. You can then either gradually expand its presence, or keep it contained to a few dynamic widgets.
+<details>
+  <summary>view the picture</summary>
+  
+  ![try React](../screenshots/add-to-website.png)
+</details>
 
+### Words
+* present
+  <details>
+    <summary>view the definition</summary>
+    英 [ˈpreznt] adj. 现在的；出席的； n. 现在；礼物；瞄准 vt. 介绍；出现
 
+    presence n. 出席；仪表；风度
+  </details>
+
+* dynamic
+  <details>
+    <summary>view the definition</summary>
+    英 [daɪˈnæmɪk] adj. 动态的；动力的； n. 动态；动力；活力
+  </details>
+
+* widget
+  <details>
+    <summary>view the definition</summary>
+    英 [ˈwɪdʒɪt] n. 小器具；装饰品；窗口小部件
+  </details>
