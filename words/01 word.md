@@ -81,4 +81,62 @@
     英 [daɪˈdʒest] vt. 消化；整理；吸收；领悟 n. 文摘；摘要
   </details>
 
+* scenarios
+  <details>
+    <summary>view the definition</summary>
+    英 [sɪ'nɑ:ri:əʊz] n. 情节；剧本；事态；脚本
+  </details>
 
+* compression
+  <details>
+    <summary>view the definition</summary>
+    英 [kəmˈpres] vt. 压紧；压缩；精简
+  </details>
+
+* delta
+  <details>
+    <summary>view the definition</summary>
+    英 [ˈdeltə] n. 变量；增量
+  </details>
+
+* thread
+  <details>
+    <summary>view the definition</summary>
+    英 [θred] n. 线；线索；线状物；螺纹 vt. 穿成串；用...线缝
+  </details>
+
+* use up
+  <details>
+    <summary>view the definition</summary>
+    用完；用尽；耗光
+  </details>
+
+* execute
+  <details>
+    <summary>view the definition</summary>
+    英 [ˈeksɪkju:t] vt. 执行；处死，处决；履行；完成
+  </details>
+
+* commodity
+  <details>
+    <summary>view the definition</summary>
+    英 [kəˈmɒdəti] n. 商品；日用品；有价值的物品；有利
+  </details>
+
+* assume
+  <details>
+    <summary>view the definition</summary>
+    英 [əˈsju:m] v. 假定，认为；承担；装出；呈现
+  </details>
+
+* adapter
+  <details>
+    <summary>view the definition</summary>
+    英 [ə'dæptə] n. 适配器；改编者；适应物
+  </details>
+
+* section
+  <details>
+    <summary>view the definition</summary>
+    英 [ˈsekʃn] n. 部分；节；部件；部门
+  </details>
