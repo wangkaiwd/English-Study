@@ -124,6 +124,13 @@ People come to React from different backgrounds and with different learning styl
 * If you prefer to learn concepts step by step, start with our guide to main concepts.
 
 Like any unfamiliar technology, React does have a learning curve. With practice and some patience, you will get the hang of it.
+<details>
+  <summary>view the picture</summary>
+  
+  ![react-curve](../screenshots/learn-react-curve.png)
+  
+  get the hang of : 熟悉某物的用法；掌握做某事的窍门
+</details>
 
 ### Words
 * theoretical
