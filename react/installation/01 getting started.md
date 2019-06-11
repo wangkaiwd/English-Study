@@ -113,4 +113,27 @@ As your application grows, you might want to consider a more integrated setup. T
   <details>
     <summary>view the definition</summary>
     英 [ədˈvɑ:ntɪdʒ] n. 有利条件；益处；优越（性） vt. 有利于；促进
+    
+    take full advantage of : 充分利用
+  </details>
+
+## Learn React
+People come to React from different backgrounds and with different learning styles. Whether you prefer a more theoretical or a practical approach, we hope you’ll find this section helpful.
+
+* If you prefer to learn by doing, start with our practical tutorial.
+* If you prefer to learn concepts step by step, start with our guide to main concepts.
+
+Like any unfamiliar technology, React does have a learning curve. With practice and some patience, you will get the hang of it.
+
+### Words
+* theoretical
+  <details>
+    <summary>view the definition</summary>
+    英 [ˌθɪəˈretɪkl] adj. 理论的；推想的，假设的；
+  </details>
+  
+* curve
+  <details>
+    <summary>view the definition</summary>
+    英 [kɜ:v] n.弧线，曲线； vi. 使弯曲
   </details>
