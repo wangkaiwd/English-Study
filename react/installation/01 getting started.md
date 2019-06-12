@@ -144,3 +144,16 @@ Like any unfamiliar technology, React does have a learning curve. With practice 
     <summary>view the definition</summary>
     英 [kɜ:v] n.弧线，曲线； vi. 使弯曲
   </details>
+
+## First Examples
+The React homepage contains a few small React examples with a live editor. Even if you don’t know anything about React yet, try changing their code and see how it affects the result. 
+
+<details>
+  <summary>view the picture</summary>
+  
+  ![live-eidtor](../screenshots/live.png)
+  
+  get the hang of : 熟悉某物的用法；掌握做某事的窍门
+</details>
+
+## 
