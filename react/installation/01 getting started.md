@@ -156,4 +156,24 @@ The React homepage contains a few small React examples with a live editor. Even 
   get the hang of : 熟悉某物的用法；掌握做某事的窍门
 </details>
 
-## 
+## React for Beginners
+If you feel that the React documentation goes at a faster pace than you’re comfortable with, check out this overview of React by Tania Rascia. It introduces the most important React concepts in a detailed, beginner-friendly way. Once you’re done, give the documentation another try!
+
+<details>
+  <summary>view the picture</summary>
+  
+  ![beginners](../screenshots/beginner.png)
+</details>
+
+### Word
+* pace
+  <details>
+    <summary>view the definition</summary>
+    英 [peɪs] n. 一步；长度单位 vt. 踱步 vi.
+  </details>
+  
+* check out
+  <details>
+    <summary>view the definition</summary>
+    n. 结账离开；得到证实；获得证明；借阅；查看
+  </details>
