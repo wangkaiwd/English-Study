@@ -58,7 +58,7 @@ React has been designed from the start for gradual adoption, and you can use as 
   </details>
 
 ## Online Playgrounds
-f you’re interested in playing around with React, you can use an online code playground. Try a Hello World template on CodePen, CodeSandbox, or Glitch.
+if you’re interested in playing around with React, you can use an online code playground. Try a Hello World template on CodePen, CodeSandbox, or Glitch.
 
 If you prefer to use your own text editor, you can also download this HTML file, edit it, and open it from the local filesystem in your browser. It does a slow runtime code transformation, so we’d only recommend using this for simple demos.
 
@@ -161,6 +161,9 @@ If you feel that the React documentation goes at a faster pace than you’re com
 
 <details>
   <summary>view the picture</summary>
+  give ... another try: 再来一次
+  
+  give the documentation: 再来试着读一次文档
   
   ![beginners](../screenshots/beginner.png)
 </details>
@@ -176,4 +179,47 @@ If you feel that the React documentation goes at a faster pace than you’re com
   <details>
     <summary>view the definition</summary>
     n. 结账离开；得到证实；获得证明；借阅；查看
+  </details>
+
+## React for Designers
+if you’re coming from a design background, these resources are a great place to get started.
+
+## JavaScript Resources
+The React documentation assumes some familiarity with programming in the JavaScript language. You don’t have to be an expert, but it’s harder to learn both React and JavaScript at the same time.
+
+We recommend going through this JavaScript overview to check your knowledge level. It will take you between 30 minutes and an hour but you will feel more confident learning React.
+
+> #### Tip
+>  Whenever you get confused by something in JavaScript, MDN and javascript.info are great websites to check. There are also community support forums where you can ask for help.
+<details>
+  <summary>view the picture</summary>
+  
+  ![js-tip](../screenshots/javascript-tip.png)
+</details>
+
+### Words
+* expert
+  <details>
+    <summary>view the definition</summary>
+    英 [ˈekspɜ:t] n. 专家，能手
+  </details>
+  
+* confident
+  <details>
+    <summary>view the definition</summary>
+    英 [ˈkɒnfɪdənt] adj. 确信的，深信的 n. 知己，心腹
+  </details>
+  
+* confident
+  <details>
+    <summary>view the definition</summary>
+    英 [ˈkɒnfɪdənt] adj. 确信的，深信的 n. 知己，心腹
+  </details>  
+  
+* confuse
+  <details>
+    <summary>view the definition</summary>
+    英 [kənˈfju:z] vt. 使混乱；使困惑 vi.使糊涂
+    
+    confused: adj. 不清楚的，困惑的； v.困惑(confuse的过去式)
   </details>
