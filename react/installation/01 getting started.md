@@ -223,3 +223,23 @@ We recommend going through this JavaScript overview to check your knowledge leve
     
     confused: adj. 不清楚的，困惑的； v.困惑(confuse的过去式)
   </details>
+
+## Practical Tutorial
+If you prefer to learn by doing, check out our practical tutorial. In this tutorial, we build a tic-tac-toe game in React. You might be tempted to skip it because you’re not building games — but give it a chance. The techniques you’ll learn in the tutorial are fundamental to building any React apps, and mastering it will give you a much deeper understanding
+
+## Step-by-Step Guide
+If you prefer to learn concepts step by step, our guide to main concepts is the best place to start. Every next chapter in it builds on the knowledge introduced in the previous chapters so you won’t miss anything as you go along
+
+<details>
+  <summary>view the picture</summary>
+  
+  ![learn step by step](../screenshots/learn-step-by-step.png)
+</details>
+
+### Word
+* chapter
+  <details>
+    <summary>view the definition</summary>
+    英 [ˈtʃæptə(r)] n.章，回；（俱乐部，协会等）的分会；人生或历史上的重要时期  vt. 把...分成章节
+  </details>
+
