@@ -243,3 +243,13 @@ If you prefer to learn concepts step by step, our guide to main concepts is the 
     英 [ˈtʃæptə(r)] n.章，回；（俱乐部，协会等）的分会；人生或历史上的重要时期  vt. 把...分成章节
   </details>
 
+## Thinking in React
+
+Many React users credit reading Thinking in React as the moment React finally “clicked” for them. It’s probably the oldest React walkthrough but it’s still just as relevant
+
+### Word
+* credit
+  <details>
+    <summary>view the definition</summary>
+    英 [ˈkredɪt] n. 信誉，信用；贷款；荣誉；学分 vt. 相信，信任；归功于；赞颂
+  </details>
