@@ -152,8 +152,6 @@ The React homepage contains a few small React examples with a live editor. Even 
   <summary>view the picture</summary>
   
   ![live-eidtor](../screenshots/live.png)
-  
-  get the hang of : 熟悉某物的用法；掌握做某事的窍门
 </details>
 
 ## React for Beginners
@@ -163,7 +161,7 @@ If you feel that the React documentation goes at a faster pace than you’re com
   <summary>view the picture</summary>
   give ... another try: 再来一次
   
-  give the documentation: 再来试着读一次文档
+  give the documentation another try: 再来试着读一次文档
   
   ![beginners](../screenshots/beginner.png)
 </details>
@@ -207,14 +205,8 @@ We recommend going through this JavaScript overview to check your knowledge leve
 * confident
   <details>
     <summary>view the definition</summary>
-    英 [ˈkɒnfɪdənt] adj. 确信的，深信的 n. 知己，心腹
+    英 [ˈkɒnfɪdənt] adj. 确信的，深信的,有信心的 n. 知己，心腹
   </details>
-  
-* confident
-  <details>
-    <summary>view the definition</summary>
-    英 [ˈkɒnfɪdənt] adj. 确信的，深信的 n. 知己，心腹
-  </details>  
   
 * confuse
   <details>
@@ -247,9 +239,21 @@ If you prefer to learn concepts step by step, our guide to main concepts is the 
 
 Many React users credit reading Thinking in React as the moment React finally “clicked” for them. It’s probably the oldest React walkthrough but it’s still just as relevant
 
+<details>
+  <summary>view the picture</summary>
+  
+  ![think-in-react](../screenshots/thinking-in-react.png)
+</details>
+
 ### Word
 * credit
   <details>
     <summary>view the definition</summary>
     英 [ˈkredɪt] n. 信誉，信用；贷款；荣誉；学分 vt. 相信，信任；归功于；赞颂
+  </details>
+
+* walkthrough
+  <details>
+    <summary>view the definition</summary>
+    英 ['wɔ:kθru:] n. 预排；游戏攻略，指完整的游戏攻关指导
   </details>
