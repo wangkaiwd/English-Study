@@ -257,3 +257,32 @@ Many React users credit reading Thinking in React as the moment React finally �
     <summary>view the definition</summary>
     英 ['wɔ:kθru:] n. 预排；游戏攻略，指完整的游戏攻关指导
   </details>
+
+## Recommended Courses
+Sometimes people find third-party books and video courses more helpful than the official documentation. We maintain a list of commonly recommended resources, some of which are free.
+
+### Word
+* maintain
+  <details>
+    <summary>view the definition</summary>
+    英 [meɪnˈteɪn] vt. 维持；继续；维护；主张；供养
+  </details>
+
+## Advanced Concepts
+Once you’re comfortable with the main concepts and played with React a little bit, you might be interested in more advanced topics. This section will introduce you to the powerful, but less commonly used React features like context and refs.
+
+## API Reference
+This documentation section is useful when you want to learn more details about a particular React API. For example, React.Component API reference can provide you with details on how setState() works, and what different lifecycle methods are useful for
+
+<details>
+  <summary>view the picture</summary>
+  
+  ![api-reference](../screenshots/api-reference.png)
+</details>
+
+### Word
+* particular
+  <details>
+    <summary>view the definition</summary>
+    英 [pəˈtɪkjələ(r)] adj. 特别的；详细的；独有的 n. 特色，特点；（可分类，列举的）项目；细节；某一事项
+  </details>
