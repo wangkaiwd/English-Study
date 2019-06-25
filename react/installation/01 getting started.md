@@ -286,3 +286,15 @@ This documentation section is useful when you want to learn more details about a
     <summary>view the definition</summary>
     英 [pəˈtɪkjələ(r)] adj. 特别的；详细的；独有的 n. 特色，特点；（可分类，列举的）项目；细节；某一事项
   </details>
+
+## Glossary and FAQ
+The glossary contains an overview of the most common terms you’ll see in the React documentation. There is also a FAQ section dedicated to short questions and answers about common topics, including making AJAX requests, component state, and file structure.
+
+### Word
+* glossary
+  <details>
+    <summary>view the definition</summary>
+    英 [ˈglɒsəri] n. (书尾的)词汇表，难词汇编
+
+    FAQ: frequently asked questions
+  </details>
