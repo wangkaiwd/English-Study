@@ -296,5 +296,18 @@ The glossary contains an overview of the most common terms you’ll see in the R
     <summary>view the definition</summary>
     英 [ˈglɒsəri] n. (书尾的)词汇表，难词汇编
 
-    FAQ: frequently asked questions
+    FAQ: frequently asked questions: 常见问题与解答；常见问答集；直译：常被问到的问题
   </details>
+
+## Staying Informed
+The React blog is the official source for the updates from the React team. Anything important, including release notes or deprecation notices, will be posted there first.
+
+You can also follow the @reactjs account on Twitter, but you won’t miss anything essential if you only read the blog.
+
+Not every React release deserves its own blog post, but you can find a detailed changelog for every release in the CHANGELOG.md file in the React repository, as well as on the Releases page
+
+<details>
+  <summary>view the picture</summary>
+  
+  ![staying-informed](../screenshots/staying-informed.png)
+</details>
