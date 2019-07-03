@@ -320,3 +320,20 @@ This documentation always reflects the latest stable version of React. Since Rea
   
   ![versioned-document](../screenshots/versioned-document.png)
 </details>
+
+### Word
+* reflect
+  <details>
+    <summary>view the definition</summary>
+    英 [rɪˈflekt] v. 反射，反照；表达；显示；折转；映射
+  </details>
+* snapshot
+  <details>
+    <summary>view the definition</summary>
+    英 [ˈsnæpʃɒt] n. (快照)照片，独立的印象，简单印象；简介；v.拍快照
+  </details>
+
+## Something Missing?
+If something is missing in the documentation or if you found some part confusing, please file an issue for the documentation repository with your suggestions for improvement, or tweet at the @reactjs account. We love hearing from you!
+
+### Word
