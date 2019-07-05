@@ -6,6 +6,7 @@
 
 ## 单词学习
 > [48个国际音标表](https://en-yinbiao.xiao84.com/yinbiaofayin/)
+* [word8](http://83d85d64.wiz03.com/share/s/23S5RA2OSkx62g7Bay0GHkBh3GzvNt3lDQx-2Es7Z40GTJTK)
 * [word9](http://83d85d64.wiz03.com/share/s/23S5RA2OSkx62g7Bay0GHkBh3omy8f2tZAkq2MyGd02AQjPS)
 * [word10](http://83d85d64.wiz03.com/share/s/23S5RA2OSkx62g7Bay0GHkBh2aRM8801UkS82AYNLV0NqzzU)
 * [word11](http://83d85d64.wiz03.com/share/s/23S5RA2OSkx62g7Bay0GHkBh1_luPv1F94LD2J2rCt2FykR-)

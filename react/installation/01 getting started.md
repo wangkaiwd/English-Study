@@ -337,3 +337,8 @@ This documentation always reflects the latest stable version of React. Since Rea
 If something is missing in the documentation or if you found some part confusing, please file an issue for the documentation repository with your suggestions for improvement, or tweet at the @reactjs account. We love hearing from you!
 
 ### Word
+* tweet
+  <details>
+    <summary>view the definition</summary>
+    英 [twi:t] n. 小鸟啼叫； vi. 鸣叫
+  </details>
