@@ -26,4 +26,18 @@ let isDone: boolean = false;
 </details>
 
 ### Number
+As in JavaScript, all numbers in TypeScript are floating point values. These floating point numbers get the type number. In addition to hexadecimal and decimal literals, TypeScript also supports binary and octal literals introduced in ECMAScript 2015.
 
+<details>
+  <summary>translate to chinese</summary>
+  
+  就像在`JavaScript`中一样，所有的数值在`TypeScript`都是浮点值。这些浮点值获得了`number`类型。除了十六进制和十进制字面量外，`TypeScript`还支持在`ECMAScript 2015`里介绍到的二进制和八进制字面量。
+</details>
+
+<details>
+  <summary>knowledge point</summary>
+  
+  * in addition to: 除...之外（还）
+  * hexadecimal: n. & adj. 十六进制（的）
+  * octal: adj. 八进制的
+</details>
