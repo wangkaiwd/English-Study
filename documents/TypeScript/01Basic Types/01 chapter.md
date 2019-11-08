@@ -63,6 +63,12 @@ color = 'red';
 </details>
 
 You can also use template strings, which can span multiple lines and have embedded expressions. These strings are surrounded by the backtick/backquote (\`) character, and embedded expressions are of the form `${ expr }`.
+<details>
+  <summary>translate to chinese</summary>
+  
+  你也能使用模板字符串，它能跨越多行文本和内嵌表达式。这些字符串被反引号字符包裹，并且以`${ expr }`的形式内嵌表达式。
+  
+</details>
 
 ```typescript
 let fullName: string = `Bob Bobbington`;
@@ -78,12 +84,8 @@ let sentence: string = "Hello, my name is " + fullName + ".\n\n" +
 ```
 
 <details>
-  <summary>translate to chinese</summary>
-  
-  
-</details>
-
-<details>
   <summary>knowledge point</summary>
   
+  * [span](https://dict.eudic.net/dicts/en/span): 英音：/spæn/ vt. 跨越
+  * backquote: n. 反引号
 </details>
