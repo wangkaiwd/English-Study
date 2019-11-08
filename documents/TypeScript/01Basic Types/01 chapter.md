@@ -67,7 +67,7 @@ You can also use template strings, which can span multiple lines and have embedd
   <summary>translate to chinese</summary>
   
   你也能使用模板字符串，它能跨越多行文本和内嵌表达式。这些字符串被反引号字符包裹，并且以`${ expr }`的形式内嵌表达式。
-  
+  ![](https://raw.githubusercontent.com/wangkaiwd/drawing-bed/master/english-ts-string-span.png)
 </details>
 
 ```typescript
