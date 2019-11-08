@@ -48,3 +48,18 @@ let octal: number = 0o744;
   * [hexadecimal](https://dict.eudic.net/dicts/en/hexadecimal):  英音：/ˌheksə'desɪm(ə)l/ n. & adj. 十六进制（的）
   * [octal](https://dict.eudic.net/dicts/en/octal): 英音：/'ɒkt(ə)l/ adj. 八进制的
 </details>
+
+### String
+
+Another fundamental part of creating programs in JavaScript for webpages and servers alike is working with textual data. As in other languages, we use the type string to refer to these textual datatypes. Just like JavaScript, TypeScript also uses double quotes (") or single quotes (') to surround string data.
+```typescript
+let color: string = "blue";
+color = 'red';
+```
+<details>
+  <summary>translate to chinese</summary>
+  
+  在`JavaScript`网页和服务端编程中另外一个创建程序的基础部分是都需要处理文本数据。和其它语言一样，我们使用类型`string`来表示这些文本数据类型。就像`JavaScript`,`TypeScript`也使用双引号(`"`)或者单引号(`'`)来包裹字符串数据。
+</details>
+
+You can also use template strings, which can span multiple lines and have embedded expressions. These strings are surrounded by the backtick/backquote (\`) character, and embedded expressions are of the form `${ expr }`.
