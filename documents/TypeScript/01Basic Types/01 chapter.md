@@ -63,3 +63,27 @@ color = 'red';
 </details>
 
 You can also use template strings, which can span multiple lines and have embedded expressions. These strings are surrounded by the backtick/backquote (\`) character, and embedded expressions are of the form `${ expr }`.
+
+```typescript
+let fullName: string = `Bob Bobbington`;
+let age: number = 37;
+let sentence: string = `Hello, my name is ${ fullName }.
+
+I'll be ${ age + 1 } years old next month.`;
+```
+This is equivalent to declaring `sentence` like so:
+```typescript
+let sentence: string = "Hello, my name is " + fullName + ".\n\n" +
+    "I'll be " + (age + 1) + " years old next month.";
+```
+
+<details>
+  <summary>translate to chinese</summary>
+  
+  
+</details>
+
+<details>
+  <summary>knowledge point</summary>
+  
+</details>
