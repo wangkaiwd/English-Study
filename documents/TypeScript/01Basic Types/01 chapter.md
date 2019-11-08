@@ -9,6 +9,7 @@ For programs to be useful, we need to be able to work with some of the simplest 
 
 <details>
   <summary>knowledge point</summary>
+  
   [ant the like](https://dict.eudic.net/dicts/en/and%20the%20like): 等等，诸如此类
 </details>
 
