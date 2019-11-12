@@ -89,3 +89,20 @@ let sentence: string = "Hello, my name is " + fullName + ".\n\n" +
   * [span](https://dict.eudic.net/dicts/en/span): 英音：/spæn/ vt. 跨越
   * backquote: n. 反引号
 </details>
+
+### Array
+TypeScript, like JavaScript, allows you to work with arrays of values. Array types can be written in one of two ways. In the first, you use the type of the elements followed by [] to denote an array of that element type:
+
+```typescript
+const list: number[] = [1 ,2 ,3];
+```
+The second way uses a generic array type, `Array<elemType>`: 
+```typescript
+const list: Array<number> = [1, 2, 3];
+```
+<details>
+  <summary>translate to chinese</summary>
+  
+  像`JavaScript`一样，`TypeScript`允许你使用数组。数组类型可以用以下俩种方式之一编写。第一种书写方式，可以在元素的类型后接上`[]`来表示该元素类型组成的数组。第二种书写方式，使用泛型数组类型, `Array<elemType>`。
+  ![](https://raw.githubusercontent.com/wangkaiwd/drawing-bed/master/english-ts-array-write.png)
+</details>
