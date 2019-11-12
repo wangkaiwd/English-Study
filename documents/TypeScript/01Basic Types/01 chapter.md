@@ -106,3 +106,18 @@ const list: Array<number> = [1, 2, 3];
   像`JavaScript`一样，`TypeScript`允许你使用数组。数组类型可以用以下俩种方式之一编写。第一种书写方式，可以在元素的类型后接上`[]`来表示该元素类型组成的数组。第二种书写方式，使用泛型数组类型, `Array<elemType>`。
   ![](https://raw.githubusercontent.com/wangkaiwd/drawing-bed/master/english-ts-array-write.png)
 </details>
+
+### Tuple
+Tuple types allow you to express an array with a fixed number of elements whose types are known, but need not be the same. For example, you may want to represent a value as a pair of a `string` and a `number`:
+```typescript
+// Declare a tuple type
+let x: [string, number];
+// Initialize it
+x = ['hello', 10]; // OK
+// x = [10, 'hello']; Initialize it incorrectly
+```
+<details>
+  <summary>translate to chinese</summary>
+  
+  元祖允许你表示一个用固定数量的已知类型元素组成的数组，各个元素的类型不必相同。例如：你可能想用一个`string`和
+</details>
