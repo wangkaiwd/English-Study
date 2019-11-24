@@ -9,3 +9,21 @@ console.log(x[0].substring(1)); // OK
 
 // x[3] = 'world'; // Error, Property '3' does not exist on type '[string, number]'
 // console.log(x[5].toString()); // Error, Property '5' does not exist on type '[string, number]'
+
+// enum Color {Red, Green, Blue};
+// let c: Color = Color.Green;
+
+// enum Color {Red = 1, Green, Blue};
+// let c: Color = Color.Green;
+
+// manually set all the values in the enum:
+// enum Color {Red = 1, Green = 2, Blue = 4};
+// let c: Color = Color.Green;
+
+enum Color {
+  Red = 1,
+  Green,
+  Blue
+}
+let colorName: string = Color[2];
+console.log('colorName', colorName); // Display 'Green' as its value is 2 above

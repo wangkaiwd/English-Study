@@ -147,3 +147,61 @@ console.log(x[5].toString()); // Error, Property '5' does not exist on type '[st
   * plural: n. 复数形式
   ![](https://raw.githubusercontent.com/wangkaiwd/drawing-bed/master/english-ts-outside-tuple.png)
 </details>
+
+### Enum
+A helpful addition to the standard set of datatypes from JavaScript is the `enum`. As in languages like C#, an enum is a way of giving more friendly names to sets of numeric values.
+```typescript
+enum Color {Red, Green, Blue};
+let c: Color = Color.Green;
+```
+<details>
+  <summary>translate to chinese</summary>
+  
+  `enum`是除`JavaScript`标准数据类型集之外的一个有用的类型。像`C#`语言一样，枚举类型为一组数值(数值集)提供了一种更友好的命名方式
+</details>
+
+By default, enums begin numbering their members starting at `0`. You can change this by manually setting the value of one of its members. For example, we can start the previous example at `1` instead of `0`:
+```typescript
+enum Color {Red = 1, Green, Blue};
+let c: Color = Color.Green;
+```
+
+Or, even manually set all the values in the enum:
+```typescript
+enum Color {Red = 1, Green = 2, Blue = 4};
+let c: Color = Color.Green;
+```
+<details>
+  <summary>translate to chinese</summary>
+  
+  默认的，枚举类型会为它的成员从零开始编号。你可以手动设置成员的值来改变这个编号。例如：在前一个例子中，枚举类型的编号可以从1开始，而不是0.
+  
+  或者，为枚举类型的全部成员手动赋值.
+</details>
+
+<details>
+  <summary>knowledge point</summary>
+  
+  * number: vt.编号
+  * addition to : 除 ... 之外
+  ![](https://raw.githubusercontent.com/wangkaiwd/drawing-bed/master/english-ts-enum-standard-datatypes.png)
+  ![](https://raw.githubusercontent.com/wangkaiwd/drawing-bed/master/english-ts-enum-number.png)
+</details>
+
+A handy feature of enums is that you can also go from a numeric value to the name of that value in the enum. For example, if we had the value 2 but weren’t sure what that mapped to in the Color enum above, we could look up the corresponding name:
+```typescript
+enum Color {
+  Red = 1,
+  Green,
+  Blue
+}
+let colorName: string = Color[2];
+console.log('colorName', colorName); // Display 'Green' as its value is 2 above
+```
+
+<details>
+  <summary>translate to chinese</summary>
+  
+  枚举一个方便的功能是可以使用枚举的值找到其对应的名字。例如：如果我们只知道数值`2`但不知道它映射到`Color`枚举中的哪一个名字，我们可以通过`2`来查找到对应的名字
+  ![](https://raw.githubusercontent.com/wangkaiwd/drawing-bed/master/english-ts-enum-go%20from%20to.png)
+</details>
