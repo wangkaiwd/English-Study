@@ -119,5 +119,31 @@ x = ['hello', 10]; // OK
 <details>
   <summary>translate to chinese</summary>
   
-  元祖允许你表示一个用固定数量的已知类型元素组成的数组，各个元素的类型不必相同。例如：你可能想用一个`string`和
+  元祖允许你表示一个用固定数量的已知类型元素组成的数组，各个元素的类型不必相同。例如：你可能想用一对值分别为`string`和`number`类型的数组来代表一个元祖类型
+</details>
+
+When accessing an element with a known index, the correct type is [retrieved](https://dict.eudic.net/dicts/en/retrieve):
+```typescript
+console.log(x[0].substring(1)); // OK
+console.log(x[1].substring(1)); // Property 'substring' does not exist on type 'number'
+```
+
+Accessing an element outside the set of known indices fails with an error:
+```typescript
+x[3] = 'world'; // Error, Property '3' does not exist on type '[string, number]'
+console.log(x[5].toString()); // Error, Property '5' does not exist on type '[string, number]'
+```
+
+<details>
+  <summary>translate to chinese</summary>
+  
+  当访问一个已知索引的元素时，正确的类型会被检索到；访问一个已知索引外的元素将会失败并显示错误
+</details>
+<details>
+  <summary>knowledge point</summary>
+  
+  * [retrieve](https://dict.eudic.net/dicts/en/retrieve): 英音：/rɪ'triːv/ vt. 检索
+  * indices: index的复数形式：indices is a [plural](http://www.iciba.com/plural) form of index
+  * plural: n. 复数形式
+  ![](https://raw.githubusercontent.com/wangkaiwd/drawing-bed/master/english-ts-outside-tuple.png)
 </details>
