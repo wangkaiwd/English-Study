@@ -231,5 +231,7 @@ let prettySure: Object = 4;
 <details>
   <summary>translate to chinese</summary>
   
-  
+  `any`类型是一个与现有`JavaScript`一起工作的强大方式，它允许你在编译时逐渐选择进入或退出烈性检查。你可能期望`Object`来扮演一个类似的角色，因为它在其它语言里就是这样，然而，`Object`类型的变量值只允许你为它们分配任意值，你不能调用它们上的任意方法，甚至这个方法真实存在。
 </details>
+
+> Note: Avoid using Object in favor of the non-primitive object type as described in our Do’s and Don’ts section.
