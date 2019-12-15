@@ -249,3 +249,12 @@ list[1] = 100;
   
   如果你知道类型的一些部分但可能不是该类型的全部，这个时候使用`any`类型是很方便的。例如：你可能有一个数组但是数组元素混合了不同类型
 </details>
+
+<details>
+  <summary>knowledge point</summary>
+  
+  * in favor of: 支持
+    ![](https://raw.githubusercontent.com/wangkaiwd/drawing-bed/master/english-ts-any-knowledge-point.png)
+    [favor](https://dict.eudic.net/dicts/en/favor): vt. 支持,赞成
+   * [primitive](https://dict.eudic.net/dicts/en/primitive): adj. 原始的，早期的 n.原始人，原始事务
+</details>
