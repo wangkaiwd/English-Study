@@ -228,10 +228,24 @@ notSure.toFixed(); // okay, toFixed exists(but the compiler doesn't check)
 let prettySure: Object = 4;
 // prettySure.toFixed(); // Error: Property 'toFixed' doesn't exist on type 'Object'
 ```
+
+> Note: Avoid using `Object` in favor of the non-primitive `object` type as described in our [Do’s and Don’ts](https://www.typescriptlang.org/docs/handbook/declaration-files/do-s-and-don-ts.html#general-types) section.
+
 <details>
   <summary>translate to chinese</summary>
   
   `any`类型是一个与现有`JavaScript`一起工作的强大方式，它允许你在编译时逐渐选择进入或退出烈性检查。你可能期望`Object`来扮演一个类似的角色，因为它在其它语言里就是这样，然而，`Object`类型的变量值只允许你为它们分配任意值，你不能调用它们上的任意方法，甚至这个方法真实存在。
+  
+  > 提示：避免使用支持非原始`object`的`Object`,如同我们在[该做什么不该做什么中]描述的那样。
 </details>
 
-> Note: Avoid using Object in favor of the non-primitive object type as described in our Do’s and Don’ts section.
+The any type is also handy if you know some part of the type, but perhaps not all of it. For example, you may have an array but the array has a mix of different types:
+```typescript
+let list: any[] = [1, true, 'free'];
+list[1] = 100;
+```
+<details>
+  <summary>translate to chinese</summary>
+  
+  
+</details>
