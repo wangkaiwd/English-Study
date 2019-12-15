@@ -27,3 +27,15 @@ enum Color {
 }
 let colorName: string = Color[2];
 console.log('colorName', colorName); // Display 'Green' as its value is 2 above
+
+// let notSure: any = 4;
+// notSure = 'maybe a string instead';
+// notSure = false; // okay, definitely a boolean
+
+let notSure: any = 4;
+notSure.ifTtExists(); // okay,ifTiExists might exist at runtime
+notSure.toFixed(); // okay, toFixed exists(but the compiler doesn't check)
+
+let prettySure: Object = 4;
+// prettySure.toFixed(); // Error: Property 'toFixed' doesn't exist on type 'Object'
+

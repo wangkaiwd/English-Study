@@ -205,3 +205,31 @@ console.log('colorName', colorName); // Display 'Green' as its value is 2 above
   枚举一个方便的功能是可以使用枚举的值找到其对应的名字。例如：如果我们只知道数值`2`但不知道它映射到`Color`枚举中的哪一个名字，我们可以通过`2`来查找到对应的名字
   ![](https://raw.githubusercontent.com/wangkaiwd/drawing-bed/master/english-ts-enum-go%20from%20to.png)
 </details>
+
+### Any
+We may need to describe the type of variables that we do not know when we are writing an application. These values may come from dynamic content, e.g. from the user or a 3rd party library. In these cases, we want to opt-out of type checking and let the values pass through compile-time checks. To do so, we label these with the any type:
+```typescript
+let notSure: any = 4;
+notSure = 'maybe a string instead';
+notSure = false; // okay, definitely a boolean
+``` 
+<details>
+  <summary>translate to chinese</summary>
+  
+  当我们正在写一个应用程序时，我们可能需要描述一个我们不知道类型的变量。这些值可能来自于动态的内容，比如来自于用户或者一个第三方库。在这些情况，我们想选择退出类型检查来让值能通过编译时检查。为了能这样做,我们将这些值标记为`any`类型
+</details>
+
+The `any` type is a powerful way to work with existing JavaScript, allowing you to gradually opt-in and opt-out of type checking during compilation. You might expect Object to play a similar role, as it does in other languages. However, variables of type Object only allow you to assign any value to them. You can’t call arbitrary methods on them, even ones that actually exist:
+```typescript
+let notSure: any = 4;
+notSure.ifTtExists(); // okay,ifTiExists might exist at runtime
+notSure.toFixed(); // okay, toFixed exists(but the compiler doesn't check)
+
+let prettySure: Object = 4;
+// prettySure.toFixed(); // Error: Property 'toFixed' doesn't exist on type 'Object'
+```
+<details>
+  <summary>translate to chinese</summary>
+  
+  
+</details>
