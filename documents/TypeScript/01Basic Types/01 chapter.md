@@ -266,8 +266,23 @@ function warnUser (): void {
   console.log('this is warning message');
 }
 ```
-Declaring variables of type `void` is not useful because you can only assign `null`(only if `--strictNullChecks` is not specified) or `undefined` to them:
+Declaring variables of type `void` is not useful because you can only assign `null`(only if `--strictNullChecks` is not specified, see next section) or `undefined` to them:
 ```typescript
 let unusable: void = undefined;
 unusable = null; // OK if `--strictNullChecks` is not given
 ```
+<details>
+  <summary>translate to chinese</summary>
+  
+  `void`有一点像`any`的相反面：完全没有任何类型。你可能会经常看到这样的情况：没有返回任一值作为函数返回值的类型。
+  
+  类型`void`声明变量是没有用的，因为你只能将`null`(只有当`--strictNullChecks`没有被指定的情况下，具体看下节)或`undefined`分配给它们。
+</details>
+
+<details>
+  <summary>knowledge point</summary>
+  
+  ![](https://raw.githubusercontent.com/wangkaiwd/drawing-bed/master/english-study-ts-void-knowledge-point.png)
+  * [opposite](https://dict.eudic.net/dicts/en/opposite): adj. 相反的；对立的
+  * [at all](https://dict.eudic.net/dicts/en/at%20all): (否定句) 根本；究竟
+</details>
