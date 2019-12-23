@@ -258,3 +258,16 @@ list[1] = 100;
     [favor](https://dict.eudic.net/dicts/en/favor): vt. 支持,赞成
    * [primitive](https://dict.eudic.net/dicts/en/primitive): adj. 原始的，早期的 n.原始人，原始事务
 </details>
+
+### Void
+`void` is a little like the opposite of `any`: the absence of having any type at all. You may commonly see this as return type of functions that do not return a value:
+```typescript
+function warnUser (): void {
+  console.log('this is warning message');
+}
+```
+Declaring variables of type `void` is not useful because you can only assign `null`(only if `--strictNullChecks` is not specified) or `undefined` to them:
+```typescript
+let unusable: void = undefined;
+unusable = null; // OK if `--strictNullChecks` is not given
+```

@@ -42,4 +42,9 @@ let prettySure: Object = 4;
 let list: any[] = [1, true, 'free'];
 list[1] = 100;
 
+function warnUser (): void {
+  console.log('this is warning message');
+}
 
+let unusable: void = undefined;
+unusable = null; // OK if `--strictNullChecks` is not given
