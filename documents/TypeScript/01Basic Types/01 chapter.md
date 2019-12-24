@@ -309,3 +309,24 @@ However, when using the `--strictNullChecks` flag, `null` and `undefined` are on
 Union type are an advanced topic that we'll cover in a later chapter.
 
 > As a note: we encourage the use of `--strictNullChecks` when possible, but for the purposes of this handbook, we will assume it is turned off.
+
+<details>
+  <summary>translate to chinese</summary>
+  
+  然而，当使用了`--strictNullChecks`标识，`null`和`undefined`只能分配给`any`类型以及它们各自的类型(一个例外是`undefined`也可以分配给`void`类型)。这帮助开发者避免了许多常见的错误。在某些情况下你可能想要传入一个`string`或`null`或`undefined`，你可以使用联合类型`string | null | undefined`。
+  
+  联合类型是一个高级话题，我们将会在之后的章节涉及到。
+  
+  > 注意： 在可能的时候我们推荐使用`--strictNullChecks`，但是对于本本手册来说，我们将会假设它是关闭的。
+</details>
+
+<details>
+  <summary>knowledge point</summary>
+  
+  ![](https://raw.githubusercontent.com/wangkaiwd/drawing-bed/master/english-ts-document-on-their-own.png)
+  
+  * [exception](https://dict.eudic.net/dicts/en/exception): 美音：/ɪk'sɛpʃən/  
+    n. 例外；异常  
+    词根：[except](https://dict.eudic.net/dicts/en/except): 美音：/ɪk'sɛpt/ prep. 除...外
+  ![](https://raw.githubusercontent.com/wangkaiwd/drawing-bed/master/english-ts-document-exception.png)
+</details>
