@@ -286,3 +286,24 @@ unusable = null; // OK if `--strictNullChecks` is not given
   * [opposite](https://dict.eudic.net/dicts/en/opposite): adj. 相反的；对立的
   * [at all](https://dict.eudic.net/dicts/en/at%20all): (否定句) 根本；究竟
 </details>
+
+### Null and undefined
+In TypeScript, both `undefined` and `null` actually have their own types named `undefined` and `null` respectively.Much like `void`, they're not extremely useful on their own: 
+```typescript
+// Not much else we can assign to these variables!
+let u: undefined = undefined;
+let n: null = null;
+```
+By default `null` and `undefined` are subtypes of all other types. That means you can assign `null` and `undefined` to something like `number`.
+
+<details>
+  <summary>translate to chinese</summary>
+  
+  在`TypeScript`中，`undefined`和`null`都有它们自己的类型名称分别叫做`undefined`和`null`.就像`void`一样，它们本身并不是特别有用。
+</details>
+
+However, when using the `--strictNullChecks` flag, `null` and `undefined` are only assignable to `any` and their respective types (the one exception being that `undefined` is also assignable to `void`). This helps avoid many common errors. In cases where you want to pass in either a `string` or `null` or `undefined`, you can use the union type `string | null | undefined`.
+
+Union type are an advanced topic that we'll cover in a later chapter.
+
+> As a note: we encourage the use of `--strictNullChecks` when possible, but for the purposes of this handbook, we will assume it is turned off.
