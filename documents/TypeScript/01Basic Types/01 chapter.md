@@ -299,7 +299,9 @@ By default `null` and `undefined` are subtypes of all other types. That means yo
 <details>
   <summary>translate to chinese</summary>
   
-  在`TypeScript`中，`undefined`和`null`都有它们自己的类型名称分别叫做`undefined`和`null`.就像`void`一样，它们本身并不是特别有用。
+  在`TypeScript`中，`undefined`和`null`都有它们自己的类型名称分别叫做`undefined`和`null`.就像`void`一样，对于它们本身来说并不是特别有用。
+  
+  默认情况下`null`和`undefined`是所有其它类型的子类型。这意味着你能将`null`和`undefined`分配像`number`这样的类型。
 </details>
 
 However, when using the `--strictNullChecks` flag, `null` and `undefined` are only assignable to `any` and their respective types (the one exception being that `undefined` is also assignable to `void`). This helps avoid many common errors. In cases where you want to pass in either a `string` or `null` or `undefined`, you can use the union type `string | null | undefined`.
