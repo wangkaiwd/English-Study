@@ -25,6 +25,7 @@ enum Color {
   Green,
   Blue
 }
+
 let colorName: string = Color[2];
 console.log('colorName', colorName); // Display 'Green' as its value is 2 above
 
@@ -42,9 +43,26 @@ let prettySure: Object = 4;
 let list: any[] = [1, true, 'free'];
 list[1] = 100;
 
-function warnUser (): void {
+function warnUser(): void {
   console.log('this is warning message');
 }
 
 let unusable: void = undefined;
 unusable = null; // OK if `--strictNullChecks` is not given
+
+// Function returning never must have unreachable end point
+function error(message: string): never {
+  throw new Error(message)
+}
+
+// Inferred return type is never
+function fail() {
+  return error('something failed')
+}
+
+// Function returning never must have unreachable end point
+function infiniteLoop(): never {
+  while (true) {
+
+  }
+}
