@@ -355,3 +355,18 @@ function infiniteLoop(): never {
   }
 }
 ```
+<details>
+  <summary>translate to chinese</summary>
+  
+  `never`类型表示从未出现的值的类型。例如，`never`是总是抛出异常或从来没有返回值的函数表达式或箭头函数表达式返回值得类型。当类型守卫的类型范围被缩小到永远不会是`true`的时候，变量也会获得`never`类型。
+
+  `never`类型是所有类型的子类型，并且可以赋值给所有类型。然而，没有任何类型是`never`的子类型，并且除了`never`它自己，没有任何类型可以赋值给`never`，甚至`any`也不能分配给`never`。
+
+  下面是函数返回值是`never`类型的一些例子。
+</details>
+
+<details>
+  <summary>knowledge point</summary>
+  
+  ![](https://raw.githubusercontent.com/wangkaiwd/drawing-bed/master/english-ts-basic-type-never.png)
+</details>
