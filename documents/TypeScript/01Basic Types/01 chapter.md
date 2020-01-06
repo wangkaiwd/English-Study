@@ -411,10 +411,18 @@ And the other is the `as`-syntax:
 
 The two samples are equivalent. Using one over the other is mostly a choice of preference; however, when using TypeScript with JSX, only `as`-style assertions are allowed.
 
-A note about `let`
+<details>
+  <summary>translate to chinese</summary>
+
+  有时你可能比`TypeScript`更了解一个值。这种情况通常发生在你知道实体的类型比它的当前类型更加具体时候。
+
+  类型断言是告诉编译器“相信我，我知道我再做什么。”的一种方式。类型断言就像其它语言中的类型转换，但是不会执行特殊的检查或者调整数据。它没有运行时的影响，只是被编译器使用。
+</details>
+
+### A note about `let`
 You may’ve noticed that so far, we’ve been using the `let` keyword instead of JavaScript’s `var` keyword which you might be more familiar with. The `let` keyword was introduced to JavaScript in ES2015 and is now considered the standard because it’s safer than `var`. We’ll discuss the details later, but many common problems in JavaScript are alleviated by using `let`, so you should use it instead of `var` whenever possible.
 <details>
   <summary>translate to chinese</summary>
   
-  到目前为止你可能已经注意到，我们使用`let`关键字而不是在`JavaScript`中你可能更熟悉的`var`关键字。
+  到目前为止你可能已经注意到，我们使用`let`关键字而不是在`JavaScript`中你可能更熟悉的`var`关键字。`let`关键字在`JavaScript` `ES2015`中被引入，由于它比`var`更加安全，现在被视为标准关键字，有关细节我们将在之后讨论。通过使用`let`可以避免`JavaScript`中的许多常见问题，因此只要在可能的情况下你都应改使用`let`而不是`var`
 </details>
