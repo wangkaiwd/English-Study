@@ -370,3 +370,25 @@ function infiniteLoop(): never {
   
   ![](https://raw.githubusercontent.com/wangkaiwd/drawing-bed/master/english-ts-basic-type-never.png)
 </details>
+
+### Object
+`object` is a type that represents the non-primitive type, i.e. anything that is not `number`, `string`, `boolean`, `bigint`, `symbol`, `null`, or `undefined`.
+
+With `object` type, APIs like `Object.create` can be better represented. For example:
+```typescript
+declare function create(o: object | null): void;
+create({ prop: 0 });
+create(null);
+
+// create(42); // Error
+// create("string"); // Error
+// create(false); // Error
+// create(undefined); // Error
+```
+<details>
+  <summary>translate to chinese</summary>
+
+  `object`表示非原始类型。不是`number`,`string`,`boolean`,`bigint`,`symbol`,`null`或`undefined`的任何类型都是`object`。
+
+  使用`object`类型，可以更好的表示像`Object.create`这样的`APIs`.例如：
+</details>
