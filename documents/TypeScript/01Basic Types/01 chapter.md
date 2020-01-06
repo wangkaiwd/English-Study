@@ -392,3 +392,29 @@ create(null);
 
   使用`object`类型，可以更好的表示像`Object.create`这样的`APIs`.例如：
 </details>
+
+### Type assertions
+
+Sometimes you’ll end up in a situation where you’ll know more about a value than TypeScript does. Usually this will happen when you know the type of some entity could be more specific than its current type.
+
+Type assertions are a way to tell the compiler “trust me, I know what I’m doing.” A type assertion is like a type cast in other languages, but performs no special checking or restructuring of data. It has no runtime impact, and is used purely by the compiler. TypeScript assumes that you, the programmer, have performed any special checks that you need.
+
+Type assertions have two forms. One is the “angle-bracket” syntax:
+```typescript
+
+```
+
+And the other is the `as`-syntax:
+```typescript
+
+```
+
+The two samples are equivalent. Using one over the other is mostly a choice of preference; however, when using TypeScript with JSX, only `as`-style assertions are allowed.
+
+A note about `let`
+You may’ve noticed that so far, we’ve been using the `let` keyword instead of JavaScript’s `var` keyword which you might be more familiar with. The `let` keyword was introduced to JavaScript in ES2015 and is now considered the standard because it’s safer than `var`. We’ll discuss the details later, but many common problems in JavaScript are alleviated by using `let`, so you should use it instead of `var` whenever possible.
+<details>
+  <summary>translate to chinese</summary>
+  
+  到目前为止你可能已经注意到，我们使用`let`关键字而不是在`JavaScript`中你可能更熟悉的`var`关键字。
+</details>
