@@ -424,5 +424,12 @@ You may’ve noticed that so far, we’ve been using the `let` keyword instead o
 <details>
   <summary>translate to chinese</summary>
   
-  到目前为止你可能已经注意到，我们使用`let`关键字而不是在`JavaScript`中你可能更熟悉的`var`关键字。`let`关键字在`JavaScript` `ES2015`中被引入，由于它比`var`更加安全，现在被视为标准关键字，有关细节我们将在之后讨论。通过使用`let`可以避免`JavaScript`中的许多常见问题，因此只要在可能的情况下你都应改使用`let`而不是`var`
+  到目前为止你可能已经注意到，我们使用`let`关键字而不是在`JavaScript`中你可能更熟悉的`var`关键字。`let`关键字在`JavaScript` `ES2015`中被引入，由于它比`var`更加安全，现在被视为标准关键字，有关细节我们将在之后讨论。通过使用`let`可以避免`JavaScript`中的许多常见问题，因此只要在可能的情况下你都应该使用`let`而不是`var`。
+</details>
+
+<details>
+  <summary>knowledge point</summary>
+  
+  * [alleviate](https://www.youdao.com/w/alleviate/#keyfrom=dict2.top): 美 [əˈliːvieɪt]  
+    vt. 减轻；缓和
 </details>
