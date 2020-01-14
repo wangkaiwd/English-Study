@@ -395,6 +395,8 @@ create(null);
 
 ### Type assertions
 
+> todo: 1. 第一句解读
+
 Sometimes you’ll end up in a situation where you’ll know more about a value than TypeScript does. Usually this will happen when you know the type of some entity could be more specific than its current type.
 
 Type assertions are a way to tell the compiler “trust me, I know what I’m doing.” A type assertion is like a type cast in other languages, but performs no special checking or restructuring of data. It has no runtime impact, and is used purely by the compiler. TypeScript assumes that you, the programmer, have performed any special checks that you need.
@@ -428,7 +430,14 @@ The two samples are equivalent. Using one over the other is mostly a choice of p
 
   俩个示例文件是等价的。至于使用哪个大多数情况下是个人喜好；然而，当在`JSX`中使用`TypeScript`时，只允许使用`as`风格的类型断言。
 </details>
-![](https://raw.githubusercontent.com/wangkaiwd/drawing-bed/master/english-study-ts-type-assertion-choice.png)
+
+<details>
+  <summary>knowledge point</summary>
+  * [entity](http://www.youdao.com/w/entity/#keyfrom=dict2.top): 美 [ˈentəti]
+    n. **实体**；存在；本质
+  * type cast: 类型转换
+  ![](https://raw.githubusercontent.com/wangkaiwd/drawing-bed/master/english-study-ts-type-assertion-choice.png)
+</details>
 
 ### A note about `let`
 You may’ve noticed that so far, we’ve been using the `let` keyword instead of JavaScript’s `var` keyword which you might be more familiar with. The `let` keyword was introduced to JavaScript in ES2015 and is now considered the standard because it’s safer than `var`. We’ll discuss the details later, but many common problems in JavaScript are alleviated by using `let`, so you should use it instead of `var` whenever possible.
