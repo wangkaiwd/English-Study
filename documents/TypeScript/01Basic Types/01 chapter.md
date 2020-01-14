@@ -401,12 +401,16 @@ Type assertions are a way to tell the compiler “trust me, I know what I’m do
 
 Type assertions have two forms. One is the “angle-bracket” syntax:
 ```typescript
+let someValue: any = "this is a string";
 
+let strLength: number = (<string>someValue).length;
 ```
 
 And the other is the `as`-syntax:
 ```typescript
+let someValue: any = "this is a string";
 
+let strLength: number = (someValue as string).length;
 ```
 
 The two samples are equivalent. Using one over the other is mostly a choice of preference; however, when using TypeScript with JSX, only `as`-style assertions are allowed.
