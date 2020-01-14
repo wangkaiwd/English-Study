@@ -420,8 +420,15 @@ The two samples are equivalent. Using one over the other is mostly a choice of p
 
   有时你可能比`TypeScript`更了解一个值。这种情况通常发生在你知道实体的类型比它的当前类型更加具体时候。
 
-  类型断言是告诉编译器“相信我，我知道我再做什么。”的一种方式。类型断言就像其它语言中的类型转换，但是不会执行特殊的检查或者调整数据。它没有运行时的影响，只是被编译器使用。
+  类型断言是告诉编译器“相信我，我知道我再做什么。”的一种方式。类型断言就像其它语言中的类型转换，但是不会执行特殊的检查或者调整数据。它没有运行时的影响，只是被编译器使用。`TypeScript`假设你(程序设计员)，已经执行了任何你需要的特殊的检查。
+
+  类型断言有俩种形式。一种是”尖括号“语法：
+
+  另一种是`as`语法：
+
+  俩个示例文件是等价的。至于使用哪个大多数情况下是个人喜好；然而，当在`JSX`中使用`TypeScript`时，只允许使用`as`风格的类型断言。
 </details>
+![](https://raw.githubusercontent.com/wangkaiwd/drawing-bed/master/english-study-ts-type-assertion-choice.png)
 
 ### A note about `let`
 You may’ve noticed that so far, we’ve been using the `let` keyword instead of JavaScript’s `var` keyword which you might be more familiar with. The `let` keyword was introduced to JavaScript in ES2015 and is now considered the standard because it’s safer than `var`. We’ll discuss the details later, but many common problems in JavaScript are alleviated by using `let`, so you should use it instead of `var` whenever possible.
