@@ -8,3 +8,20 @@
 如果你只想准备去使用`React Hook`来获取数据：执行`npm install use-data-api`并且跟随文档来使用。如果你用到了它，别忘记为它点一个`star`。
 
 **注意：**在未来，`React`并不打算用`React Hooks`来获取数据。相反的，一个叫做`Suspense`的特性将会负责这件事。不过，下列的讲解是一个很好的用来学习更多关于`React`中`state`和`effect` `hooks`内容的方式。
+
+### 用`React Hooks`来获取数据
+
+
+### 如何手动地/编程式的触发一个`Hook`
+
+### 用`React Hooks`来显示`loading`
+
+### 用`React Hooks`处理错误
+
+### 从表单和`React`获取数据
+
+### 自定义数据获取`Hook`
+
+### 使用`reducer hook`获取数据
+
+### 在`effect hook`中终止数据获取
