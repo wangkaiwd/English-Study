@@ -13,3 +13,18 @@
 
 ### 用`React Hooks`来获取数据
 如果你不熟悉`React`中的数据获取，查阅我的[`React`文章中通用的数据获取]。它将带你了解如何使用`React`类组件来进行数据获取，如何使用`Render Prop Components`和高阶组件(`Higher-Order Components`)来使代码变的可复用，如何进行错误处理和加载`loading`状态。在这篇文章，我想用函数组件中的`React Hooks`来向你展示这些内容。
+
+
+### 如何手动地/编程式的触发一个`Hook`
+
+### 用`React Hooks`来显示`loading`
+
+### 用`React Hooks`处理错误
+
+### 从表单和`React`获取数据
+
+### 自定义数据获取`Hook`
+
+### 使用`reducer hook`获取数据
+
+### 在`effect hook`中终止数据获取
