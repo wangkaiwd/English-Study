@@ -14,7 +14,9 @@
 ### 用`React Hooks`来获取数据
 如果你不熟悉`React`中的数据获取，查阅我的[`React`文章中通用的数据获取]。它将带你了解如何使用`React`类组件来进行数据获取，如何使用`Render Prop Components`和高阶组件(`Higher-Order Components`)来使代码变的可复用，如何进行错误处理和加载`loading`状态。在这篇文章，我想用函数组件中的`React Hooks`来向你展示这些内容。
 
-`App`组件展示了所有项目的列表(hits = Hacker News articles)。`state`和更新`state`的函数来自于一个叫做`useState`的`hook`，它负责管理我们要为`App`组件取回数据的局部状态。
+`App`组件展示了所有项目的列表(hits = Hacker News articles)。`state`和更新`state`的函数来自于一个叫做`useState`的`hook`，它负责管理我们要为`App`组件取回数据的局部状态。初始状态用一个对象中空的`hits`列表来表示数据,还没有人为该数据设置任何状态。
+
+我们将要使用`axios`来获取数据，但是想要使用其它的数据获取库或者浏览器原生的`fetch API`将取决于你。如果你还没有安装`axios`, 你可以通过在命令行上使用`npm install axios`来做这件事，然后实现你获取数据的`effect hook`。
 
 ### 如何手动地/编程式的触发一个`Hook`
 
