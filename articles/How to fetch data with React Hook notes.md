@@ -12,3 +12,10 @@
 
 2.  If you haven't installed axios yet, you can do so by on the command line with npm install axios。
 
+3. The effect hook called useEffect is used to fetch the data with axios from the API and to set the data in the local state of the component with the state hook's update function
+
+4. However, when you run your application, you should stumble into a nasty loop.
+
+5. The effect hook runs when the component mounts but also when the component updates
+
+6. That's why you can provide an empty array as second argument to the effect hook to avoid activating it on component updates but only for the mounting of the component.
