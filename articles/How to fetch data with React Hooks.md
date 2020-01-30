@@ -4,7 +4,7 @@
 ### 前言
 
 在这个教程中，我想向您展示如何通过`state`和`effect`钩子来获取数据。我们将会使用广为人知的[Hacker News API](https://hn.algolia.com/api)从科技界获取流行文章。你也会为数据获取实现自己的自定义`hook`,它可以在你的应用中的任何地方被复用或者发布到`npm`作为一个独立的`node`包。
-```typescript jsx diff
+```typescript jsx
 import React, { useEffect, useState } from 'react';
 
 const App: React.FC = () => {
