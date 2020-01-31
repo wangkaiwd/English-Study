@@ -4,7 +4,7 @@
 ### 前言
 > 注意：笔者将会使用`TypeScript`来完成文章中的代码，并使用`ant design`来美化界面样式
 
-在这个教程中，我想向您展示如何通过`state`和`effect`钩子来获取数据。我们将会使用广为人知的[Hacker News API](https://hn.algolia.com/api)从科技界获取流行文章。你也会为数据获取实现自己的自定义`hook`,它可以在你的应用中的任何地方被复用或者发布到`npm`作为一个独立的`node`包。
+在这个教程中，我想向您展示如何通过`state`和`effect`钩子来获取数据。我们将会使用广为人知的[Hacker News API](https://hn.algolia.com/api)从科技世界获取流行文章。你也会为数据获取实现自己的自定义`hook`,它可以在你的应用中的任何地方被复用或者发布到`npm`作为一个独立的`node`包。
 
 如果你完全不了解这个`React`新特性，查阅这里：[introduction to React Hooks](https://www.robinwieruch.de/react-hooks)。如果你想要查阅如何在`React`中使用`hooks`来获取数据示例的完成项目，可以查阅这个[`GitHub`仓库](https://github.com/the-road-to-learn-react/react-hooks-introduction)。
 
@@ -83,6 +83,74 @@ const App: React.FC = () => {
 };
 export default App;
 ```
+第二个参数用来定义`hook`依赖的所有变量(分配给这个数组的)。如果其中的一个变量发生改变，`hook`将会再次运行。如果数组中的的变量为空，`hook`在组件更新后将不再运行，因为它没有必要监测任何变量。
+
+还有最后一个陷阱。在代码中，我们使用`async/await`从第三方`API`获取数据。按照文档所说，每个用`async`标注的函数都会返回一个隐式的`promise`: "`async`函数声明定义一个返回y一个`AsyncFunction`对象的异步函数。异步函数是通过事件循环来操作异步并且使用一个隐式的`promise`返回结果的函数"。然而，一个`effect hook`应该什么都不返回或者返回一个清理函数。这就是为什么你可能会在你的开发者控制台日志看到如下警告：**07:41:22.910 index.js Warning: useEffect function must return a cleanup function or nothing. Promises and useEffect(async() => ...) are not supported, but you can call an async function inside an effect(`useEffect`函数必须返回一个清理函数或者什么都不返回。`Promises`和`useEffect(async() => ...))`是不支持的，但是你可以在`effect`内部调用一个`async`函数）**.这也是为什么在`useEffect`函数里直接使用`async`不被允许的原因。让我们为这种情况实施一种变通方案，在`effect`内部使用`async`函数。(译注者：下边的代码使用了`ant design`,之后不再提示)
+```typescript jsx
+import React, { useEffect, useState } from 'react';
+import axios from 'axios';
+import { Card, List } from 'antd';
+import { IData } from '@/responseTypes';
+
+const App: React.FC = () => {
+  const [data, setData] = useState<IData>({ hits: [] });
+  useEffect(() => {
+    const fetchData = async () => {
+      const result = await axios('https://hn.algolia.com/api/v1/search?query=react');
+      setData({ hits: result.data.hits });
+    };
+    fetchData().then();
+  }, []);
+  return (
+    <Card bordered={false}>
+      <List dataSource={data.hits} renderItem={(item) => (
+        <List.Item>
+          <a href={item.url}>{item.title}</a>
+        </List.Item>
+      )}/>
+    </Card>
+  );
+};
+export default App;
+```
+译注者：`hack news`的响应数据`TypeScript`类型如下：
+```typescript
+// responseTypes.ts
+export interface IData {hits: IHit[];}
+
+interface IHit {
+  title: string;
+  url: string;
+  author: string;
+  points: number;
+  story_text?: any;
+  comment_text?: any;
+  _tags: string[];
+  num_comments: number;
+  objectID: string;
+  _highlightResult: IHighlightResult;
+}
+
+interface IHighlightResult {
+  title: ITitle;
+  url: ITitle;
+  author: IAuthor;
+}
+
+interface IAuthor {
+  value: string;
+  matchLevel: string;
+  matchedWords: string[];
+}
+
+interface ITitle {
+  value: string;
+  matchLevel: string;
+  matchedWords: any[];
+}
+```
+
+简单来说，这就是使用`React hooks`来获取数据。但是如果你对错误处理、展示`loading`状态、如何触发从表单获取数据、以及如何实现一个可复用的数据获取`hook`感兴趣的话，请继续阅读。
 ### 如何手动地/编程式的触发一个`Hook`
 
 ### 用`React Hooks`来显示`loading`
