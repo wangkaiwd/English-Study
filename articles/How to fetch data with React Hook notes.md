@@ -19,3 +19,5 @@
 5. The effect hook runs when the component mounts but also when the component updates
 
 6. That's why you can provide an empty array as second argument to the effect hook to avoid activating it on component updates but only for the mounting of the component.
+
+7. That's data fetching with React hooks in a nutshell.
