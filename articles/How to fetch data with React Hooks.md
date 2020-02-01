@@ -294,9 +294,89 @@ const App: React.FC = () => {
 export default App;
 ```
 
+现在，我们使`effect`依赖于`search`状态而不是随着在输入框中每一次击键而发生变化的`query`状态。一旦用户点击按钮，新的`search`状态被设置并且手动地触发`effect hook`。
 
+`search`状态的初始值也被设置为和`query`状态一样。因为组件也在挂载后获取数据并且结果应该和输入框中的值作为查询条件获取到的数据相同。然而，具有类似的`query`和`search`状态有一点让人疑惑。为什么不设置目前的请求地址作为状态来替代`search`状态？
+```typescript jsx
+import React, { useEffect, useState } from 'react';
+import axios from 'axios';
+import { Button, Card, Input, List } from 'antd';
+import { IData } from '@/responseTypes';
+
+const App: React.FC = () => {
+  const [data, setData] = useState<IData>({ hits: [] });
+  const [query, setQuery] = useState('redux');
+  const [url, setUrl] = useState('https://hn.algolia.com/api/v1/search?query=redux');
+  useEffect(() => {
+    const fetchData = async () => {
+      const result = await axios(url);
+      setData({ hits: result.data.hits });
+    };
+    fetchData().then();
+  }, [url]);
+  return (
+    <Card bordered={false}>
+      <Input
+        type="text"
+        value={query}
+        onChange={(e) => setQuery(e.target.value)}
+      />
+      <Button onClick={() => setUrl(`https://hn.algolia.com/api/v1/search?query=${query}`)}>Search</Button>
+      <List dataSource={data.hits} renderItem={(item) => (
+        <List.Item>
+          <a href={item.url}>{item.title}</a>
+        </List.Item>
+      )}/>
+    </Card>
+  );
+};
+export default App;
+```
+
+上面的例子就是用`effect hook`隐式编程来获取数据。你可以决定`effect`依赖于哪一个状态。一旦你在点击事件或在其它的副作用(`useEffect`)中设置状态，对应的`effect`将会再次运行。在上边的例子中，如果`url`状态发生改变，`effect`将会再次运行并从`API`中获取文章数据。
 ### 用`React Hooks`来显示`loading`
+让我们继续介绍数据获取时的`loading`展示。它只是被`state hook`所管理的另外一个`state`。在`App`组件中，`loading`标记用来渲染一个`loading`指示器。
 
+```typescript jsx
+import React, { useEffect, useState } from 'react';
+import axios from 'axios';
+import { Button, Card, Input, List } from 'antd';
+import { IData } from '@/responseTypes';
+
+const App: React.FC = () => {
+  const [data, setData] = useState<IData>({ hits: [] });
+  const [query, setQuery] = useState('redux');
+  const [url, setUrl] = useState('https://hn.algolia.com/api/v1/search?query=redux');
+  const [isLoading, setIsLoading] = useState(false);
+  useEffect(() => {
+    const fetchData = async () => {
+      setIsLoading(true);
+      const result = await axios(url);
+      setData({ hits: result.data.hits });
+      setIsLoading(false);
+    };
+    fetchData().then();
+  }, [url]);
+  return (
+    <Card bordered={false}>
+      <Input
+        type="text"
+        value={query}
+        onChange={(e) => setQuery(e.target.value)}
+      />
+      <Button onClick={() => setUrl(`https://hn.algolia.com/api/v1/search?query=${query}`)}>Search</Button>
+      <List dataSource={data.hits} loading={isLoading} renderItem={(item) => (
+        <List.Item>
+          <a href={item.url}>{item.title}</a>
+        </List.Item>
+      )}/>
+    </Card>
+  );
+};
+export default App;
+```
+
+当组件挂载或者`url`状态发生改变，`effect`被调用来获取数据，`loading`状态将被设置为`true`。一旦请求成功获取到数据，`loading`状态将会再次被设置为`false`。
 ### 用`React Hooks`处理错误
 
 ### 从表单和`React`获取数据
