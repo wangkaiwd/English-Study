@@ -152,6 +152,148 @@ interface ITitle {
 
 简单来说，这就是使用`React hooks`来获取数据。但是如果你对错误处理、展示`loading`状态、如何触发从表单获取数据、以及如何实现一个可复用的数据获取`hook`感兴趣的话，请继续阅读。
 ### 如何手动地/编程式的触发一个`Hook`
+很好，一旦组件挂载我们就会去获取数据。但是使用一个输入字段来告诉`API`我们对哪个话题感兴趣呢？"Redux"被作为默认查询，但是关于"React"的话题呢？让我们实现一个输入框能够让用户获取除"Redux"外的其它相关文章。因此，我们为输入元素引入一个新的状态。
+```typescript jsx
+import React, { useEffect, useState } from 'react';
+import axios from 'axios';
+import { Card, Input, List } from 'antd';
+import { IData } from '@/responseTypes';
+
+const App: React.FC = () => {
+  const [data, setData] = useState<IData>({ hits: [] });
+  const [query, setQuery] = useState('redux');
+  useEffect(() => {
+    const fetchData = async () => {
+      const result = await axios('https://hn.algolia.com/api/v1/search?query=redux');
+      setData({ hits: result.data.hits });
+    };
+    fetchData().then();
+  }, []);
+  return (
+    <Card bordered={false}>
+      <Input
+        type="text"
+        value={query}
+        onChange={(e) => setQuery(e.target.value)}
+      />
+      <List dataSource={data.hits} renderItem={(item) => (
+        <List.Item>
+          <a href={item.url}>{item.title}</a>
+        </List.Item>
+      )}/>
+    </Card>
+  );
+};
+export default App;
+```
+
+此时，俩个状态彼此之间互相独立，但是现在你想要组合它们只获取输入框中指定查询条件的文章数据。一旦组件挂载后，应该通过查询项来获取所有文章。
+```typescript jsx
+import React, { useEffect, useState } from 'react';
+import axios from 'axios';
+import { Card, Input, List } from 'antd';
+import { IData } from '@/responseTypes';
+
+const App: React.FC = () => {
+  const [data, setData] = useState<IData>({ hits: [] });
+  const [query, setQuery] = useState('redux');
+  useEffect(() => {
+    const fetchData = async () => {
+      const result = await axios(`https://hn.algolia.com/api/v1/search?query=${query}`);
+      setData({ hits: result.data.hits });
+    };
+    fetchData().then();
+  }, []);
+  return (
+    <Card bordered={false}>
+      <Input
+        type="text"
+        value={query}
+        onChange={(e) => setQuery(e.target.value)}
+      />
+      <List dataSource={data.hits} renderItem={(item) => (
+        <List.Item>
+          <a href={item.url}>{item.title}</a>
+        </List.Item>
+      )}/>
+    </Card>
+  );
+};
+export default App;
+```
+
+有一儿被忽略了：当你尝试在输入框中输入一些文字后，组件的重新渲染后并没有进行数据获取。那是因为你提供了空数组作为`effect`的第二个参数，`effect`不依赖于任何变量，因此它只会在组件挂载后触发。然而，`effect`现在应该依赖于`query`,一旦`query`改变，数据请求将会再次触发。
+```typescript jsx
+import React, { useEffect, useState } from 'react';
+import axios from 'axios';
+import { Card, Input, List } from 'antd';
+import { IData } from '@/responseTypes';
+
+const App: React.FC = () => {
+  const [data, setData] = useState<IData>({ hits: [] });
+  const [query, setQuery] = useState('redux');
+  useEffect(() => {
+    const fetchData = async () => {
+      const result = await axios(`https://hn.algolia.com/api/v1/search?query=${query}`);
+      setData({ hits: result.data.hits });
+    };
+    fetchData().then();
+  }, [query]);
+  return (
+    <Card bordered={false}>
+      <Input
+        type="text"
+        value={query}
+        onChange={(e) => setQuery(e.target.value)}
+      />
+      <List dataSource={data.hits} renderItem={(item) => (
+        <List.Item>
+          <a href={item.url}>{item.title}</a>
+        </List.Item>
+      )}/>
+    </Card>
+  );
+};
+export default App;
+```
+
+一旦你改变了输入框中的值数据将会重新获取。但是这也引发了另外一个问题：在你每为输入框输入一个字符的时候，`effect`将会被触发并且执行另一次数据获取请求。那么如何提供一个按钮来触发请求从而手动的地执行`hook`呢？
+```typescript jsx
+import React, { useEffect, useState } from 'react';
+import axios from 'axios';
+import { Button, Card, Input, List } from 'antd';
+import { IData } from '@/responseTypes';
+
+const App: React.FC = () => {
+  const [data, setData] = useState<IData>({ hits: [] });
+  const [query, setQuery] = useState('redux');
+  const [search, setSearch] = useState('redux');
+  useEffect(() => {
+    const fetchData = async () => {
+      const result = await axios(`https://hn.algolia.com/api/v1/search?query=${search}`);
+      setData({ hits: result.data.hits });
+    };
+    fetchData().then();
+  }, [search]);
+  return (
+    <Card bordered={false}>
+      <Input
+        type="text"
+        value={query}
+        onChange={(e) => setQuery(e.target.value)}
+      />
+      <Button onClick={() => setSearch(query)}>Search</Button>
+      <List dataSource={data.hits} renderItem={(item) => (
+        <List.Item>
+          <a href={item.url}>{item.title}</a>
+        </List.Item>
+      )}/>
+    </Card>
+  );
+};
+export default App;
+```
+
 
 ### 用`React Hooks`来显示`loading`
 

@@ -21,3 +21,11 @@
 6. That's why you can provide an empty array as second argument to the effect hook to avoid activating it on component updates but only for the mounting of the component.
 
 7. That's data fetching with React hooks in a nutshell.
+
+#### how to trigger a hook programmatically/manually
+1. Let's implement an input element to enable someone to fetch other stories than "Redux" stories
+
+2. At the moment, both states are independent from each other, but now you want to couple them to only fetch articles that are specified by the query in the input field
+
+3. Now, make the effect dependant on the search state rather than the fluctuant query state that changes with every key stroke in the input field
+
