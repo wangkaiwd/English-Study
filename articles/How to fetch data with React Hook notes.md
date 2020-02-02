@@ -29,3 +29,9 @@
 
 3. Now, make the effect dependant on the search state rather than the fluctuant query state that changes with every key stroke in the input field
 
+#### reducer hook for data fetching
+1. However, somehow all these states, managed with their own state hook, belong together because they care about the same cause.
+
+2.  A good indicator that they belong together is that they are used one after another (e.g. setIsError, setIsLoading).
+
+3. All this information is used in the actual reducer function to distill a new state from the previous state, the action's optional payload and type
