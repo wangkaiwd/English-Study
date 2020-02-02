@@ -155,7 +155,7 @@ interface ITitle {
 
 简单来说，这就是使用`React hooks`来获取数据。但是如果你对错误处理、展示`loading`状态、如何触发从表单获取数据、以及如何实现一个可复用的数据获取`hook`感兴趣的话，请继续阅读。
 ### 如何手动地/编程式地触发一个`Hook`
-很好，一旦组件挂载我们就会去获取数据。但是使用一个输入字段来告诉`API`我们对哪个话题感兴趣呢？"Redux"被作为默认查询，但是关于"React"的话题呢？让我们实现一个输入框能够让用户获取除"Redux"外的其它相关文章。因此，我们为输入元素引入一个新的状态。
+很好，一旦组件挂载我们就会去获取数据。但是使用一个输入字段来告诉`API`我们对哪个话题感兴趣呢？"Redux"被作为默认查询，但是关于"React"的话题呢？接下来，让我们实现一个`input`输入框，能够让用户获取除"Redux"外的其它相关文章。因此，我们为输入元素引入一个新的状态。
 ```typescript jsx
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
@@ -225,7 +225,7 @@ const App: React.FC = () => {
 export default App;
 ```
 
-有一儿被忽略了：当你尝试在输入框中输入一些文字后，组件的重新渲染后并没有进行数据获取。那是因为你提供了空数组作为`effect`的第二个参数，`effect`不依赖于任何变量，因此它只会在组件挂载后触发。然而，`effect`现在应该依赖于`query`,一旦`query`改变，数据请求将会再次触发。
+这里有一块儿被忽略了：当你尝试在输入框中输入一些文字后，组件重新渲染后并没有进行数据获取。那是因为你提供了空数组作为`effect`的第二个参数，`effect`不依赖于任何变量，因此它只会在组件挂载后触发。然而，`effect`现在应该依赖于`query`,一旦`query`改变，数据请求将会再次触发。
 ```typescript jsx
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
@@ -299,7 +299,7 @@ export default App;
 
 现在，我们使`effect`依赖于`search`状态而不是随着在输入框中每一次击键而发生变化的`query`状态。一旦用户点击按钮，新的`search`状态被设置并且手动地触发`effect hook`。
 
-`search`状态的初始值也被设置为和`query`状态一样。因为组件也在挂载后获取数据并且结果应该和输入框中的值作为查询条件获取到的数据相同。然而，具有类似的`query`和`search`状态有一点让人疑惑。为什么不设置目前的请求地址作为状态来替代`search`状态？
+`search`状态的初始值也被设置为和`query`状态一样。因为组件也在挂载后获取数据，并且结果应该和输入框中的值作为查询条件获取到的数据相同。然而，具有类似的`query`和`search`状态有一点让人疑惑。为什么不设置当前的请求地址作为状态来替代`search`状态？
 ```typescript jsx
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
@@ -336,7 +336,7 @@ const App: React.FC = () => {
 export default App;
 ```
 
-上面的例子就是用`effect hook`隐式编程来获取数据。你可以决定`effect`依赖于哪一个状态。一旦你在点击事件或在其它的副作用(`useEffect`)中设置状态，对应的`effect`将会再次运行。在上边的例子中，如果`url`状态发生改变，`effect`将会再次运行并从`API`中获取文章数据。
+上面的例子就是用`effect hook`编程地/手动地获取数据。你可以决定`effect`依赖于哪一个状态。一旦你在点击事件或在其它的副作用(`useEffect`)中设置状态(`setState`)，对应的`effect`将会再次运行。在上边的例子中，如果`url`状态发生改变，`effect`将会再次运行并从`API`中获取文章数据。
 ### 用`React Hooks`来显示`loading`
 让我们继续介绍数据获取时的`loading`展示。它只是被`state hook`所管理的另外一个`state`。在`App`组件中，`loading`标记用来渲染一个`loading`指示器。
 
