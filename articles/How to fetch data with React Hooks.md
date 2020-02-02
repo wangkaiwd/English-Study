@@ -431,9 +431,189 @@ export default FetchData;
 ```
 每次`hooks`再次运行的时候错误状态将会被重置。这是有用的，因为在请求失败后用户可能想要再次尝试，这个时候应该重置错误。为了强行制造一个错误你可以将`url`改为某些无效的值，然后检查错误信息是否展示。
 ### 从表单和`React`获取数据
+怎样用一个合适的表单来获取数据呢？目前为止，我们只有输入框和按钮进行组合。一旦你想要引入跟多的`input`元素，你可能想要用一个`form`元素来包裹它们。此外，`form`也可以让你用回车键来触发按钮。
+```typescript jsx
+import React, { useEffect, useState } from 'react';
+import axios from 'axios';
+import { Button, Card, Input, List } from 'antd';
+import { IData } from '@/responseTypes';
 
+const FetchData: React.FC = () => {
+  const [data, setData] = useState<IData>({ hits: [] });
+  const [query, setQuery] = useState('redux');
+  const [url, setUrl] = useState('https://hn.algolia.com/api/v1/search?query=redux');
+  const [isLoading, setIsLoading] = useState(false);
+  const [isError, setIsError] = useState(false);
+  useEffect(() => {
+    const fetchData = async () => {
+      setIsError(false);
+      setIsLoading(true);
+      try {
+        const result = await axios(url);
+        setData({ hits: result.data.hits });
+      } catch (e) {
+        setIsError(true);
+      }
+      setIsLoading(false);
+    };
+    fetchData().then();
+  }, [url]);
+  return (
+    <Card bordered={false}>
+      <form onSubmit={(e) => {
+        setUrl(`https://hn.algolia.com/api/v1/search?query=${query}`);
+      }}>
+        <Input
+          type="text"
+          value={query}
+          onChange={(e) => setQuery(e.target.value)}
+        />
+        <Button htmlType="submit">Search</Button>
+      </form>
+      {isError ?
+        <div>something went wrong...</div>
+        :
+        <List dataSource={data.hits} loading={isLoading} renderItem={(item) => (
+          <List.Item>
+            <a href={item.url}>{item.title}</a>
+          </List.Item>
+        )}/>}
+    </Card>
+  );
+};
+export default FetchData;
+```
+但是现在当点击提交按钮的时候，浏览器将会重新加载，这是在提交一个表单时浏览器的默认行为。为了阻止默认行为，我们要在`React`事件内调用一个函数。在`React`类组件中你也可以这样做。
+```typescript jsx
+import React, { useEffect, useState } from 'react';
+import axios from 'axios';
+import { Button, Card, Input, List } from 'antd';
+import { IData } from '@/responseTypes';
+
+const FetchData: React.FC = () => {
+  const [data, setData] = useState<IData>({ hits: [] });
+  const [query, setQuery] = useState('redux');
+  const [url, setUrl] = useState('https://hn.algolia.com/api/v1/search?query=redux');
+  const [isLoading, setIsLoading] = useState(false);
+  const [isError, setIsError] = useState(false);
+  useEffect(() => {
+    const fetchData = async () => {
+      setIsError(false);
+      setIsLoading(true);
+      try {
+        const result = await axios(url);
+        setData({ hits: result.data.hits });
+      } catch (e) {
+        setIsError(true);
+      }
+      setIsLoading(false);
+    };
+    fetchData().then();
+  }, [url]);
+  return (
+    <Card bordered={false}>
+      <form onSubmit={(e) => {
+        e.preventDefault();
+        setUrl(`https://hn.algolia.com/api/v1/search?query=${query}`);
+      }}>
+        <Input
+          type="text"
+          value={query}
+          onChange={(e) => setQuery(e.target.value)}
+        />
+        <Button htmlType="submit">Search</Button>
+      </form>
+      {isError ?
+        <div>something went wrong...</div>
+        :
+        <List dataSource={data.hits} loading={isLoading} renderItem={(item) => (
+          <List.Item>
+            <a href={item.url}>{item.title}</a>
+          </List.Item>
+        )}/>}
+    </Card>
+  );
+};
+export default FetchData;
+```
+现在，当你点击提交按钮后浏览器不再会重新加载。它和之前一样工作，但这时是一个表单而不是原生输入框和按钮的组合，你也可以按下你键盘上的回车键进行提交。
 ### 自定义数据获取`Hook`
 
+为了为获取数据提取自定义`hook`,除了属于输入框的`query`状态，移动包括`loading`展示和错误处理在内所有属于数据获取的代码到它自己的函数中。当然，也要确保从函数中返回所有在`App`组件中所用到的必须的变量。
+
+初始状态也能变得通用，只需要简单地将它传给新的自定义`hook`。
+```typescript jsx
+import { Dispatch, SetStateAction, useEffect, useState } from 'react';
+import axios from 'axios';
+
+interface IResult<T> {
+  data: T;
+  isLoading: boolean;
+  isError: boolean;
+}
+
+const useHackerNewsApi = <T extends any> (initialData: T, initialUrl: string): [IResult<T>, Dispatch<SetStateAction<string>>] => {
+  const [data, setData] = useState<T>(initialData);
+  const [url, setUrl] = useState(initialUrl);
+  const [isLoading, setIsLoading] = useState(false);
+  const [isError, setIsError] = useState(false);
+  useEffect(() => {
+    const fetchData = async () => {
+      setIsError(false);
+      setIsLoading(true);
+      try {
+        const result = await axios(url);
+        setData(result.data);
+      } catch (e) {
+        setIsError(true);
+      }
+      setIsLoading(false);
+    };
+    fetchData().then();
+  }, [url]);
+  return [{ data, isLoading, isError }, setUrl];
+};
+
+export default useHackerNewsApi;
+```
+现在，你的新`hook`可以在`App`组件中再次使用：
+```typescript jsx
+import React, { useState } from 'react';
+import { Button, Card, Input, List } from 'antd';
+import useHackerNewsApi from '@/views/fetchData/useHackerNewsApi';
+import { IData } from '@/responseTypes';
+
+const FetchData: React.FC = () => {
+  const [query, setQuery] = useState('redux');
+  const [{ data, isLoading, isError }, setUrl] = useHackerNewsApi<IData>({ hits: [] }, 'https://hn.algolia.com/api/v1/search?query=redux');
+  return (
+    <Card bordered={false}>
+      <form onSubmit={(e) => {
+        e.preventDefault();
+        setUrl(`https://hn.algolia.com/api/v1/search?query=${query}`);
+      }}>
+        <Input
+          type="text"
+          value={query}
+          onChange={(e) => setQuery(e.target.value)}
+        />
+        <Button htmlType="submit">Search</Button>
+      </form>
+      {isError ?
+        <div>something went wrong...</div>
+        :
+        <List dataSource={data.hits} loading={isLoading} renderItem={(item) => (
+          <List.Item>
+            <a href={item.url}>{item.title}</a>
+          </List.Item>
+        )}/>}
+    </Card>
+  );
+};
+export default FetchData;
+```
+
+这就是用一个自定义`hook`来获取数据。`hook`本身并不知道关于`API`的任何内容，它接收所有来自外部的参数，并且只管理必要的状态比如：`data`,`loading`,`error`。它就像自定义请求数据`hook`一样为使用到它的组件发起请求并且返回数据。
 ### 使用`reducer hook`获取数据
 
 ### 在`effect hook`中终止数据获取
