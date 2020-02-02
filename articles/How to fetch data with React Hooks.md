@@ -381,7 +381,55 @@ export default App;
 
 当组件挂载或者`url`状态发生改变，`effect`被调用来获取数据，`loading`状态将被设置为`true`。一旦请求成功获取到数据，`loading`状态将会再次被设置为`false`。
 ### 用`React Hooks`处理错误
+怎样用`React hook`来为数据获取进行错误处理呢？`error`只是用`state hook`初始化的另外一个`state`,一旦有一个错误状态，`App`组件会为用户渲染错误页面。当使用`async/await`的时候，使用`try/catch`来进行错误处理是常见的，你可以在`effect`里来做这件事。
+```typescript jsx
+import React, { useEffect, useState } from 'react';
+import axios from 'axios';
+import { Button, Card, Input, List } from 'antd';
+import { IData } from '@/responseTypes';
 
+const FetchData: React.FC = () => {
+  const [data, setData] = useState<IData>({ hits: [] });
+  const [query, setQuery] = useState('redux');
+  const [url, setUrl] = useState('https://hn.algolia.com/api/v1/search?query=redux');
+  const [isLoading, setIsLoading] = useState(false);
+  const [isError, setIsError] = useState(false);
+  useEffect(() => {
+    const fetchData = async () => {
+      setIsError(false);
+      setIsLoading(true);
+      try {
+        const result = await axios(url);
+        setData({ hits: result.data.hits });
+      } catch (e) {
+        setIsError(true);
+      }
+      setIsLoading(false);
+    };
+    fetchData().then();
+  }, [url]);
+  return (
+    <Card bordered={false}>
+      <Input
+        type="text"
+        value={query}
+        onChange={(e) => setQuery(e.target.value)}
+      />
+      <Button onClick={() => setUrl(`https://hn.algolia.com/api/v1/search?query=${query}`)}>Search</Button>
+      {isError ?
+        <div>something went wrong...</div>
+        :
+        <List dataSource={data.hits} loading={isLoading} renderItem={(item) => (
+          <List.Item>
+            <a href={item.url}>{item.title}</a>
+          </List.Item>
+        )}/>}
+    </Card>
+  );
+};
+export default FetchData;
+```
+每次`hooks`再次运行的时候错误状态将会被重置。这是有用的，因为在请求失败后用户可能想要再次尝试，这个时候应该重置错误。为了强行制造一个错误你可以将`url`改为某些无效的值，然后检查错误信息是否展示。
 ### 从表单和`React`获取数据
 
 ### 自定义数据获取`Hook`
