@@ -338,7 +338,7 @@ export default App;
 
 上面的例子就是用`effect hook`编程地/手动地获取数据。你可以决定`effect`依赖于哪一个状态。一旦你在点击事件或在其它的副作用(`useEffect`)中设置状态(`setState`)，对应的`effect`将会再次运行。在上边的例子中，如果`url`状态发生改变，`effect`将会再次运行并从`API`中获取文章数据。
 ### 用`React Hooks`来显示`loading`
-让我们继续介绍数据获取时的`loading`展示。它只是被`state hook`所管理的另外一个`state`。在`App`组件中，`loading`标记用来渲染一个`loading`指示器。
+让我们继续介绍数据获取时的`loading`展示。本质上，`loading`只是被`state hook`所管理的另外一个`state`。在`App`组件中，`loading`标识用来渲染一个`loading`指示器。
 
 ```typescript jsx
 import React, { useEffect, useState } from 'react';
