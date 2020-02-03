@@ -1,7 +1,10 @@
 ## 如何用`React Hooks`获取数据
 > * 原文地址：[How to fetch data with React Hooks?](https://www.robinwieruch.de/react-hooks-fetch-data)
 > * 原文作者：[Robin Wieruch](https://twitter.com/intent/follow?screen_name=rwieruch)
+> * 原文源代码地址：[use data api hook](https://github.com/the-road-to-learn-react/react-hooks-introduction/blob/master/src/useDataApiHook-example/index.js)
 > * 本文地址：[如何用`React Hooks`获取数据](https://github.com/wangkaiwd/English-Study/blob/master/articles/How%20to%20fetch%20data%20with%20React%20Hooks.md)
+> * 本文源代码地址：[fetch data with react hooks](https://github.com/wangkaiwd/react-hooks-TS-practice/blob/master/src/views/fetchData/fetchData.tsx)
+> * `Stackblitz`地址：[fetch data with react hooks](https://stackblitz.com/edit/fetch-data-with-react-hooks)
 
 ### 前言
 > 注意：笔者将会使用`TypeScript`来完成文章中的代码，并使用`ant design`来美化界面样式
