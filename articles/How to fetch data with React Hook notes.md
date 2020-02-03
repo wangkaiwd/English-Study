@@ -47,3 +47,8 @@
 8. For instance, in the case of a successful request, the payload is used to set the data of the new state object.
 
 9. In conclusion, the Reducer Hook makes sure that this portion of the state management is encapsulated with its own logic
+
+#### abort data fetching in effect hook
+1. I have written about this issue previously over here which describes how to prevent setting state for unmounted components in various scenarios
+
+2.  If the component did unmount, the flag should be set to true which results in preventing to set the component state after the data fetching has been asynchronously resolved eventually

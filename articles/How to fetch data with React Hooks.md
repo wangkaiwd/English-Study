@@ -1,5 +1,7 @@
-## 如何`React Hooks`获取数据
-> 原文地址：[How to fetch data with React Hooks?](https://www.robinwieruch.de/react-hooks-fetch-data)
+## 如何用`React Hooks`获取数据
+> * 原文地址：[How to fetch data with React Hooks?](https://www.robinwieruch.de/react-hooks-fetch-data)
+> * 原文作者：[Robin Wieruch](https://twitter.com/intent/follow?screen_name=rwieruch)
+> * 本文地址：[如何用`React Hooks`获取数据](https://github.com/wangkaiwd/English-Study/blob/master/articles/How%20to%20fetch%20data%20with%20React%20Hooks.md)
 
 ### 前言
 > 注意：笔者将会使用`TypeScript`来完成文章中的代码，并使用`ant design`来美化界面样式
@@ -800,3 +802,39 @@ const FetchData: React.FC = () => {
 export default FetchData;
 ```
 ### 在`effect hook`中终止数据获取
+即使组件已经卸载(比如由于使用`React Router`导航离开当前组件)但是组件的状态还是会被设置，这在`React`中是一个常见的问题。我之前在这里写过关于这个问题的文章，它描述了在各种场景下[如何阻止卸载组件设置状态](https://www.robinwieruch.de/react-warning-cant-call-setstate-on-an-unmounted-component)。让我们看一下如何在获取数据的自定义`hook`中阻止设置状态：
+```typescript jsx
+const useDataApi = <T extends any> (initialData: T, initialUrl: string): [IResult<T>, Dispatch<SetStateAction<string>>] => {
+  const [state, dispatch] = useReducer<Reducer<IResult<T>, IAction<T>>>(dataFetchReducer, {
+    data: initialData,
+    isError: false,
+    isLoading: false
+  });
+  const [url, setUrl] = useState(initialUrl);
+  useEffect(() => {
+    let didCancel = false;
+    const fetchData = async () => {
+      dispatch({ type: 'FETCH_INIT' });
+      try {
+        const result = await axios(url);
+        if (!didCancel) {
+          dispatch({ type: 'FETCH_SUCCESS', payload: result.data });
+        }
+      } catch (e) {
+        if (!didCancel) {
+          dispatch({ type: 'FETCH_FAILURE' });
+        }
+      }
+    };
+    fetchData().then();
+    return () => {
+      didCancel = true;
+    };
+  }, [url]);
+  return [state, setUrl];
+};
+```
+
+在组件卸载的时候，每一个`Effect Hook`所对应的请求函数将会运行。清理函数是一个从`hook`里返回的函数。在我们的例子中，我们使用一个叫做`didCancel`的布尔值作为标识来让数据获取逻辑知道组件的状态(挂载/卸载)。如果组件已经卸载了，应该将标记设置为`true`，从而阻止在异步解析数据之后设置组件的状态。
+
+注意：实际上数据获取并没有被终止（终止数据获取可以用`Axios Cancellation`来实现），但是已经挂载的组件不再执行状态转换。因为`Axios Cancellation`在我眼中不是最好的`API`，这个布尔值也能做设置状态的工作。
