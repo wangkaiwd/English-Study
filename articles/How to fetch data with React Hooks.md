@@ -435,15 +435,15 @@ const FetchData: React.FC = () => {
 export default FetchData;
 ```
 每次`hooks`再次运行的时候错误状态将会被重置。这是有用的，因为在请求失败后用户可能想要再次尝试，这个时候应该重置错误。为了强行制造一个错误你可以将`url`改为某些无效的值，然后检查错误信息是否展示。
-### 从表单和`React`获取数据
-怎样用一个合适的表单来获取数据呢？目前为止，我们只有输入框和按钮进行组合。一旦你想要引入跟多的`input`元素，你可能想要用一个`form`元素来包裹它们。此外，`form`也可以让你用回车键来触发按钮。
+### 在`React`中从表单获取数据
+怎样用一个合适的表单来获取数据呢？目前为止，我们只有输入框和按钮进行组合。一旦你想要引入更多的`input`元素，你可能想要用一个`form`元素来包裹它们。此外，`form`也可以让你用回车键来触发`search`按钮。
 ```typescript jsx
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 import { Button, Card, Input, List } from 'antd';
 import { IData } from '@/responseTypes';
 
-const FetchData: React.FC = () => {
+const App: React.FC = () => {
   const [data, setData] = useState<IData>({ hits: [] });
   const [query, setQuery] = useState('redux');
   const [url, setUrl] = useState('https://hn.algolia.com/api/v1/search?query=redux');
@@ -486,7 +486,7 @@ const FetchData: React.FC = () => {
     </Card>
   );
 };
-export default FetchData;
+export default App;
 ```
 但是现在当点击提交按钮的时候，浏览器将会重新加载，这是在提交一个表单时浏览器的默认行为。为了阻止默认行为，我们要在`React`事件内调用一个函数。在`React`类组件中你也可以这样做。
 ```typescript jsx
@@ -541,7 +541,7 @@ const FetchData: React.FC = () => {
 };
 export default FetchData;
 ```
-现在，当你点击提交按钮后浏览器不再会重新加载。它和之前一样工作，但这时是一个表单而不是原生输入框和按钮的组合，你也可以按下你键盘上的回车键进行提交。
+现在，当你点击提交按钮后浏览器不再会重新加载。它和之前一样工作，但这时是一个表单而不是原生输入框和按钮的组合，你也可以按下你键盘上的回车键来提交表单内容。
 ### 自定义数据获取`Hook`
 
 为了为获取数据提取自定义`hook`,除了属于输入框的`query`状态，移动包括`loading`展示和错误处理在内所有属于数据获取的代码到它自己的函数中。当然，也要确保从函数中返回所有在`App`组件中所用到的必须的变量。
@@ -581,6 +581,9 @@ const useHackerNewsApi = <T extends any> (initialData: T, initialUrl: string): [
 
 export default useHackerNewsApi;
 ```
+
+> Tip: [在`tsx`中箭头函数定义泛型的语法](https://stackoverflow.com/a/45576880/12819402)
+
 现在，你的新`hook`可以在`App`组件中再次使用：
 ```typescript jsx
 import React, { useState } from 'react';
@@ -618,11 +621,11 @@ const FetchData: React.FC = () => {
 export default FetchData;
 ```
 
-这就是用一个自定义`hook`来获取数据。`hook`本身并不知道关于`API`的任何内容，它接收所有来自外部的参数，并且只管理必要的状态比如：`data`,`loading`,`error`。它就像自定义请求数据`hook`一样为使用到它的组件发起请求并且返回数据。
+这就是用一个自定义`hook`来获取数据。`hook`本身并不知道关于`API`的任何内容，它接收所有来自外部的参数，并且只管理必要的状态，比如：`data`,`loading`,`error`。它就像自定义请求数据`hook`一样为使用到它的组件发起请求并且返回数据。
 ### 使用`reducer hook`获取数据
-到目前为止，我们已经使用多个`state hook`来管理我们的数据获取状态`data`,加载状态`loading`和错误状态`error`。然而，用自己的`state hook`管理的所有这些状态都应该属于同一类，因为它们关心相同的问题。正如你看到的，他们都在数据获取函数中被用到。它们是一个接一个地使用的(比如：`setIsError`,`setIsLoading`),这可以很好的表明它们是在一起的。让我们将三个状态全部与`Reducer Hook`结合使用。
+到目前为止，我们已经使用多个`state hook`来管理我们的数据获取状态`data`,加载状态`loading`和错误状态`error`。然而，用单独的`state hook`管理的所有这些状态都应该属于同一类，因为它们关心相同的问题。正如你看到的，他们都在数据获取函数中被用到。它们是一个接一个地使用的(比如：`setIsError`,`setIsLoading`),这可以很好的表明它们是在一起的。让我们将三个状态全部与`Reducer Hook`结合使用。
 
-`Reducer Hook`为我们返回一个`state`对象以及一个更改`state`对象的函数。这个函数叫做派发(`dispatch`)函数,它接收一个拥有`type`和可选的`payload`的`action`作为参数。所有的这些信息用来从之前的状态以及`action`的可选的`payload`和`type`来提取一个新的`state`。然我们看一下这在代码中是如何工作的：
+`Reducer Hook`为我们返回一个`state`对象以及一个更改`state`对象的函数。这个函数叫做派发(`dispatch`)函数,它接收一个拥有`type`和可选的`payload`的`action`作为参数。所有的这些信息用来从之前的状态以及`action`的可选的`payload`和`type`来提取一个新的`state`。让我们看一下这在代码中是如何工作的：
 ```typescript jsx
 import React, {
   Fragment,
@@ -645,7 +648,7 @@ const useDataApi = (initialUrl, initialData) => {
 };
 ```
 
-`Reducer hook`接受`reducer`函数和一个初始的`state`对象作为参数。在我们的例子中，`data`,`loading`和`error`状态的初始的参数是不会变化的，但是它们被聚合到了一个状态对象，通过一个`reducer hook`代替单独的`state hook`。
+`Reducer hook`接受`reducer`函数和一个初始的`state`对象作为参数。在我们的例子中，`data`,`loading`和`error`状态的初始参数是不会变化的，但是它们被聚合到了一个状态对象，通过一个`reducer hook`代替每个单独的`state hook`。
 
 ```typescript jsx
 const dataFetchReducer = (state, action) => {
@@ -674,9 +677,9 @@ const useDataApi = (initialUrl, initialData) => {
 };
 ```
 
-现在，当数据获取的时候，`dispatch`函数会发送信息到`reducer`函数。使用`dispatch`函数发送的对象有一个必需的`type`属性和一个可选的`payload`属性。`type`将会告诉`reducer`函数哪一个状态转换需要被应用，`payload`被用来从`reducer`提取新的`state`。最终，我们只有三种状态转换：初始化数据获取过程、成功数据获取结果的通知、异常数据获取结果的通知。
+现在，当数据获取的时候，`dispatch`函数会发送信息到`reducer`函数。使用`dispatch`函数发送的对象有一个必需的`type`属性和一个可选的`payload`属性。`type`将会告诉`reducer`函数哪一个状态转换需要被应用，`payload`被用来从`reducer`提取新的`state`。最终，我们只有三种状态转换：初始化数据获取过程、数据获取结果成功的通知、数据获取结果异常的通知。
 
-在自定义`hook`的最后，`state`像之前一样被返回，因为我们有一个`state`对象而不再是独立的`state`。这种方式，调用`useDataApi`自定义`hook`的组件仍然可以使用`data`、`isLoading`和`isError`。
+在自定义`hook`的最后，`state`像之前一样被返回，因为我们有一个`state`对象而不再是几个独立的`state`。通过这种方式，调用`useDataApi`自定义`hook`的组件仍然可以使用`data`、`isLoading`和`isError`。
 ```typescript jsx
 const useDataApi = (initialUrl, initialData) => {
   const [url, setUrl] = useState(initialUrl);
@@ -690,7 +693,7 @@ const useDataApi = (initialUrl, initialData) => {
 };
 ```
 
-最后但是也很重要的一点，我们少了对`reducer`函数的实现。它需要处理三种不同的状态转换，分别是`FETCH_INIT`,`FETCH_SUCCESS`和`FETCH_FAILURE`。每一种状态转换需要返回一个新的`state`对象。让我们看看如何通过`switch case`语句来实现它：
+最后很重要的一点，我们少了对`reducer`函数的实现。它需要处理三种不同的状态转换，分别是`FETCH_INIT`,`FETCH_SUCCESS`和`FETCH_FAILURE`。每一种状态转换需要返回一个新的`state`对象。让我们看看如何通过`switch case`语句来实现它：
 ```typescript jsx
 const dataFetchReducer = (state, action) => {
   switch (action.type) {
@@ -706,7 +709,40 @@ const dataFetchReducer = (state, action) => {
 };
 ```
 
-`reducer`函数可以通过参数来访问当前的状态`state`和执行`dispatch`时传入的`action`。目前为止，在`switch case`语句中每一个状态转换只返回了之前的`state`。解构赋值用来保证`state`对象不可变（意味着`state`永远不能直接改变）来实施最佳实践。现在让我们覆盖一些当前状态的返回属性来改变每一次状态变换的`state`。
+`reducer`函数可以通过参数来访问当前的状态`state`和执行`dispatch`时传入的`action`。目前为止，在`switch case`语句中每一个状态转换只返回了之前的`state`。展开语法用来保证`state`对象不可变（意味着`state`永远不能直接改变）以实施最佳实践。现在让我们覆盖一些当前状态的返回属性来改变每一次状态变换的`state`。
+```typescript jsx
+const dataFetchReducer = (state, action) => {
+  switch (action.type) {
+    case 'FETCH_INIT':
+      return {
+        ...state,
+        isLoading: true,
+        isError: false
+      };
+    case 'FETCH_SUCCESS':
+      return {
+        ...state,
+        isLoading: false,
+        isError: false,
+        data: action.payload,
+      };
+    case 'FETCH_FAILURE':
+      return {
+        ...state,
+        isLoading: false,
+        isError: true,
+      };
+    default:
+      throw new Error();
+  }
+};
+```
+
+现在，通过`action`的`type`决定的每一次状态转换，将会基于之前的状态和可选的`payload`返回一个新的状态。比如，在一次成功请求的情况下，`payload`被用来设置新的状态对象的`data`属性。
+
+总之，`Reducer Hook`确保这部分状态管理用它自己的逻辑来封装。通过提供`action types`和可选的`payload`，你将总会用一个可预测的状态改变来更新`state`。此外，你将永远不会遇到无效的状态。例如，在这之前，`isLoading`和`isError`状态可能会被意外的都设置为`true`。这种情况下`UI`应该显示什么呢？现在，通过`reducer`函数定义的每个状态变换都会指向一个有效的`state`对象。
+
+译者注：所有的自定义`hook`的源码如下
 ```typescript jsx
 import { Dispatch, Reducer, SetStateAction, useEffect, useReducer, useState } from 'react';
 import axios from 'axios';
