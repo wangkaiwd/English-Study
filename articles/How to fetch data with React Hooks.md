@@ -615,5 +615,188 @@ export default FetchData;
 
 这就是用一个自定义`hook`来获取数据。`hook`本身并不知道关于`API`的任何内容，它接收所有来自外部的参数，并且只管理必要的状态比如：`data`,`loading`,`error`。它就像自定义请求数据`hook`一样为使用到它的组件发起请求并且返回数据。
 ### 使用`reducer hook`获取数据
+到目前为止，我们已经使用多个`state hook`来管理我们的数据获取状态`data`,加载状态`loading`和错误状态`error`。然而，用自己的`state hook`管理的所有这些状态都应该属于同一类，因为它们关心相同的问题。正如你看到的，他们都在数据获取函数中被用到。它们是一个接一个地使用的(比如：`setIsError`,`setIsLoading`),这可以很好的表明它们是在一起的。让我们将三个状态全部与`Reducer Hook`结合使用。
 
+`Reducer Hook`为我们返回一个`state`对象以及一个更改`state`对象的函数。这个函数叫做派发(`dispatch`)函数,它接收一个拥有`type`和可选的`payload`的`action`作为参数。所有的这些信息用来从之前的状态以及`action`的可选的`payload`和`type`来提取一个新的`state`。然我们看一下这在代码中是如何工作的：
+```typescript jsx
+import React, {
+  Fragment,
+  useState,
+  useEffect,
+  useReducer,
+} from 'react';
+import axios from 'axios';
+const dataFetchReducer = (state, action) => {
+  ...
+};
+const useDataApi = (initialUrl, initialData) => {
+  const [url, setUrl] = useState(initialUrl);
+  const [state, dispatch] = useReducer(dataFetchReducer, {
+    isLoading: false,
+    isError: false,
+    data: initialData,
+  });
+  ...
+};
+```
+
+`Reducer hook`接受`reducer`函数和一个初始的`state`对象作为参数。在我们的例子中，`data`,`loading`和`error`状态的初始的参数是不会变化的，但是它们被聚合到了一个状态对象，通过一个`reducer hook`代替单独的`state hook`。
+
+```typescript jsx
+const dataFetchReducer = (state, action) => {
+  ...
+};
+const useDataApi = (initialUrl, initialData) => {
+  const [url, setUrl] = useState(initialUrl);
+  const [state, dispatch] = useReducer(dataFetchReducer, {
+    isLoading: false,
+    isError: false,
+    data: initialData,
+  });
+  useEffect(() => {
+    const fetchData = async () => {
+      dispatch({ type: 'FETCH_INIT' });
+      try {
+        const result = await axios(url);
+        dispatch({ type: 'FETCH_SUCCESS', payload: result.data });
+      } catch (error) {
+        dispatch({ type: 'FETCH_FAILURE' });
+      }
+    };
+    fetchData();
+  }, [url]);
+  ...
+};
+```
+
+现在，当数据获取的时候，`dispatch`函数会发送信息到`reducer`函数。使用`dispatch`函数发送的对象有一个必需的`type`属性和一个可选的`payload`属性。`type`将会告诉`reducer`函数哪一个状态转换需要被应用，`payload`被用来从`reducer`提取新的`state`。最终，我们只有三种状态转换：初始化数据获取过程、成功数据获取结果的通知、异常数据获取结果的通知。
+
+在自定义`hook`的最后，`state`像之前一样被返回，因为我们有一个`state`对象而不再是独立的`state`。这种方式，调用`useDataApi`自定义`hook`的组件仍然可以使用`data`、`isLoading`和`isError`。
+```typescript jsx
+const useDataApi = (initialUrl, initialData) => {
+  const [url, setUrl] = useState(initialUrl);
+  const [state, dispatch] = useReducer(dataFetchReducer, {
+    isLoading: false,
+    isError: false,
+    data: initialData,
+  });
+  ...
+  return [state, setUrl];
+};
+```
+
+最后但是也很重要的一点，我们少了对`reducer`函数的实现。它需要处理三种不同的状态转换，分别是`FETCH_INIT`,`FETCH_SUCCESS`和`FETCH_FAILURE`。每一种状态转换需要返回一个新的`state`对象。让我们看看如何通过`switch case`语句来实现它：
+```typescript jsx
+const dataFetchReducer = (state, action) => {
+  switch (action.type) {
+    case 'FETCH_INIT':
+      return { ...state };
+    case 'FETCH_SUCCESS':
+      return { ...state };
+    case 'FETCH_FAILURE':
+      return { ...state };
+    default:
+      throw new Error();
+  }
+};
+```
+
+`reducer`函数可以通过参数来访问当前的状态`state`和执行`dispatch`时传入的`action`。目前为止，在`switch case`语句中每一个状态转换只返回了之前的`state`。解构赋值用来保证`state`对象不可变（意味着`state`永远不能直接改变）来实施最佳实践。现在让我们覆盖一些当前状态的返回属性来改变每一次状态变换的`state`。
+```typescript jsx
+import { Dispatch, Reducer, SetStateAction, useEffect, useReducer, useState } from 'react';
+import axios from 'axios';
+
+interface IResult<T = any> {
+  data: T;
+  isLoading: boolean;
+  isError: boolean;
+}
+
+type IAction<T = any> = {
+  type: 'FETCH_INIT';
+} | {
+  type: 'FETCH_SUCCESS';
+  payload: T
+} | {
+  type: 'FETCH_FAILURE';
+}
+const dataFetchReducer = <T extends any> (state: IResult<T>, action: IAction<T>): IResult<T> => {
+  switch (action.type) {
+    case 'FETCH_INIT':
+      return { ...state, isLoading: true };
+    case 'FETCH_SUCCESS':
+      return {
+        ...state,
+        data: action.payload,
+        isLoading: false,
+        isError: false
+      };
+    case 'FETCH_FAILURE':
+      return { ...state, isError: true };
+    default:
+      throw new Error();
+  }
+};
+
+const useDataApi = <T extends any> (initialData: T, initialUrl: string): [IResult<T>, Dispatch<SetStateAction<string>>] => {
+  const [state, dispatch] = useReducer<Reducer<IResult<T>, IAction<T>>>(dataFetchReducer, {
+    data: initialData,
+    isError: false,
+    isLoading: false
+  });
+  const [url, setUrl] = useState(initialUrl);
+  useEffect(() => {
+    const fetchData = async () => {
+      dispatch({ type: 'FETCH_INIT' });
+      try {
+        const result = await axios(url);
+        dispatch({ type: 'FETCH_SUCCESS', payload: result.data });
+      } catch (e) {
+        dispatch({ type: 'FETCH_FAILURE' });
+      }
+    };
+    fetchData().then();
+  }, [url]);
+  return [state, setUrl];
+};
+
+export { useDataApi };
+```
+
+在组件中这样使用：
+```typescript jsx
+import React, { useState } from 'react';
+import { Button, Card, Input, List } from 'antd';
+import { useDataApi } from '@/views/fetchData/useHackerNewsApi';
+import { IData } from '@/responseTypes';
+
+const FetchData: React.FC = () => {
+  const [query, setQuery] = useState('redux');
+  const [{ data, isLoading, isError }, setUrl] = useDataApi<IData>({ hits: [] }, 'https://hn.algolia.com/api/v1/search?query=redux');
+  return (
+    <Card bordered={false}>
+      <form onSubmit={(e) => {
+        e.preventDefault();
+        setUrl(`https://hn.algolia.com/api/v1/search?query=${query}`);
+      }}>
+        <Input
+          type="text"
+          value={query}
+          onChange={(e) => setQuery(e.target.value)}
+        />
+        <Button htmlType="submit">Search</Button>
+      </form>
+      {isError ?
+        <div>something went wrong...</div>
+        :
+        <List dataSource={data.hits} loading={isLoading} renderItem={(item) => (
+          <List.Item>
+            <a href={item.url}>{item.title}</a>
+          </List.Item>
+        )}/>}
+    </Card>
+  );
+};
+export default FetchData;
+```
 ### 在`effect hook`中终止数据获取

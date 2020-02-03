@@ -35,3 +35,15 @@
 2.  A good indicator that they belong together is that they are used one after another (e.g. setIsError, setIsLoading).
 
 3. All this information is used in the actual reducer function to distill a new state from the previous state, the action's optional payload and type
+
+4. In our case, the arguments of the initial states for the data, loading and error state didn't change, but they have been aggregated to one state object managed by one reducer hook instead of single state hooks.
+
+5.  This way, the one who calls the useDataApi custom hook still gets access to data, isLoading and isError
+
+6. Last but not least, the implementation of the reducer function is missing. It needs to act on three different state transitions called FETCH_INIT, FETCH_SUCCESS and FETCH_FAILURE. 
+
+7. A destructuring statement is used to keep the state object immutable -- meaning the state is never directly mutated -- to enforce best practices
+
+8. For instance, in the case of a successful request, the payload is used to set the data of the new state object.
+
+9. In conclusion, the Reducer Hook makes sure that this portion of the state management is encapsulated with its own logic
