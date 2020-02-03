@@ -7,7 +7,8 @@
 > * `Stackblitz`地址：[fetch data with react hooks](https://stackblitz.com/edit/fetch-data-with-react-hooks)
 
 ### 前言
-> 注意：笔者将会使用`TypeScript`来完成文章中的代码，并使用`ant design`来美化界面样式
+> * 注意：笔者将会使用`TypeScript`来完成文章中的代码，并使用`ant design`来美化界面样式
+> * 如果文章对你有用的话，欢迎[`star`](https://github.com/wangkaiwd/English-Study/blob/master/articles/How%20to%20fetch%20data%20with%20React%20Hooks.md)
 
 ![](https://raw.githubusercontent.com/wangkaiwd/drawing-bed/master/english-fetch-data-with-hooks-banner.jpg)
 
