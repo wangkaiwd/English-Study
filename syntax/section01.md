@@ -1,9 +1,4 @@
 ## 过去时
-
-### 开头故事
-The gods intended to bind the monstrous wolf, Fenrir. They had made two fetters to challenge the wolf, both of which were torn apart by it. But the third one had been made by the dwarves 6 mythical ingredients.And it looked like silk but it was very strong.The gods were hoping to trick the wolf into the third fetter, but the monster was no fool.It was thinking of an exit strategy.My escape from one silky rope won't be deemed heroic.But I will suffer bitter consequences if i fail. Unless, one of you places an arm in my jaw in good faith.In the end, the war god Tyr lost his right hand and the wolf was bound securely by the fetter.
-
-
 ### 英语过去时
 #### 一般过去时和过去进行时  
 一般过去时：存在于过去的孤立岛屿，用来描述始于过去也止于过去的完整动作
@@ -16,7 +11,16 @@ The gods intended to bind the monstrous wolf, Fenrir. They had made two fetters 
 
 例句：
 ![](https://raw.githubusercontent.com/wangkaiwd/drawing-bed/master/english-study-syntax-01-simple-past-tense.png)
-In the end, the war Tyr lost his right hand and the wolf was bound securely by the fetter.
+In the end, the war god Týr lost his right hand and the wolf was bound securely by the fetter.
+<details>
+  <summary>knowledge point</summary>
+  最后，战神泰尔失去了右手，而狼被锁链牢牢的绑住了。
+
+  * bound: 绑(bind的过去式)
+  * [fetter](https://youdao.com/w/eng/fetter/#keyfrom=dict2.index): 美 [ˈfetər]  
+    vt. 束缚，限制(某人的自由)
+    n. **脚镣(常复数)**
+</details>
 
 过去进行时：没有明显的边界，用来给故事刷一道出彩的背景色
 
@@ -29,14 +33,40 @@ In the end, the war Tyr lost his right hand and the wolf was bound securely by t
 例句：
 ![](https://raw.githubusercontent.com/wangkaiwd/drawing-bed/master/english-study-syntax-01-past-continuous-tense.png)
 The gods were hoping to trick the wolf into the third fetter,but the monster was no fool.
+<details>
+  <summary>knowledge point</summary>
+  众神希望将将狼诱入第三条锁链，但是怪物(狼)并不傻
 
+  * trick: 美 [trɪk]
+    n. 诡计；恶作剧；欺诈
+    vt. 欺骗；哄骗；装饰
+    vi. 哄骗；戏弄
+    adj. 特技的；欺诈的；有诀窍的
+  * monster: 美 [ˈmɑːnstər]
+    n. 怪物；巨人，巨兽；残忍的人
+    adj. 巨大的，庞大的
+</details>
 
 ![](https://raw.githubusercontent.com/wangkaiwd/drawing-bed/master/english-study-syntax-01-past-continuous-tense02.png)
 The expensive shops in a famous arcade near Piccadilly were just opening.  
-皮卡迪利(Piccadilly)大街附近的一条著名拱廊街道上，几家高档商铺刚刚开始营业
+<details>
+  <summary>knowledge point</summary>
+  皮卡迪利(Piccadilly)大街附近的一条著名拱廊街道上，几家高档商铺刚刚开始营业
+
+  * [arcade](https://youdao.com/w/arcade/#keyfrom=dict2.top): 美 [ɑːrˈkeɪd]   
+    n. 拱廊
+</details>
 
 Mr.Taylor, the owner of a jewellery shop was admiring a new window display.  
-珠宝店老板泰勒先生此刻正在欣赏新布置的橱窗
+<details>
+  <summary>knowledge point</summary>
+  珠宝店老板泰勒先生此刻正在欣赏新布置的橱窗
+
+  * jewel: 美 [ˈdʒuːəl]  
+    n. 宝石；珠宝
+    vt. 镶以宝石；饰以珠宝
+    ![](https://raw.githubusercontent.com/wangkaiwd/drawing-bed/master/20200209154512.png)
+</details>
 #### 过去完成时
 表示俩个动作的先后顺序，也可能包含着某种隐藏菜单，根据具体上下文传达着某些言下之意
 
@@ -50,8 +80,14 @@ Mr.Taylor, the owner of a jewellery shop was admiring a new window display.
 例句：
 ![](https://raw.githubusercontent.com/wangkaiwd/drawing-bed/master/english-study-syntax-01-past-perfect-tense02.png)
 She had died by the time he arrived at the hospital.
-
+<details>
+  <summary>knowledge point</summary>
+  当他赶到医院的时候，她已经死了
+</details>
 
 ![](https://raw.githubusercontent.com/wangkaiwd/drawing-bed/master/english-study-syntax-01-past-perfect-tense03.png)
 I said YES the moment she had invited me to her birthday party.  
-她邀请我去参加她的生日派对，我欣然答应
+<details>
+  <summary>knowledge point</summary>
+  她邀请我去参加她的生日派对，我欣然答应
+</details>
