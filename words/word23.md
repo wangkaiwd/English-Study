@@ -3,7 +3,7 @@
   <details>
     <summary>translate to chinese</summary>
 
-    n. 民族；:apple:人们；亲属（复数）  
+    n. 民族；**:apple:人们**s；亲属（复数）  
     adj. 民间的  
   </details>
 
