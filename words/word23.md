@@ -3,7 +3,7 @@
   <details>
     <summary>translate to chinese</summary>
 
-    n. 民族；人们；亲属（复数）  
+    n. 民族；:apple:人们；亲属（复数）  
     adj. 民间的  
   </details>
 
@@ -11,7 +11,7 @@
   <details>
     <summary>translate to chinese</summary>
 
-    vt. 承认；准许进入；可容纳  
+    vt. :apple:承认；准许进入；可容纳  
     vi. 承认；容许  
   </details>
 
@@ -19,7 +19,7 @@
   <details>
     <summary>translate to chinese</summary>
 
-    n. 偏见；偏爱；斜纹  
+    n. :apple:偏见；偏爱；斜纹  
     vt. 使存偏见  
     adj. 偏斜的  
     ![](https://raw.githubusercontent.com/wangkaiwd/drawing-bed/master/20200311091812.png)
