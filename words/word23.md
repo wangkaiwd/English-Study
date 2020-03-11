@@ -9,9 +9,9 @@
   <details>
     <summary>chinese meaning</summary>
     
-    n. ![#f03c15](https://placehold.it/15/f03c15/000000?text=+)偏见；偏爱；斜纹  
+    n. 偏见；偏爱；斜纹  
     vt. 使存偏见  
-    adj. 偏斜的
+    adj. 偏斜的  
   </details>
   
   <details>
@@ -19,3 +19,11 @@
     
     ![](https://raw.githubusercontent.com/wangkaiwd/drawing-bed/master/20200311091812.png)
   </details>
+* applicable: 美 [ˈæplɪkəbl,əˈplɪkəbl]  
+  <details>
+  <summary>translate to chinese</summary>
+  
+  adj. 可适用的；:apple:可应用的；合适的
+  ![](https://raw.githubusercontent.com/wangkaiwd/drawing-bed/master/20200311221918.png)
+  ![](https://raw.githubusercontent.com/wangkaiwd/drawing-bed/master/20200311222210.png)
+</details>
