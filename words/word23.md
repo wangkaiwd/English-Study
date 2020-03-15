@@ -27,9 +27,25 @@
 
 * applicable: 美 [ˈæplɪkəbl,əˈplɪkəbl]  
   <details>
-  <summary>translate to chinese</summary>
-  
-  adj. 可适用的；:red_circle:可应用的；合适的
-  ![](https://raw.githubusercontent.com/wangkaiwd/drawing-bed/master/20200311221918.png)
-  ![](https://raw.githubusercontent.com/wangkaiwd/drawing-bed/master/20200311222210.png)
-</details>
+    <summary>translate to chinese</summary>
+    
+    adj. 可适用的；:red_circle:可应用的；合适的
+    ![](https://raw.githubusercontent.com/wangkaiwd/drawing-bed/master/20200311221918.png)
+    ![](https://raw.githubusercontent.com/wangkaiwd/drawing-bed/master/20200311222210.png)
+  </details>
+
+* [suffer](https://dict.youdao.com/w/suffer/#keyfrom=dict2.top): 美 [ˈsʌfər]
+  <details>
+    <summary>translate to chinese</summary>
+    
+    vi/vt. 遭受；忍受；经历
+  </details>
+
+* [beneath](https://dict.youdao.com/w/beneath/#keyfrom=dict2.top): 美 [bɪˈniːθ]
+  <details>
+    <summary>translate to chinese</summary>
+    
+    prep: 在...之下；低于；次于
+    n. 在下方；在底下
+    ![](https://raw.githubusercontent.com/wangkaiwd/drawing-bed/master/20200315144407.png)
+  </details>
