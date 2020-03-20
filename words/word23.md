@@ -66,7 +66,6 @@
 
     adj. 陈腐的；不新鲜的  
     vi/vt. 变陈旧
-
     ![](https://raw.githubusercontent.com/wangkaiwd/drawing-bed/master/20200321000534.png)
   </details>
 
@@ -80,6 +79,5 @@
 
     majority:  美 [məˈdʒɔːrəti]  
     n. **多数**；成年
-
-    !![](https://raw.githubusercontent.com/wangkaiwd/drawing-bed/master/20200321000901.png)
+    ![](https://raw.githubusercontent.com/wangkaiwd/drawing-bed/master/20200321000901.png)
   </details>
