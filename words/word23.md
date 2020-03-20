@@ -49,3 +49,37 @@
     n. 在下方；在底下
     ![](https://raw.githubusercontent.com/wangkaiwd/drawing-bed/master/20200315144407.png)
   </details>
+
+* [latest](https://youdao.com/w/eng/latest/#keyfrom=dict2.index): 美 [ˈleɪtɪst]
+  <details>
+    <summary>translate to chinese</summary>
+    
+    adj. 最新的，最近的；最迟的，最后的  
+    adv. 最迟地；最后地  
+    n. (the latest) 最新的事物；最新消息
+    ![](https://raw.githubusercontent.com/wangkaiwd/drawing-bed/master/20200320234804.png)
+  </details>
+
+* [stale](https://dict.youdao.com/w/stale/#keyfrom=dict2.top): 美 [steɪl]
+  <details>
+    <summary>translate to chinese</summary>
+
+    adj. 陈腐的；不新鲜的  
+    vi/vt. 变陈旧
+
+    ![](https://raw.githubusercontent.com/wangkaiwd/drawing-bed/master/20200321000534.png)
+  </details>
+
+* [major](https://dict.youdao.com/w/major/#keyfrom=dict2.top): 美 [ˈmeɪdʒər] 
+  <details>
+    <summary>translate to chinese</summary>
+
+    adj. **主要的**；重要的；主修的；**较多的**  
+    n. [人类]成年人；主修科目  
+    vi. 主修  
+
+    majority:  美 [məˈdʒɔːrəti]  
+    n. **多数**；成年
+
+    !![](https://raw.githubusercontent.com/wangkaiwd/drawing-bed/master/20200321000901.png)
+  </details>
