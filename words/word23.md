@@ -81,3 +81,19 @@
     n. **多数**；成年
     ![](https://raw.githubusercontent.com/wangkaiwd/drawing-bed/master/20200321000901.png)
   </details>
+
+* [constraint](https://www.youdao.com/w/eng/constraint/#keyfrom=dict2.index): 美 [kənˈstreɪnt]
+  <details>
+    <summary>translate to chinese</summary>
+
+    adj. **约束**；局促，态度不自然；强制
+  </details>
+
+* [prove](https://www.youdao.com/w/prove/#keyfrom=dict2.top): 美 [pruːv]
+  <details>
+    <summary>translate to chinese</summary>
+
+    vt. **证明**；检验；显示
+    vi. 证明是
+    ![](https://raw.githubusercontent.com/wangkaiwd/drawing-bed/master/20200322165406.png)
+  </details>
