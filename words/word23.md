@@ -93,7 +93,18 @@
   <details>
     <summary>translate to chinese</summary>
 
-    vt. **证明**；检验；显示
-    vi. 证明是
+    vt. **证明**；检验；显示  
+    vi. 证明是  
     ![](https://raw.githubusercontent.com/wangkaiwd/drawing-bed/master/20200322165406.png)
+  </details>
+
+* [aggregate](https://www.youdao.com/w/aggregate/#keyfrom=dict2.top): 美 [ˈæɡrɪɡət]
+
+  <details>
+    <summary>translate to chinese</summary>
+
+    n. 合计；集合体  
+    adj. 聚合的；合计的；集合的；  
+    v. 聚合；集合  
+    [![](https://raw.githubusercontent.com/wangkaiwd/drawing-bed/master/20200322170407.png)](https://stackoverflow.com/questions/35837029/aggregate-imports-then-export-in-typescript)
   </details>
