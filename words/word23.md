@@ -108,3 +108,15 @@
     v. 聚合；集合  
     [![](https://raw.githubusercontent.com/wangkaiwd/drawing-bed/master/20200322170407.png)](https://stackoverflow.com/questions/35837029/aggregate-imports-then-export-in-typescript)
   </details>
+
+* eagle
+  
+* relate  
+  relevant
+![](https://raw.githubusercontent.com/wangkaiwd/drawing-bed/master/20200330001108.png)
+
+* tight
+![](https://raw.githubusercontent.com/wangkaiwd/drawing-bed/master/20200330001910.png)
+
+* mechanism  
+![](https://raw.githubusercontent.com/wangkaiwd/drawing-bed/master/20200330003326.png)
