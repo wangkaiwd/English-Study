@@ -109,14 +109,33 @@
     [![](https://raw.githubusercontent.com/wangkaiwd/drawing-bed/master/20200322170407.png)](https://stackoverflow.com/questions/35837029/aggregate-imports-then-export-in-typescript)
   </details>
 
-* eagle
-  
-* relate  
-  relevant
-![](https://raw.githubusercontent.com/wangkaiwd/drawing-bed/master/20200330001108.png)
+* eagle: 美 [ˈiːɡl]
+  n. 鹰；鹰状标饰
+* relate: 美 [rɪˈleɪt]
+  <details>
+      <summary>translate to chinese</summary>
 
-* tight
-![](https://raw.githubusercontent.com/wangkaiwd/drawing-bed/master/20200330001910.png)
+      vt. 叙述；使...有联系  
+      vi. 涉及；认同；符合；与...有某种联系  
+      relevant: 美 [ˈreləvənt] adj. 有关的，相关的；有意义的，目的明确的
+      ![](https://raw.githubusercontent.com/wangkaiwd/drawing-bed/master/20200330001108.png)
+  </details>
 
-* mechanism  
-![](https://raw.githubusercontent.com/wangkaiwd/drawing-bed/master/20200330003326.png)
+* tight: 美 [taɪt]
+  <details>
+    <summary>translate to chinese</summary>
+
+    adj. 紧的；密封的；绷紧的
+    adv. 紧紧地；彻底地
+    ![](https://raw.githubusercontent.com/wangkaiwd/drawing-bed/master/20200330001910.png)
+  </details>
+
+* mechanism: 美 [ˈmekənɪzəm]
+  <details>
+    <summary>translate to chinese</summary>
+
+    n. 机制；原理，途径；进程
+    ![](https://raw.githubusercontent.com/wangkaiwd/drawing-bed/master/20200330003326.png)
+  </details>
+
+![](https://raw.githubusercontent.com/wangkaiwd/drawing-bed/master/20200402101526.png)
