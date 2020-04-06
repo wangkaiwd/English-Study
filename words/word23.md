@@ -99,7 +99,6 @@
   </details>
 
 * [aggregate](https://www.youdao.com/w/aggregate/#keyfrom=dict2.top): 美 [ˈæɡrɪɡət]
-
   <details>
     <summary>translate to chinese</summary>
 
@@ -110,7 +109,11 @@
   </details>
 
 * eagle: 美 [ˈiːɡl]
-  n. 鹰；鹰状标饰
+  <details>
+    <summary>translate to chinese</summary>
+
+    n. 鹰；鹰状标饰
+  </details>
 * relate: 美 [rɪˈleɪt]
   <details>
       <summary>translate to chinese</summary>
@@ -138,4 +141,17 @@
     ![](https://raw.githubusercontent.com/wangkaiwd/drawing-bed/master/20200330003326.png)
   </details>
 
-![](https://raw.githubusercontent.com/wangkaiwd/drawing-bed/master/20200402101526.png)
+* [mitigate](https://youdao.com/w/eng/mitigate/#keyfrom=dict2.index): 美 [ˈmɪtɪɡeɪt]
+  <details>
+    <summary>translate to chinese</summary>
+
+    vi/vt. 减轻；缓和
+  </details>
+
+* augment: 美 [ɔːɡˈment]
+  <details>
+    <summary>translate to chinese</summary>
+
+    v/n. 增加；增大
+    ![](https://raw.githubusercontent.com/wangkaiwd/drawing-bed/master/20200402101526.png)
+  </details>
