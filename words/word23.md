@@ -155,3 +155,12 @@
     v/n. 增加；增大
     ![](https://raw.githubusercontent.com/wangkaiwd/drawing-bed/master/20200402101526.png)
   </details>
+
+* invalidate: 美 [ɪnˈvælɪdeɪt]
+  <details>
+    <summary>translate to chinese</summary>
+
+    vt. 使无效；使无价值  
+    the caches  will be invalidated: 缓存将失效
+    ![](https://raw.githubusercontent.com/wangkaiwd/drawing-bed/master/20200408223620.png)
+  </details>
