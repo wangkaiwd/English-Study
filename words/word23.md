@@ -164,3 +164,5 @@
     the caches  will be invalidated: 缓存将失效
     ![](https://raw.githubusercontent.com/wangkaiwd/drawing-bed/master/20200408223620.png)
   </details>
+
+  ![](https://raw.githubusercontent.com/wangkaiwd/drawing-bed/master/20200412002815.png)
