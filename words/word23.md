@@ -116,12 +116,12 @@
   </details>
 * relate: 美 [rɪˈleɪt]
   <details>
-      <summary>translate to chinese</summary>
+    <summary>translate to chinese</summary>
 
-      vt. 叙述；使...有联系  
-      vi. 涉及；认同；符合；与...有某种联系  
-      relevant: 美 [ˈreləvənt] adj. 有关的，相关的；有意义的，目的明确的
-      ![](https://raw.githubusercontent.com/wangkaiwd/drawing-bed/master/20200330001108.png)
+    vt. 叙述；使...有联系  
+    vi. 涉及；认同；符合；与...有某种联系  
+    relevant: 美 [ˈreləvənt] adj. 有关的，相关的；有意义的，目的明确的  
+    ![](https://raw.githubusercontent.com/wangkaiwd/drawing-bed/master/20200330001108.png)
   </details>
 
 * tight: 美 [taɪt]
@@ -165,4 +165,19 @@
     ![](https://raw.githubusercontent.com/wangkaiwd/drawing-bed/master/20200408223620.png)
   </details>
 
-  ![](https://raw.githubusercontent.com/wangkaiwd/drawing-bed/master/20200412153402.png)
+* [halt](https://dict.youdao.com/w/halt/#keyfrom=dict2.top): 美 [hɔːlt] 
+  <details>
+    <summary>translate to chinese</summary>
+
+    v. (使)停止；突然停下；犹豫  
+    n. 停止  
+    adj. 跛的；瘸的
+  </details>
+
+* [phase](https://dict.youdao.com/w/phase/#keyfrom=dict2.top): 美 [feɪz]
+  <details>
+    <summary>translate to chinese</summary>
+
+    n. **时期，阶段**；月相 
+    ![](https://raw.githubusercontent.com/wangkaiwd/drawing-bed/master/20200412153402.png)
+  </details>
