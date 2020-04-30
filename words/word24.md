@@ -3,7 +3,12 @@
 ![](https://raw.githubusercontent.com/wangkaiwd/drawing-bed/master/20200413175540.png)
 
 * imply
-![](https://raw.githubusercontent.com/wangkaiwd/drawing-bed/master/20200414160135.png)
+  <details>
+    <summary>translate to chinese</summary>
+
+    vt. 意味；暗示；隐含   
+    ![](https://raw.githubusercontent.com/wangkaiwd/drawing-bed/master/20200414160135.png)
+  </details>
 
 * [fair](https://youdao.com/w/fair/#keyfrom=dict2.top): 美 [fer]
   <details>
@@ -16,6 +21,14 @@
     ![](https://raw.githubusercontent.com/wangkaiwd/drawing-bed/master/20200417002043.png)
   </details>
 
+* take place
+  <details>
+    <summary>translate to chinese</summary>
+
+    发生；进行；产生  
+    ![](https://raw.githubusercontent.com/wangkaiwd/drawing-bed/master/20200419132300.png)
+  </details>
+
 * violate: 美 [ˈvaɪəleɪt]
   <details>
     <summary>translate to chinese</summary>
@@ -24,10 +37,23 @@
     ![](https://raw.githubusercontent.com/wangkaiwd/drawing-bed/master/20200419132300.png)
   </details>
 
-![](https://raw.githubusercontent.com/wangkaiwd/drawing-bed/master/20200423002619.png)
+* [differentiate](https://youdao.com/w/differentiate/#keyfrom=dict2.top):  美 [ˌdɪfəˈrenʃieɪt]
+  <details>
+    <summary>translate to chinese</summary>
 
-![](https://raw.githubusercontent.com/wangkaiwd/drawing-bed/master/20200423002930.png)
+    vi. 区分；区别
+    ![](https://raw.githubusercontent.com/wangkaiwd/drawing-bed/master/20200423002619.png)
+    ![](https://raw.githubusercontent.com/wangkaiwd/drawing-bed/master/20200423002930.png)
+  </details>
 
+* [resolution](): 
+  <details>
+    <summary>translate to chinese</summary>
+
+    vi. 区分；区别
+    ![](https://raw.githubusercontent.com/wangkaiwd/drawing-bed/master/20200430174319.png)
+    ![](https://raw.githubusercontent.com/wangkaiwd/drawing-bed/master/20200423002930.png)
+  </details>
 
 ![](https://raw.githubusercontent.com/wangkaiwd/drawing-bed/master/20200414163428.png)
 
