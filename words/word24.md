@@ -82,22 +82,62 @@
     take sth into consideration: 考虑到  
     ![](https://raw.githubusercontent.com/wangkaiwd/drawing-bed/master/20200414163428.png)
   </details>
+* [leverage](http://www.youdao.com/w/eng/leverage/#keyfrom=dict2.index): 美 [ˈlevərɪdʒ]
+  <details>
+    <summary>translate to chinese</summary>
+
+    n. 手段，影响力；杠杆作用  
+    v. **利用**；
+    ![](https://raw.githubusercontent.com/wangkaiwd/drawing-bed/master/20200543424101211.png)
+  </details>
+* [relinquish](http://www.youdao.com/w/eng/relinquish/#keyfrom=dict2.index): 美 [rɪˈlɪŋkwɪʃ]
+  <details>
+    <summary>translate to chinese</summary>
+    
+    vt. 放弃；放手
+    ![](https://raw.githubusercontent.com/wangkaiwd/drawing-bed/master/202004286666155632.png)
+  </details>
+* [visualize](http://www.youdao.com/w/eng/visualize/#keyfrom=dict2.index): 美 [ˈvɪʒuəlaɪz]
+  <details>
+    <summary>translate to chinese</summary>
+    
+    vt. 形象，形象化；想象，设想  
+    ![](https://raw.githubusercontent.com/wangkaiwd/drawing-bed/master/202004288876172016.png)
+    ![](https://raw.githubusercontent.com/wangkaiwd/drawing-bed/master/202047740428171755.png)
+  </details>
+* [spin](http://www.youdao.com/w/eng/spin/#keyfrom=dict2.index): 美 [spɪn]
+  <details>
+    <summary>translate to chinese</summary>
+    
+    vi. **旋转**；纺纱；吐司；眩晕
+  </details>
+* civic: 美 [ˈsɪvɪk]
+  <details>
+    <summary>translate to chinese</summary>
+    
+    adj. 市的；公民的，市民的
+  </details>
+* duty: 美 [ˈduːti]
+  <details>
+    <summary>translate to chinese</summary>
+    
+    n. **责任**；职务；[税收]关税
+  </details>
+* [woe](http://www.youdao.com/w/eng/woe/#keyfrom=dict2.index): 美 [woʊ]
+  <details>
+    <summary>translate to chinese</summary>
+    
+    n. **困难**，灾难；痛苦，悲伤  
+    复数:woes
+    ![](https://raw.githubusercontent.com/wangkaiwd/drawing-bed/master/20200429104806.png)
+  </details>
 
 ![](https://raw.githubusercontent.com/wangkaiwd/drawing-bed/master/20200423142309.png)
 
-![](https://raw.githubusercontent.com/wangkaiwd/drawing-bed/master/20200543424101211.png)
-
-
-
-![](https://raw.githubusercontent.com/wangkaiwd/drawing-bed/master/202004286666155632.png)
-
-![](https://raw.githubusercontent.com/wangkaiwd/drawing-bed/master/202004288876172016.png)
-
-![](https://raw.githubusercontent.com/wangkaiwd/drawing-bed/master/202047740428171755.png)
 
 ![](https://raw.githubusercontent.com/wangkaiwd/drawing-bed/master/20200429102431.png)
 
-![](https://raw.githubusercontent.com/wangkaiwd/drawing-bed/master/20200429104806.png)
+
 
 ![](https://raw.githubusercontent.com/wangkaiwd/drawing-bed/master/20200429111221.png)
 
