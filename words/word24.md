@@ -43,7 +43,6 @@
 
     vi. 区分；区别
     ![](https://raw.githubusercontent.com/wangkaiwd/drawing-bed/master/20200423002619.png)
-    ![](https://raw.githubusercontent.com/wangkaiwd/drawing-bed/master/20200423002930.png)
   </details>
 
 * [resolution](): 
@@ -52,16 +51,43 @@
 
     vi. 区分；区别
     ![](https://raw.githubusercontent.com/wangkaiwd/drawing-bed/master/20200430174319.png)
+  </details>
+* [dual](http://www.youdao.com/w/eng/dual/#keyfrom=dict2.index):  美 [ˈduːəl]
+  <details>
+    <summary>translate to chinese</summary>
+
+    adj. 双的；双重的  
+    n. 双数  
+  </details>
+* beast: 美 [biːst]
+  <details>
+    <summary>translate to chinese</summary>
+
+    n. 野兽；畜生；人面兽心的人
+    ![](https://raw.githubusercontent.com/wangkaiwd/drawing-bed/master/20200426103302.png)
+  </details>
+* [manner](http://www.youdao.com/w/eng/manner/#keyfrom=dict2.index): 美 [ˈmænər]
+  <details>
+    <summary>translate to chinese</summary>
+
+    n. **方式**；习惯；种类；规矩；风俗  
     ![](https://raw.githubusercontent.com/wangkaiwd/drawing-bed/master/20200423002930.png)
   </details>
+* differentiate: 
+  <details>
+    <summary>translate to chinese</summary>
 
-![](https://raw.githubusercontent.com/wangkaiwd/drawing-bed/master/20200414163428.png)
+    n. **方式**；习惯；种类；规矩；风俗  
+    make use of: 使用；利用  
+    take sth into consideration: 考虑到  
+    ![](https://raw.githubusercontent.com/wangkaiwd/drawing-bed/master/20200414163428.png)
+  </details>
 
 ![](https://raw.githubusercontent.com/wangkaiwd/drawing-bed/master/20200423142309.png)
 
 ![](https://raw.githubusercontent.com/wangkaiwd/drawing-bed/master/20200543424101211.png)
 
-![](https://raw.githubusercontent.com/wangkaiwd/drawing-bed/master/20200426103302.png)
+
 
 ![](https://raw.githubusercontent.com/wangkaiwd/drawing-bed/master/202004286666155632.png)
 
