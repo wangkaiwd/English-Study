@@ -1,7 +1,11 @@
 ## words 24
 * move on
-![](https://raw.githubusercontent.com/wangkaiwd/drawing-bed/master/20200413175540.png)
+  <details>
+    <summary>translate to chinese</summary>
 
+    继续前进；前进；继续向前移动
+    ![](https://raw.githubusercontent.com/wangkaiwd/drawing-bed/master/20200413175540.png)
+  </details>
 * imply
   <details>
     <summary>translate to chinese</summary>
@@ -9,7 +13,6 @@
     vt. 意味；暗示；隐含   
     ![](https://raw.githubusercontent.com/wangkaiwd/drawing-bed/master/20200414160135.png)
   </details>
-
 * [fair](https://youdao.com/w/fair/#keyfrom=dict2.top): 美 [fer]
   <details>
     <summary>translate to chinese</summary>
@@ -131,14 +134,38 @@
     复数:woes
     ![](https://raw.githubusercontent.com/wangkaiwd/drawing-bed/master/20200429104806.png)
   </details>
-
+* blurry: 美 [ˈblɜːri]
+  <details>
+    <summary>translate to chinese</summary>
+    
+    adj. 模糊的；不清楚的；污脏的
+    ![](https://raw.githubusercontent.com/wangkaiwd/drawing-bed/master/20200429111221.png)
+    ![](https://raw.githubusercontent.com/wangkaiwd/drawing-bed/master/20200501235400.png)
+  </details>
+* pallet: 美 [ˈpælət]
+  <details>
+    <summary>translate to chinese</summary>
+    
+    n. **托盘**，货板；调色板；简陋小床  
+    next to: 旁边；紧挨着  
+    panel: n. 面板；专家组
+    ![](https://raw.githubusercontent.com/wangkaiwd/drawing-bed/master/20200429102431.png)
+  </details>
+* [pile](http://www.youdao.com/w/eng/pile/#keyfrom=dict2.index): 美 [paɪl]
+  <details>
+    <summary>translate to chinese</summary>
+    
+    n. **堆**；大量；建筑群
+    vt. 堆积；累积
+  </details>
+* [pancake](http://www.youdao.com/w/eng/pancake/#keyfrom=dict2.index): 美 [ˈpænkeɪk]
+  <details>
+    <summary>translate to chinese</summary>
+    
+    n. **煎饼**；薄烤饼 
+    ![](https://raw.githubusercontent.com/wangkaiwd/drawing-bed/master/20200429115633.png)
+  </details>
 ![](https://raw.githubusercontent.com/wangkaiwd/drawing-bed/master/20200423142309.png)
 
 
-![](https://raw.githubusercontent.com/wangkaiwd/drawing-bed/master/20200429102431.png)
 
-
-
-![](https://raw.githubusercontent.com/wangkaiwd/drawing-bed/master/20200429111221.png)
-
-![](https://raw.githubusercontent.com/wangkaiwd/drawing-bed/master/20200429115633.png)
