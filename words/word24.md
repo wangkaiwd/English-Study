@@ -29,7 +29,7 @@
     <summary>translate to chinese</summary>
 
     发生；进行；产生  
-    ![](https://raw.githubusercontent.com/wangkaiwd/drawing-bed/master/20200419132300.png)
+    ![](https://raw.githubusercontent.com/wangkaiwd/drawing-bed/master/20200423002619.png)
   </details>
 
 * violate: 美 [ˈvaɪəleɪt]
@@ -38,14 +38,6 @@
 
     vt. **违反**；侵犯，妨碍；亵渎  
     ![](https://raw.githubusercontent.com/wangkaiwd/drawing-bed/master/20200419132300.png)
-  </details>
-
-* [differentiate](https://youdao.com/w/differentiate/#keyfrom=dict2.top):  美 [ˌdɪfəˈrenʃieɪt]
-  <details>
-    <summary>translate to chinese</summary>
-
-    vi. 区分；区别
-    ![](https://raw.githubusercontent.com/wangkaiwd/drawing-bed/master/20200423002619.png)
   </details>
 
 * [resolution](): 
