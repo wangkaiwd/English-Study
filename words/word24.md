@@ -40,11 +40,11 @@
     ![](https://raw.githubusercontent.com/wangkaiwd/drawing-bed/master/20200419132300.png)
   </details>
 
-* [resolution](): 
+* [resolution](https://youdao.com/w/eng/resolution/#keyfrom=dict2.index): 
   <details>
     <summary>translate to chinese</summary>
 
-    vi. 区分；区别
+    n. **[物]分辨率**; 决议；**解决**；决心
     ![](https://raw.githubusercontent.com/wangkaiwd/drawing-bed/master/20200430174319.png)
   </details>
 * [dual](http://www.youdao.com/w/eng/dual/#keyfrom=dict2.index):  美 [ˈduːəl]
