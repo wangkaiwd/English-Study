@@ -61,6 +61,18 @@
     ![](https://raw.githubusercontent.com/wangkaiwd/drawing-bed/master/20200504153413.png)
   </details>
 
+* [acknowledgement](http://www.youdao.com/w/eng/acknowledgement/?spc=acknowledgement#keyfrom=dict.typo): 美 [əkˈnɑːlɪdʒmənt]
+  <details>
+    <summary>translate to chinese</summary>
+
+    n. 承认；确认；**致谢**；
+  </details>
+* [grateful](http://www.youdao.com/w/grateful/#keyfrom=dict2.top): 美 [ˈɡreɪtfl]
+  <details>
+    <summary>translate to chinese</summary>
+
+    adj. 感谢的；令人愉快的
+  </details>
 ![](https://raw.githubusercontent.com/wangkaiwd/drawing-bed/master/20200503201255.png)
 
 ![](https://raw.githubusercontent.com/wangkaiwd/drawing-bed/master/20200503232100.png)
