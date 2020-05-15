@@ -3,8 +3,8 @@
   <details>
     <summary>translate to chinese</summary>
 
-    n. 曲调；和谐；心情
-    vt. 调整
+    n. 曲调；和谐；心情  
+    vt. 调整  
     just one more step: 只要一个步骤
     ![](https://raw.githubusercontent.com/wangkaiwd/drawing-bed/master/20200502143707.png)
     ![](https://raw.githubusercontent.com/wangkaiwd/drawing-bed/master/20200514172713.png)
@@ -14,7 +14,7 @@
   <details>
     <summary>translate to chinese</summary>
 
-    n. 男巫；巫术；**向导程序**
+    n. 男巫；巫术；**向导程序**  
     adj. 男巫的；巫术的
     ![](https://raw.githubusercontent.com/wangkaiwd/drawing-bed/master/20200502143747.png)
   </details>
@@ -24,9 +24,9 @@
     <summary>translate to chinese</summary>
 
     取得成功；得到好结果
-    curiosity: n. 好奇心  
-    sleepless night: 不眠的夜晚  
-    once again: 再一次  
+    curiosity: n. 好奇心    
+    sleepless night: 不眠的夜晚   
+    once again: 再一次   
     ![](https://raw.githubusercontent.com/wangkaiwd/drawing-bed/master/20200503193005.png)
   </details>
 
@@ -41,7 +41,7 @@
   <details>
     <summary>translate to chinese</summary>
 
-    adj. **模糊的**；含糊的；不明确的；暧昧的
+    adj. **模糊的**；含糊的；不明确的；暧昧的  
     piece: n. 块；件；篇；硬币
     ![](https://raw.githubusercontent.com/wangkaiwd/drawing-bed/master/20200503202258.png)
   </details>
@@ -60,19 +60,57 @@
     adj. **宝贵的**；珍贵的；矫揉造作的
     ![](https://raw.githubusercontent.com/wangkaiwd/drawing-bed/master/20200504153413.png)
   </details>
-
 * [acknowledgement](http://www.youdao.com/w/eng/acknowledgement/?spc=acknowledgement#keyfrom=dict.typo): 美 [əkˈnɑːlɪdʒmənt]
   <details>
     <summary>translate to chinese</summary>
 
     n. 承认；确认；**致谢**；
   </details>
+
 * [grateful](http://www.youdao.com/w/grateful/#keyfrom=dict2.top): 美 [ˈɡreɪtfl]
   <details>
     <summary>translate to chinese</summary>
 
     adj. 感谢的；令人愉快的
   </details>
+* [collaboration](http://www.youdao.com/w/collaboration/#keyfrom=dict2.top): 美 [kəˌlæbəˈreɪʃn]
+  <details>
+    <summary>translate to chinese</summary>
+
+    n. **合作**；勾结；通敌  
+    ![](https://raw.githubusercontent.com/wangkaiwd/drawing-bed/master/20200506234450.png)
+  </details>
+* terminology: 美 [ˌtɜːrmɪˈnɑːlədʒi]
+  <details>
+    <summary>translate to chinese</summary>
+
+    n. 术语  
+    ![](https://raw.githubusercontent.com/wangkaiwd/drawing-bed/master/20200511002245.png)
+  </details>
+
+* terminology: 美 [ˌtɜːrmɪˈnɑːlədʒi]
+  <details>
+    <summary>translate to chinese</summary>
+
+    n. 术语  
+    ![](https://raw.githubusercontent.com/wangkaiwd/drawing-bed/master/20200511002245.png)
+  </details>
+* [conform](http://www.youdao.com/w/eng/conform/#keyfrom=dict.basic.relword): 美 [kənˈfɔːrm]
+  <details>
+    <summary>translate to chinese</summary>
+
+    vi. 符合；遵照
+    adj. 一致的；顺从的
+  </details>
+* occasionally: 美 [əˈkeɪʒnəli]
+  <details>
+    <summary>translate to chinese</summary>
+
+    adv. 偶尔；间或
+    ![](https://raw.githubusercontent.com/wangkaiwd/drawing-bed/master/20200510215607.png)
+
+  </details>  
+  
 ![](https://raw.githubusercontent.com/wangkaiwd/drawing-bed/master/20200503201255.png)
 
 ![](https://raw.githubusercontent.com/wangkaiwd/drawing-bed/master/20200503232100.png)
@@ -81,8 +119,4 @@
 
 ![](https://raw.githubusercontent.com/wangkaiwd/drawing-bed/master/20200506234409.png)
 
-![](https://raw.githubusercontent.com/wangkaiwd/drawing-bed/master/20200506234450.png)
 
-![](https://raw.githubusercontent.com/wangkaiwd/drawing-bed/master/20200510215607.png)
-
-![](https://raw.githubusercontent.com/wangkaiwd/drawing-bed/master/20200511002245.png)
