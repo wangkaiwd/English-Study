@@ -9,7 +9,6 @@
     ![](https://raw.githubusercontent.com/wangkaiwd/drawing-bed/master/20200502143707.png)
     ![](https://raw.githubusercontent.com/wangkaiwd/drawing-bed/master/20200514172713.png)
   </details>
-
 * [wizard](https://youdao.com/w/wizard/#keyfrom=dict2.top): 美 [ˈwɪzərd]
   <details>
     <summary>translate to chinese</summary>
@@ -18,7 +17,6 @@
     adj. 男巫的；巫术的
     ![](https://raw.githubusercontent.com/wangkaiwd/drawing-bed/master/20200502143747.png)
   </details>
-
 * [pay off](https://youdao.com/w/pay%20off/#keyfrom=dict2.top) 
   <details>
     <summary>translate to chinese</summary>
@@ -29,14 +27,12 @@
     once again: 再一次   
     ![](https://raw.githubusercontent.com/wangkaiwd/drawing-bed/master/20200503193005.png)
   </details>
-
 * [weird](https://youdao.com/w/weird/#keyfrom=dict2.top): 美 [wɪrd]
   <details>
     <summary>translate to chinese</summary>
 
     adj. **怪异的**；不可思议的；超自然的
   </details>
-
 * [vague](https://youdao.com/w/vague/#keyfrom=dict2.top): 美 [veɪɡ]
   <details>
     <summary>translate to chinese</summary>
@@ -45,7 +41,6 @@
     piece: n. 块；件；篇；硬币
     ![](https://raw.githubusercontent.com/wangkaiwd/drawing-bed/master/20200503202258.png)
   </details>
-
 * [proofread](https://youdao.com/w/proofread/#keyfrom=dict2.top): 美 [ˈpruːfriːd]
   <details>
     <summary>translate to chinese</summary>
@@ -66,7 +61,6 @@
 
     n. 承认；确认；**致谢**；
   </details>
-
 * [grateful](http://www.youdao.com/w/grateful/#keyfrom=dict2.top): 美 [ˈɡreɪtfl]
   <details>
     <summary>translate to chinese</summary>
@@ -87,7 +81,6 @@
     n. 术语  
     ![](https://raw.githubusercontent.com/wangkaiwd/drawing-bed/master/20200511002245.png)
   </details>
-
 * terminology: 美 [ˌtɜːrmɪˈnɑːlədʒi]
   <details>
     <summary>translate to chinese</summary>
@@ -108,9 +101,8 @@
 
     adv. 偶尔；间或
     ![](https://raw.githubusercontent.com/wangkaiwd/drawing-bed/master/20200510215607.png)
-
   </details>  
-  
+
 ![](https://raw.githubusercontent.com/wangkaiwd/drawing-bed/master/20200503201255.png)
 
 ![](https://raw.githubusercontent.com/wangkaiwd/drawing-bed/master/20200503232100.png)
