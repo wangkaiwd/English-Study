@@ -103,12 +103,25 @@
     ![](https://raw.githubusercontent.com/wangkaiwd/drawing-bed/master/20200510215607.png)
   </details>  
 
-![](https://raw.githubusercontent.com/wangkaiwd/drawing-bed/master/20200503201255.png)
+* help out
+  <details>
+    <summary>translate to chinese</summary>
 
-![](https://raw.githubusercontent.com/wangkaiwd/drawing-bed/master/20200503232100.png)
+    帮助...摆脱困难  
+    referred to as: 被称为...
+    ![](https://raw.githubusercontent.com/wangkaiwd/drawing-bed/master/20200503201255.png)
+  </details>  
+* some phrase
+  <details>
+    <summary>translate to chinese</summary>
 
-![](https://raw.githubusercontent.com/wangkaiwd/drawing-bed/master/20200504141506.png)
+    ![](https://raw.githubusercontent.com/wangkaiwd/drawing-bed/master/20200503232100.png)
+    ![](https://raw.githubusercontent.com/wangkaiwd/drawing-bed/master/20200504141506.png)
+    ![](https://raw.githubusercontent.com/wangkaiwd/drawing-bed/master/20200506234409.png)
+  </details>  
 
-![](https://raw.githubusercontent.com/wangkaiwd/drawing-bed/master/20200506234409.png)
+
+
+
 
 
