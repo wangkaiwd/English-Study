@@ -102,11 +102,35 @@
     n. 南瓜；易压烂的物品；拥挤的人群
     ![](https://raw.githubusercontent.com/wangkaiwd/drawing-bed/master/20200527113904.png)
   </details>
+* intersection:  美 [ˌɪntərˈsekt]
+  <details>
+    <summary>translate to chinese</summary>
 
-![](https://raw.githubusercontent.com/wangkaiwd/drawing-bed/master/20200527223809.png)
+    vi. 相交，**交叉**；  
+    vt. 横断，横切；贯穿；
+    ![](https://raw.githubusercontent.com/wangkaiwd/drawing-bed/master/20200527223809.png)
+  </details>
+* revamp: 美 [ˈriːvæmp]
+  <details>
+    <summary>translate to chinese</summary>
 
-![](https://raw.githubusercontent.com/wangkaiwd/drawing-bed/master/222220200527231912.png)
+    vt. 修补；翻新；修改  
+    n. 改进
+    ![](https://raw.githubusercontent.com/wangkaiwd/drawing-bed/master/222220200527231912.png)
+  </details>
+* approximate: 美 [ə'prɑksɪmət]
+  <details>
+    <summary>translate to chinese</summary>
 
-![](https://raw.githubusercontent.com/wangkaiwd/drawing-bed/master/20200527231948.png)
+    adj. 近似的，大概的；
+    v. 接近，**近似**；粗略估计；
+    ![](https://raw.githubusercontent.com/wangkaiwd/drawing-bed/master/20200527231948.png)
+  </details>
+* collocate: 美 [ˈkɑːləkət]
+  <details>
+    <summary>translate to chinese</summary>
 
-![](https://raw.githubusercontent.com/wangkaiwd/drawing-bed/master/20200527232602.png)
+    adj. 近似的，大概的；  
+    v. 接近，**近似**；粗略估计；
+    ![](https://raw.githubusercontent.com/wangkaiwd/drawing-bed/master/20200527232602.png)
+  </details>
