@@ -126,11 +126,12 @@
     v. 接近，**近似**；粗略估计；
     ![](https://raw.githubusercontent.com/wangkaiwd/drawing-bed/master/20200527231948.png)
   </details>
-* collocate: 美 [ˈkɑːləkət]
+* [collocate](http://dict.youdao.com/w/collocate/#keyfrom=dict2.top): 美 [ˈkɑːləkət]
   <details>
     <summary>translate to chinese</summary>
 
-    adj. 近似的，大概的；  
-    v. 接近，**近似**；粗略估计；
+    v. **配置**; (习惯上)与...连用，与...搭配
     ![](https://raw.githubusercontent.com/wangkaiwd/drawing-bed/master/20200527232602.png)
   </details>
+  
+![](https://raw.githubusercontent.com/wangkaiwd/drawing-bed/master/20200603213840.png)
