@@ -133,11 +133,53 @@
     v. **配置**; (习惯上)与...连用，与...搭配
     ![](https://raw.githubusercontent.com/wangkaiwd/drawing-bed/master/20200527232602.png)
   </details>
-  
-![](https://raw.githubusercontent.com/wangkaiwd/drawing-bed/master/20200603213840.png)
+* [blitz](http://youdao.com/w/eng/blitz/#keyfrom=dict2.index):  美 [blɪts]
+  <details>
+    <summary>translate to chinese</summary>
 
-![](https://raw.githubusercontent.com/wangkaiwd/drawing-bed/master/20200604000200.png)
+    n. 闪电
+    ![](https://raw.githubusercontent.com/wangkaiwd/drawing-bed/master/20200603213840.png)
+  </details>
+* [grant](http://youdao.com/w/grant/#keyfrom=dict2.top):  美 [ɡrænt]
+  <details>
+    <summary>translate to chinese</summary>
 
-![](https://raw.githubusercontent.com/wangkaiwd/drawing-bed/master/20200604103007.png)
+    n. (政府)拨款，补助金；授予，给予  
+    v. (合法地)授予，允许；(勉强)承认，同意  
+    granted: conj. 诚然；adv.的确  
+    take for granted: 认为...理所当然
+  </details>
+* [allocate](http://youdao.com/w/allocate/#keyfrom=dict2.top): 美 [ˈæləkeɪt]
+  <details>
+    <summary>translate to chinese</summary>
 
-![](https://raw.githubusercontent.com/wangkaiwd/drawing-bed/master/20200604144812.png)
+    vt. **分配**；拨出  
+    vi. **分配**；指定  
+    ![](https://raw.githubusercontent.com/wangkaiwd/drawing-bed/master/20200604000200.png)
+  </details>
+
+* [allocate](http://youdao.com/w/allocate/#keyfrom=dict2.top): 美 [ˈæləkeɪt]
+  <details>
+    <summary>translate to chinese</summary>
+
+    vt. **分配**；拨出  
+    vi. **分配**；指定  
+    ![](https://raw.githubusercontent.com/wangkaiwd/drawing-bed/master/20200604103007.png)
+  </details>
+
+* [behave](http://youdao.com/w/behave/#keyfrom=dict2.top): 美 [ˈæləkeɪt]
+  <details>
+    <summary>translate to chinese</summary>
+    vi. 行为；举止； **表现**；(机器等)运转；举止端庄；(事物)起某种作用
+    behave as: 表现得像
+    ![](https://raw.githubusercontent.com/wangkaiwd/drawing-bed/master/20200604000200.png)
+  </details>
+
+* obtrusive: 美 [əbˈtruːsɪv] 
+  <details>
+    <summary>translate to chinese</summary>
+
+    adj. 突出的；强迫人的；冒失的；  
+    distinct: adj. **明显的**；独特的；清楚的
+    ![](https://raw.githubusercontent.com/wangkaiwd/drawing-bed/master/20200604144812.png)
+  </details>
