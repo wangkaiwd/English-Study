@@ -81,13 +81,6 @@
     n. 术语  
     ![](https://raw.githubusercontent.com/wangkaiwd/drawing-bed/master/20200511002245.png)
   </details>
-* terminology: 美 [ˌtɜːrmɪˈnɑːlədʒi]
-  <details>
-    <summary>translate to chinese</summary>
-
-    n. 术语  
-    ![](https://raw.githubusercontent.com/wangkaiwd/drawing-bed/master/20200511002245.png)
-  </details>
 * [conform](http://www.youdao.com/w/eng/conform/#keyfrom=dict.basic.relword): 美 [kənˈfɔːrm]
   <details>
     <summary>translate to chinese</summary>
