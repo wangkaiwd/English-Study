@@ -167,9 +167,10 @@
     ![](https://raw.githubusercontent.com/wangkaiwd/drawing-bed/master/20200604103007.png)
   </details>
 
-* [behave](http://youdao.com/w/behave/#keyfrom=dict2.top): 美 [ˈæləkeɪt]
+* [behave](http://youdao.com/w/behave/#keyfrom=dict2.top): 美 [bɪˈheɪv]
   <details>
     <summary>translate to chinese</summary>
+  
     vi. 行为；举止； **表现**；(机器等)运转；举止端庄；(事物)起某种作用
     behave as: 表现得像
     ![](https://raw.githubusercontent.com/wangkaiwd/drawing-bed/master/20200604000200.png)
