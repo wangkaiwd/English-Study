@@ -102,7 +102,7 @@
     n. 南瓜；易压烂的物品；拥挤的人群
     ![](https://raw.githubusercontent.com/wangkaiwd/drawing-bed/master/20200527113904.png)
   </details>
-* intersection:  美 [ˌɪntərˈsekt]
+* intersect:  美 [ˌɪntərˈsekt]
   <details>
     <summary>translate to chinese</summary>
 
