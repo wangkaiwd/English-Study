@@ -149,14 +149,6 @@
     granted: conj. 诚然；adv.的确  
     take for granted: 认为...理所当然
   </details>
-* [allocate](http://youdao.com/w/allocate/#keyfrom=dict2.top): 美 [ˈæləkeɪt]
-  <details>
-    <summary>translate to chinese</summary>
-
-    vt. **分配**；拨出  
-    vi. **分配**；指定  
-    ![](https://raw.githubusercontent.com/wangkaiwd/drawing-bed/master/20200604000200.png)
-  </details>
 
 * [allocate](http://youdao.com/w/allocate/#keyfrom=dict2.top): 美 [ˈæləkeɪt]
   <details>
