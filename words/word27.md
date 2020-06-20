@@ -27,7 +27,7 @@
     n. [计]缓冲区；缓冲器，[车辆]减震器  
     vt. **缓冲**  
   </details>
-* [flush](http://youdao.com/w/flush/#keyfrom=dict2.top): 美 [ɪˈlɪmɪneɪt]
+* [flush](http://youdao.com/w/flush/#keyfrom=dict2.top): 美 [flʌʃ]
   <details>
     <summary>translate to chinese</summary>
 
