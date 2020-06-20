@@ -97,7 +97,7 @@
     * in turn: **反过来**；转而；轮流；依次
     * repetitive: 美 [rɪˈpetətɪv] adj.重复的； 
       词根: repeat
-    * 
+    * be replaced by: 被...所取代
     ![](https://raw.githubusercontent.com/wangkaiwd/drawing-bed/master/20200611111427.png)
     ![](https://raw.githubusercontent.com/wangkaiwd/drawing-bed/master/20200611113223.png)
     ![](https://raw.githubusercontent.com/wangkaiwd/drawing-bed/master/20200604235533.png)
