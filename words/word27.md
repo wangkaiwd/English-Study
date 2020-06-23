@@ -112,10 +112,82 @@
     ![](https://raw.githubusercontent.com/wangkaiwd/drawing-bed/master/20200612175302.png)
   </details>
 
-![](https://raw.githubusercontent.com/wangkaiwd/drawing-bed/master/20200614003422.png)
+* ccomplish: 美 [əˈkɑːmplɪʃ]
+  <details>
+    <summary>translate to chinese</summary>
 
-![](https://raw.githubusercontent.com/wangkaiwd/drawing-bed/master/20200617221548.png)
+    vt.**完成**；实现；达到
+  </details>
 
-![](https://raw.githubusercontent.com/wangkaiwd/drawing-bed/master/20200618093632.png)
+* accurate: 美 [ˈækjərət]
+  <details>
+    <summary>translate to chinese</summary>
 
-![](https://raw.githubusercontent.com/wangkaiwd/drawing-bed/master/20200618094128.png)
+    adj. 精确的
+    ![](https://raw.githubusercontent.com/wangkaiwd/drawing-bed/master/20200623153013.png)
+    ![](https://raw.githubusercontent.com/wangkaiwd/drawing-bed/master/20200614003422.png)
+  </details>
+
+* [tweak](http://youdao.com/w/tweak/#keyfrom=dict2.top): 美 [twiːk]
+  <details>
+    <summary>translate to chinese</summary>
+
+    n.扭；**轻微调整**
+  </details>
+
+* [sensible](http://youdao.com/w/sensible/#keyfrom=dict2.top): 美 [ˈsensəbl]
+  <details>
+    <summary>translate to chinese</summary>
+
+    adj.明智的；**合理的**
+    ![](https://raw.githubusercontent.com/wangkaiwd/drawing-bed/master/20200617221548.png)
+  </details>
+
+* hypothesis: 美 [haɪˈpɑːθəsɪs]
+  <details>
+    <summary>translate to chinese</summary>
+
+    n.**假设**；假说；假定
+  </details>
+
+* wealth: 美 [welθ]
+  <details>
+    <summary>translate to chinese</summary>
+
+    n.**财富**；大量；富有  
+    upside-down: 颠倒地；倒置的  
+    ![](https://raw.githubusercontent.com/wangkaiwd/drawing-bed/master/20200618093632.png)
+  </details>
+
+* wealth: 美 [welθ]
+  <details>
+    <summary>translate to chinese</summary>
+
+    n.**财富**；大量；富有  
+    upside-down: 颠倒地；倒置的  
+    ![](https://raw.githubusercontent.com/wangkaiwd/drawing-bed/master/20200618093632.png)
+  </details>
+
+* baggage: 美 [ˈbæɡɪdʒ]
+  <details>
+    <summary>translate to chinese</summary>
+
+    n. 行李；**包袱**
+  </details>
+
+* fame: 美 [feɪm]
+  <details>
+    <summary>translate to chinese</summary>
+
+    n. **名声**，名望；传闻，传说
+    vt. 使闻名，使有名望
+  </details>
+
+* ultimate: 美 [ˈʌltɪmət]
+  <details>
+    <summary>translate to chinese</summary>
+
+    adj.**最终的**；极限的；根本的  
+    n.终极；根本；基本原则  
+    ![](https://raw.githubusercontent.com/wangkaiwd/drawing-bed/master/20200618094128.png)
+  </details>
