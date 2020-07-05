@@ -159,15 +159,6 @@
     ![](https://raw.githubusercontent.com/wangkaiwd/drawing-bed/master/20200618093632.png)
   </details>
 
-* wealth: 美 [welθ]
-  <details>
-    <summary>translate to chinese</summary>
-
-    n.**财富**；大量；富有  
-    upside-down: 颠倒地；倒置的  
-    ![](https://raw.githubusercontent.com/wangkaiwd/drawing-bed/master/20200618093632.png)
-  </details>
-
 * baggage: 美 [ˈbæɡɪdʒ]
   <details>
     <summary>translate to chinese</summary>
