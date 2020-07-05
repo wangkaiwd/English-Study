@@ -112,7 +112,7 @@
     ![](https://raw.githubusercontent.com/wangkaiwd/drawing-bed/master/20200612175302.png)
   </details>
 
-* ccomplish: 美 [əˈkɑːmplɪʃ]
+* accomplish: 美 [əˈkɑːmplɪʃ]
   <details>
     <summary>translate to chinese</summary>
 
