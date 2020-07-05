@@ -173,6 +173,14 @@
     n. **名声**，名望；传闻，传说
     vt. 使闻名，使有名望
   </details>
+  
+* fortune: 美 [ˈfɔːrtʃən]
+  <details>
+    <summary>translate to chinese</summary>
+
+    n.**财富**；命运；运气
+    vi. 偶然发生
+  </details>
 
 * ultimate: 美 [ˈʌltɪmət]
   <details>
