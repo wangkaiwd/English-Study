@@ -178,7 +178,7 @@
   <details>
     <summary>translate to chinese</summary>
 
-    n.**财富**；命运；运气
+    n.**财富**；命运；运气  
     vi. 偶然发生
   </details>
 
