@@ -19,11 +19,12 @@
   <details>
     <summary>translate to chinese</summary>
 
-    ![](https://raw.githubusercontent.com/wangkaiwd/drawing-bed/master/20200624002223.png)
+    ![](https://raw.githubusercontent.com/wangkaiwd/drawing-bed/master/20200625185649.png)
     vt. 经历；忍受
   </details>
+  
+![](https://raw.githubusercontent.com/wangkaiwd/drawing-bed/master/20200624002223.png)
 
-![](https://raw.githubusercontent.com/wangkaiwd/drawing-bed/master/20200625185649.png)
 
 ![](https://raw.githubusercontent.com/wangkaiwd/drawing-bed/master/20200627220951.png)
 
