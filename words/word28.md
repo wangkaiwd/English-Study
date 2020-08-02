@@ -22,17 +22,40 @@
     vt. 经历；忍受
     ![](https://raw.githubusercontent.com/wangkaiwd/drawing-bed/master/20200625185649.png)
   </details>
-  
+
+* contrive: 美 [kənˈtraɪv]
+  <details>
+    <summary>translate to chinese</summary>
+
+    vt. 设计；发明；图谋  
+    vi. 谋划；设法做到  
+    contrived: 美 [kənˈtraɪvd]  
+    adj. **人为的**；做作的；不自然的；  
+    ![](https://raw.githubusercontent.com/wangkaiwd/drawing-bed/master/20200627220951.png)
+  </details>
+
+* pollution: 美 [pəˈluːʃn]
+  <details>
+    <summary>translate to chinese</summary>
+
+    vt. 设计；发明；图谋  
+    vi. 谋划；设法做到  
+    contrived: 美 [kənˈtraɪvd]  
+    adj. **人为的**；做作的；不自然的；  
+    ![](https://raw.githubusercontent.com/wangkaiwd/drawing-bed/master/20200627221254.png)
+  </details>
+
+* compensate: 美 [ˈkɑːmpenseɪt]
+  <details>
+    <summary>translate to chinese</summary>
+
+    vt/vi. 弥补；赔偿；抵消
+    ![](https://raw.githubusercontent.com/wangkaiwd/drawing-bed/master/20200705182344.png)
+  </details>
+
 ![](https://raw.githubusercontent.com/wangkaiwd/drawing-bed/master/20200624002223.png)
 
-
-![](https://raw.githubusercontent.com/wangkaiwd/drawing-bed/master/20200627220951.png)
-
-![](https://raw.githubusercontent.com/wangkaiwd/drawing-bed/master/20200627221254.png)
-
 ![](https://raw.githubusercontent.com/wangkaiwd/drawing-bed/master/20200704144452.png)
-
-![](https://raw.githubusercontent.com/wangkaiwd/drawing-bed/master/20200705182344.png)
 
 ![](https://raw.githubusercontent.com/wangkaiwd/drawing-bed/master/20200726153309.png)
 
