@@ -132,9 +132,22 @@
     ![](https://raw.githubusercontent.com/wangkaiwd/drawing-bed/master/20200726153309.png)
   </details>
 
-![](https://raw.githubusercontent.com/wangkaiwd/drawing-bed/master/20200624002223.png)
+* traffic: 美 [ˈtræfɪk]
+  <details>
+    <summary>translate to chinese</summary>
 
-![](https://raw.githubusercontent.com/wangkaiwd/drawing-bed/master/20200704144452.png)
+    n. 交通；运输；贸易  
+    vi. 交易，买卖  
+    ![](https://raw.githubusercontent.com/wangkaiwd/drawing-bed/master/20200704144452.png)
+  </details>
+
+* largely: 美 [ˈtræfɪk]
+  <details>
+    <summary>translate to chinese</summary>
+
+    adv. 很大程度上
+    ![](https://raw.githubusercontent.com/wangkaiwd/drawing-bed/master/20200624002223.png)
+  </details>
 
 
 ![](https://raw.githubusercontent.com/wangkaiwd/drawing-bed/master/20200705233415.png)
