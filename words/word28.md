@@ -39,10 +39,7 @@
   <details>
     <summary>translate to chinese</summary>
 
-    vt. 设计；发明；图谋  
-    vi. 谋划；设法做到  
-    contrived: 美 [kənˈtraɪvd]  
-    adj. **人为的**；做作的；不自然的；  
+    n. 污染；污染物；  
     ![](https://raw.githubusercontent.com/wangkaiwd/drawing-bed/master/20200627221254.png)
   </details>
 
