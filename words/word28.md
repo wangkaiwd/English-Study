@@ -11,21 +11,20 @@
   <details>
     <summary>translate to chinese</summary>
 
-    v. **与...重叠**，与...互搭
-    n. **重叠的部分**
+    v. 与...重叠  
+    n. 重叠的部分
   </details>
-
-* undergo: 美 [ˌʌndərˈɡoʊ]
+ 
+* undergo: 美 [ˌʌndərˈɡoʊ] 
   <details>
     <summary>translate to chinese</summary>
 
-    v. **与...重叠**，与...互搭
-    n. **重叠的部分**
+    vt. 经历；忍受
+    ![](https://raw.githubusercontent.com/wangkaiwd/drawing-bed/master/20200625185649.png)
   </details>
-
+  
 ![](https://raw.githubusercontent.com/wangkaiwd/drawing-bed/master/20200624002223.png)
 
-![](https://raw.githubusercontent.com/wangkaiwd/drawing-bed/master/20200625185649.png)
 
 ![](https://raw.githubusercontent.com/wangkaiwd/drawing-bed/master/20200627220951.png)
 
@@ -35,4 +34,22 @@
 
 ![](https://raw.githubusercontent.com/wangkaiwd/drawing-bed/master/20200705182344.png)
 
+![](https://raw.githubusercontent.com/wangkaiwd/drawing-bed/master/20200726153309.png)
+
 ![](https://raw.githubusercontent.com/wangkaiwd/drawing-bed/master/20200705233415.png)
+
+![](https://raw.githubusercontent.com/wangkaiwd/drawing-bed/master/20200707234518.png)
+
+![](https://raw.githubusercontent.com/wangkaiwd/drawing-bed/master/20200711160358.png)
+
+![](https://raw.githubusercontent.com/wangkaiwd/drawing-bed/master/20200719182753.png)
+
+![](https://raw.githubusercontent.com/wangkaiwd/drawing-bed/master/20200719184325.png)
+
+![](https://raw.githubusercontent.com/wangkaiwd/drawing-bed/master/20200719184910.png)
+
+![](https://raw.githubusercontent.com/wangkaiwd/drawing-bed/master/20200720100834.png)
+
+![](https://raw.githubusercontent.com/wangkaiwd/drawing-bed/master/20200726170333.png)
+
+![](https://raw.githubusercontent.com/wangkaiwd/drawing-bed/master/20200728111327.png)
