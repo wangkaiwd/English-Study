@@ -7,6 +7,22 @@
     ![](https://raw.githubusercontent.com/wangkaiwd/drawing-bed/master/20200618234921.png)
   </details>
 
+* [overlap](http://youdao.com/w/eng/overlap/#keyfrom=dict2.index): 美 [ˌoʊvərˈlæp]
+  <details>
+    <summary>translate to chinese</summary>
+
+    v. **与...重叠**，与...互搭
+    n. **重叠的部分**
+  </details>
+
+* undergo: 美 [ˌʌndərˈɡoʊ]
+  <details>
+    <summary>translate to chinese</summary>
+
+    v. **与...重叠**，与...互搭
+    n. **重叠的部分**
+  </details>
+
 ![](https://raw.githubusercontent.com/wangkaiwd/drawing-bed/master/20200624002223.png)
 
 ![](https://raw.githubusercontent.com/wangkaiwd/drawing-bed/master/20200625185649.png)
