@@ -24,3 +24,14 @@
 没什么大不了的，一次完美的合并！🎉`master`分支现在包含了所有我们在`dev`分支上做出的所有更改。
 
 #### 合并冲突
+尽管`Git`擅长如何合并分支以及向文件中添加更改，但是它不能总是依靠它自己来做出所有的决定🙂。当我们尝试合并的俩个分支在同一个文件的同一行上有不同的更改，或者如果一个分支删除了一个在另一个分支被编辑过的文件等情况发生的时候，`Git`将不能自己决定该如何合并代码。
+
+在这种情况下，`Git`将会询问您来帮助决定我们想要保留俩个选项中的哪一个。比如说在俩个分支上，我们都编辑了`README.MD`中的第一行。
+![](https://res.cloudinary.com/practicaldev/image/fetch/s--jXqGWUai--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://dev-to-uploads.s3.amazonaws.com/i/m3nxmp67mqof5sa3iik9.png)
+
+如果你想把`dev`合并到`master`，这将会导致合并冲突：您希望标题是`Hello!`还是`Hey!`?
+
+在尝试合并分支的时候，`Git`将会为您显示冲突发生的位置。我们可以手动移除我们不想保留的更改，保存剩余的更改，再次添加文件到暂存区然后提交所有的更改🥳。
+![](https://res.cloudinary.com/practicaldev/image/fetch/s--7lBksXwA--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_66%2Cw_880/https://dev-to-uploads.s3.amazonaws.com/i/bcd5ajtoc0g5dxzmpfbq.gif)
+
+好极了！尽管解决冲突十分烦人，但是它完全有意义：`Git`不应该只是假设我们想要保留那些更改。
