@@ -17,3 +17,10 @@
 
 #### No-fast-forward(`--no-ff`)
 相比于你想要合并的分支，当前分支没有任何额外的提交是极好的，但不幸的是那是很罕见的情况！如果在当前分支上提交的更改在我们想要合并的分支上不存在，`Git`将会执行一次`no-fast-forward`合并。
+
+随着一次`no-fast-forward`合并，`Git`在活动分支(本例中是`master`)上创建一个新的合并提交。提交的父提交同时指向活动分支和我们想要合并的分支(本例中是`dev`)。
+![](https://res.cloudinary.com/practicaldev/image/fetch/s--zRZ0x2Vc--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_66%2Cw_880/https://dev-to-uploads.s3.amazonaws.com/i/rf1o2b6eduboqwkigg3w.gif)
+
+没什么大不了的，一次完美的合并！🎉`master`分支现在包含了所有我们在`dev`分支上做出的所有更改。
+
+#### 合并冲突
