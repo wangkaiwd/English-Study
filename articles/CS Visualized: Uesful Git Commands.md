@@ -94,4 +94,4 @@
 比如说`ec5be`添加了一个`index.js`文件。之后，我们真正的意识到我们不在想要这次提交引入的更改！让我们恢复`ec5be`对应的提交。
 ![](https://res.cloudinary.com/practicaldev/image/fetch/s--eckmvr2M--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_66%2Cw_880/https://dev-to-uploads.s3.amazonaws.com/i/3kkd2ahn41zixs12xgpf.gif)
 
-完美！提交`9e78i`包含`ec5be`提交引入的被恢复的更改。在不修改分支历史的情况下，为了撤销一次特定的提交，执行`git revert`命令是特别有用的。
+完美！提交`9e78i`恢复了`ec5be`提交引入的更改。在不修改分支历史的情况下，为了撤销一次特定的提交，执行`git revert`命令是特别有用的。
