@@ -87,3 +87,11 @@
 ![](https://res.cloudinary.com/practicaldev/image/fetch/s--GqjwnYkF--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_66%2Cw_880/https://dev-to-uploads.s3.amazonaws.com/i/hlh0kowt3hov1xhcku38.gif)
 
 `Git`已经丢弃的在`9e78i`和`035cc`上引入的更改，并且重置它的状态到提交`ec5be`所在的位置
+
+### Reverting
+撤销更改的另一个方式是执行`git revert`命令。通过恢复一个特定的提交，我们会创建一个包含被恢复的更改的新提交！
+
+比如说`ec5be`添加了一个`index.js`文件。之后，我们真正的意识到我们不在想要这次提交引入的更改！让我们恢复`ec5be`对应的提交。
+![](https://res.cloudinary.com/practicaldev/image/fetch/s--eckmvr2M--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_66%2Cw_880/https://dev-to-uploads.s3.amazonaws.com/i/3kkd2ahn41zixs12xgpf.gif)
+
+完美！提交`9e78i`包含`ec5be`提交引入的被恢复的更改。在不修改分支历史的情况下，为了撤销一次特定的提交，执行`git revert`命令是特别有用的。
