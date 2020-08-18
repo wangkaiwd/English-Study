@@ -49,3 +49,24 @@
 这个例子展示了在`master`分支上进行`rebase`。然而在更大的项目中，通常不希望这样做。`git rebase`改变了项目的历史记录，因为为拷贝的提交创建了新的哈希值。
 
 无论何时你在一个特性分支上工作，并且`master`分支已经被更新，`rebase`都是一种很好的做法。您可以在自己的分支上获取到所有的更新，这将阻止未来的合并冲突！😄
+
+#### 交互式的rebase
+在`rebase`提交之前，我们可以编辑它们！😃 我们可以使用一个交互式的`rebase`来做这件事。交互式`rebase`对于您当前正在工作的分支以及想要修改的某些提交也是很有用处的。
+
+在我们正在`rebase`的提交上有6个操作可以执行：
+* `reword`: 更改提交信息
+* `edit`: 修改这次提交
+* `squash`: 合并提交到前一个提交
+* `fixup`: 合并提交到前一个提交，不保留提交的日志消息
+* `exec`: 在我们想要`rebase`的每一个分支上运行一个命令
+* `drop`: 移除一个提交
+
+棒极了！通过这种方式，我们可以完全控制在分支上做出的提交。如果我们想要移除一个提交，我们只需要对它执行`drop`命令。
+![](https://res.cloudinary.com/practicaldev/image/fetch/s--P6jr7igd--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_66%2Cw_880/https://dev-to-uploads.s3.amazonaws.com/i/msofpv7k6rcmpaaefscm.gif)
+
+或者如果你想将多个提交压缩到一起来获得一个干净的历史记录，完全没有问题！
+![](https://res.cloudinary.com/practicaldev/image/fetch/s--VSQt4g1V--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_66%2Cw_880/https://dev-to-uploads.s3.amazonaws.com/i/bc1r460xx1i0blu0lnnm.gif)
+
+交互式`rebase`对于你正在尝试`rebase`的提交甚至是当前活动分支都给予了极大的控制权！
+
+### Resetting
