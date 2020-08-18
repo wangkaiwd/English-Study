@@ -75,3 +75,15 @@
 `git reset`会删除当前暂存的所有文件，并且让我们控制`HEAD`应该指向的位置。
 
 #### Soft reset
+`soft reset`移动`HEAD`到指定的提交(或者提交相对于`HEAD`的索引)，不会删除在提交之后引入的更改！
+
+比如说我们不想保留添加了一个`style.css`文件的提交`9478i`，也不想保留添加了一个`index.js`文件的提交`035cc`。但是我们想要保留新添加的`style.css`和`index.js`文件！这是`soft reset`一个完美的使用示例。
+![](https://res.cloudinary.com/practicaldev/image/fetch/s---GveiZe---/c_limit%2Cf_auto%2Cfl_progressive%2Cq_66%2Cw_880/https://dev-to-uploads.s3.amazonaws.com/i/je5240aqa5uw9d8j3ibb.gif)
+
+当输入`git status`时，你将会发现我们仍然可以访问在之前的提交做出的所有更改。这很好，因为这意味着我们可以处理这些文件内容中的问题，并且在之后再次提交它们！
+
+#### Hard reset
+有些时候，我们不想保留通过特定分支引入的更改。不同于`soft reset`，我们不再需要访问这些不想被保留的更改。`Git`应该只是重置它的状态回到指定提交的位置：被重置的状态甚至包括在你在工作目录以及暂存文件中做出的更改！💣
+![](https://res.cloudinary.com/practicaldev/image/fetch/s--GqjwnYkF--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_66%2Cw_880/https://dev-to-uploads.s3.amazonaws.com/i/hlh0kowt3hov1xhcku38.gif)
+
+`Git`已经丢弃的在`9e78i`和`035cc`上引入的更改，并且重置它的状态到提交`ec5be`所在的位置
