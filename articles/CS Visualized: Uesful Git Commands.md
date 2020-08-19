@@ -90,25 +90,26 @@
 当输入`git status`时，你将会发现我们仍然可以访问在之前的提交做出的所有更改。这很好，因为这意味着我们可以继续处理这些文件，并且在之后再次提交它们！
 
 #### Hard reset
-有些时候，我们不想保留通过特定分支引入的更改。不同于`soft reset`，我们不再需要访问这些不想被保留的更改。`Git`应该只是重置它的状态回到指定提交的位置：被重置的状态甚至包括在你在工作目录以及暂存文件中做出的更改！💣
+有些时候，我们不想保留通过特定分支引入的更改。不同于`soft reset`，我们不再需要访问这些不想被保留的更改。`Git`应该只是重置它的状态回到指定提交的位置：被重置的状态甚至包括你在工作目录以及暂存文件中做出的更改！💣
 ![](https://res.cloudinary.com/practicaldev/image/fetch/s--GqjwnYkF--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_66%2Cw_880/https://dev-to-uploads.s3.amazonaws.com/i/hlh0kowt3hov1xhcku38.gif)
 
-`Git`已经丢弃的在`9e78i`和`035cc`上引入的更改，并且重置它的状态到提交`ec5be`所在的位置
+`Git`已经丢弃了在`9e78i`和`035cc`上引入的更改，并且重置它的状态到提交`ec5be`所在的位置
 
 ### Reverting
-撤销更改的另一个方式是执行`git revert`命令。通过恢复一个特定的提交，我们会创建一个包含被恢复的更改的新提交！
+撤销更改的另一个方式是执行`git revert`命令。通过恢复一个特定的提交，我们会创建一个包含被恢复更改的新提交！
 
-比如说`ec5be`添加了一个`index.js`文件。之后，我们真正的意识到我们不在想要这次提交引入的更改！让我们恢复`ec5be`对应的提交。
+比如说`ec5be`添加了一个`index.js`文件。之后，我们真正的意识到我们不再想要这次提交引入的更改！让我们恢复`ec5be`对应的提交。
 ![](https://res.cloudinary.com/practicaldev/image/fetch/s--eckmvr2M--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_66%2Cw_880/https://dev-to-uploads.s3.amazonaws.com/i/3kkd2ahn41zixs12xgpf.gif)
 
 完美！提交`9e78i`恢复了`ec5be`提交引入的更改。在不修改分支历史的情况下，为了撤销一次特定的提交，执行`git revert`命令是特别有用的。
 
 ### Cherry-picking
-当一个特定分支中包含的一个提交需要在我们的活动分支上引入它的更改时，我们可以使用`cherry-pick`命令！对一次提交进行`cherry-pick`，我们会在活动分支上创建一个新的提交，该提交会包含被`cherry-pick`的提交引入的更改。
+当一个特定分支中包含的一个提交，需要在我们的活动分支上引入它的更改时，我们可以使用`cherry-pick`命令！对一次提交进行`cherry-pick`，我们会在活动分支上创建一个新的提交，该提交会包含被`cherry-pick`的提交引入的更改。
 
 比如说在`dev`分支上的提交`76d12`为`index.js`文件添加了一个改动，我们在`master`分支上也想要拥有这次改动。我们不想要所有的提交，我们只关心这一个单独的提交！
 
 ![](https://res.cloudinary.com/practicaldev/image/fetch/s--9vWP_K4S--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_66%2Cw_880/https://dev-to-uploads.s3.amazonaws.com/i/2dkjx4yeaal10xyvj29v.gif)
+
 很酷，`master`分支现在包含了`76d12`引入的更改！
 
 ### Fetching
