@@ -95,3 +95,13 @@
 ![](https://res.cloudinary.com/practicaldev/image/fetch/s--eckmvr2M--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_66%2Cw_880/https://dev-to-uploads.s3.amazonaws.com/i/3kkd2ahn41zixs12xgpf.gif)
 
 完美！提交`9e78i`恢复了`ec5be`提交引入的更改。在不修改分支历史的情况下，为了撤销一次特定的提交，执行`git revert`命令是特别有用的。
+
+### Cherry-picking
+当一个特定分支中包含的一个提交需要在我们的活动分支上引入它的更改时，我们可以使用`cherry-pick`命令！对一次提交进行`cherry-pick`，我们会在活动分支上创建一个新的提交，该提交会包含被`cherry-pick`的提交引入的更改。
+
+比如说在`dev`分支上的提交`76d12`为`index.js`文件添加了一个改动，我们在`master`分支上也想要拥有这次改动。我们不想要所有的提交，我们只关心这一个单独的提交！
+
+![](https://res.cloudinary.com/practicaldev/image/fetch/s--9vWP_K4S--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_66%2Cw_880/https://dev-to-uploads.s3.amazonaws.com/i/2dkjx4yeaal10xyvj29v.gif)
+很酷，`master`分支现在包含了`76d12`引入的更改！
+
+### Fetching
