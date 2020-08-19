@@ -113,18 +113,18 @@
 很酷，`master`分支现在包含了`76d12`引入的更改！
 
 ### Fetching
-如果我们有一个远程`Git`分支，比如在`GitHub`上的一个分支，远程分支已经拥有了提交但是当前分支却没有时会用到`fetch`命令！可能是另一个分支被合并了，也可能是你的同事推送了一个快速修复等等情况。
+如果我们有一个远程`Git`分支，比如在`GitHub`上的一个分支，远程分支已经拥有了提交,但是当前分支却没有,这时会用到`fetch`命令！可能是另一个分支被合并到了远程分支，也可能是你的同事推送了一个快速修复等等情况。
 
-通过在远程分支上执行`git fetch`，我们可以在本地获得这些更改！它不会以任何方式影响你的本地分支：`fetch`只是下载了新的数据。
+通过在远程分支上执行`git fetch`命令，我们可以在本地获得这些更改！它不会以任何方式影响你的本地分支：`fetch`只是下载了新的数据。
 ![](https://res.cloudinary.com/practicaldev/image/fetch/s--38PuARw2--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_66%2Cw_880/https://dev-to-uploads.s3.amazonaws.com/i/bulx1voegfji4vwgndh4.gif)
 
 现在我们可以看到从最后一次推送之后做出的所有更改！现在我们在本地拥有了新数据，我们可以决定想要用新数据做什么。
 
 ### Pulling
-尽管为了获取一个分支的远程信息，`git fetch`是及其有用的，但是我们也可以执行`git pull`命令。`git pull`实际上是将俩个命令合为了一个命令：`git fetch` + `git merge`。当我们从源分支拉取更改的时候，首先会像执行`git fetch`命令一样`fetch`所有的数据，在这之后自动地将最新的更改合并到本地分支。
+尽管为了获取一个分支的远程信息，`git fetch`是及其有用的，但是我们也可以执行`git pull`命令。`git pull`实际上是将俩个命令合为了一个命令：`git fetch` + `git merge`。当我们从`origin`分支拉取更改的时候，首先会像执行`git fetch`命令一样`fetch`所有的数据，在这之后自动地将最新的更改合并到本地分支。
 ![](https://res.cloudinary.com/practicaldev/image/fetch/s---X5AXldj--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_66%2Cw_880/https://dev-to-uploads.s3.amazonaws.com/i/zifpnl1h6a4tk4qdc9sy.gif)
 
-太好了，我们现在完美的同步了远程分支的数据并且拥有了所有最新的更改！🤩
+太好了，我们现在完美的同步了远程分支的数据，并且拥有了所有最新的更改！🤩
 
 ### Reflog
 每个人都会犯错，这完全可以理解！有些时候您可能会感觉已经搞砸了你的`Git`仓库，以至于你特别想整个删掉它。
