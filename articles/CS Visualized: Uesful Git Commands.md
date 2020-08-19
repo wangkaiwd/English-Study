@@ -13,16 +13,15 @@
 现在说这些可能没有太大意义，我们先看一下它们之间的区别。
 
 #### Fast-forward(`--ff`)
-与我们正在合并的分支相比，当当前分支没有额外提交的时候，会发生`fast-forward-merge`。`Git`是懒惰的，它会首先尝试最简单的选项：`fast-forward`!这种类型的合并不会创建一个新的提交，而是在当前分支上合并我们正在合并的分支上的提交 🥳。
-
+与我们正在合并的分支相比，当当前分支没有额外提交的时候，会发生`fast-forward-merge`。`Git`是懒惰的，它会首先尝试最简单的选项：`fast-forward`!这种类型的合并不会创建一个新的提交，而是在当前分支上合并我们正在合并分支上的提交 🥳。
 ![](https://res.cloudinary.com/practicaldev/image/fetch/s--cT4TSe48--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_66%2Cw_880/https://dev-to-uploads.s3.amazonaws.com/i/894znjv4oo9agqiz4dql.gif)
 
-完美！我们现在在`master`分支上可以找到所有在`dev`分支上做出的更改。那么，`non-fast-forward`是什么意思呢？
+完美！我们现在在`master`分支上可以找到所有在`dev`分支上做出的更改。那么，`non-fast-forward`又是什么意思呢？
 
 #### No-fast-forward(`--no-ff`)
 相比于你想要合并的分支，当前分支没有任何额外的提交是极好的，但不幸的是那是很罕见的情况！如果在当前分支上提交的更改在我们想要合并的分支上不存在，`Git`将会执行一次`no-fast-forward`合并。
 
-随着一次`no-fast-forward`合并，`Git`在活动分支(本例中是`master`)上创建一个新的合并提交。提交的父提交同时指向活动分支和我们想要合并的分支(本例中是`dev`)。
+随着一次`no-fast-forward`合并，`Git`在活动分支(`master`)上创建一个新的合并提交。该提交的父提交同时指向活动分支和我们想要合并的分支(`dev`)。
 ![](https://res.cloudinary.com/practicaldev/image/fetch/s--zRZ0x2Vc--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_66%2Cw_880/https://dev-to-uploads.s3.amazonaws.com/i/rf1o2b6eduboqwkigg3w.gif)
 
 没什么大不了的，一次完美的合并！🎉`master`分支现在包含了所有我们在`dev`分支上做出的所有更改。
