@@ -113,4 +113,20 @@
 现在我们可以看到从最后一次推送之后做出的所有更改！现在我们在本地拥有了新数据，我们可以决定想要用新数据做什么。
 
 ### Pulling
-尽管为了获取一个分支的远程信息，`git fetch`是及其有用的，但是我们也可以执行`git pull`命令。`git pull`实际上是将俩个命令合为了一个命令：`git fetch` + `git merge`。
+尽管为了获取一个分支的远程信息，`git fetch`是及其有用的，但是我们也可以执行`git pull`命令。`git pull`实际上是将俩个命令合为了一个命令：`git fetch` + `git merge`。当我们从源分支拉取更改的时候，首先会像执行`git fetch`命令一样`fetch`所有的数据，在这之后自动地将最新的更改合并到本地分支。
+![](https://res.cloudinary.com/practicaldev/image/fetch/s---X5AXldj--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_66%2Cw_880/https://dev-to-uploads.s3.amazonaws.com/i/zifpnl1h6a4tk4qdc9sy.gif)
+
+太好了，我们现在完美的同步了远程分支的数据并且拥有了所有最新的更改！🤩
+
+### Reflog
+每个人都会犯错，这完全可以理解！有些时候您可能会感觉已经搞砸了你的`Git`仓库，以至于你特别想整个删掉它。
+
+`git reflog`是一个非常有用的命令，目的是用来显示已经被采取的所有操作的日志！日志中包括`merge`,`reset`,`reset`：基本上会显示任何对你分支做出更改的日志。
+![](https://res.cloudinary.com/practicaldev/image/fetch/s--MMUdOS0P--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_66%2Cw_880/https://dev-to-uploads.s3.amazonaws.com/i/1aqek1py1knwl926ele7.gif)
+
+如果你不小心犯了一个错误，你可以轻易的基于`reflog`给我们提供的信息重置`HEAD`到之前的位置，然后重做我们之前做错的事情！
+
+比如说实际上我们不想合并`origin`分支。当我们执行`git reflog`命令时，将会看到在合并之前仓库的状态实在`HEAD@{1}`。让我们执行`git reset`将`HEAD`指回到`HEAD@{1}`的位置！
+![](https://res.cloudinary.com/practicaldev/image/fetch/s--A1UMM2AH--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_66%2Cw_880/https://dev-to-uploads.s3.amazonaws.com/i/9z9rhtbw7mrigp0miijz.gif)
+
+我们可以看到最新的操作已经被推到了`reflog`中！
