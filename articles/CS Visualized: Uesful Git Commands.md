@@ -21,33 +21,37 @@
 #### No-fast-forward(`--no-ff`)
 相比于你想要合并的分支，当前分支没有任何额外的提交是极好的，但不幸的是那是很罕见的情况！如果在当前分支上提交的更改在我们想要合并的分支上不存在，`Git`将会执行一次`no-fast-forward`合并。
 
-随着一次`no-fast-forward`合并，`Git`在活动分支(`master`)上创建一个新的合并提交。该提交的父提交同时指向活动分支和我们想要合并的分支(`dev`)。
+随着一次`no-fast-forward`合并，`Git`在活动分支(`master`)上创建一个新的合并提交。该提交的父提交同时指向活动分支和我们想要合并的分支(`dev`)。  
 ![](https://res.cloudinary.com/practicaldev/image/fetch/s--zRZ0x2Vc--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_66%2Cw_880/https://dev-to-uploads.s3.amazonaws.com/i/rf1o2b6eduboqwkigg3w.gif)
 
 没什么大不了的，一次完美的合并！🎉`master`分支现在包含了所有我们在`dev`分支上做出的所有更改。
 
-#### 合并冲突
-尽管`Git`擅长如何合并分支以及向文件中添加更改，但是它不能总是依靠它自己来做出所有的决定🙂。当我们尝试合并的俩个分支在同一个文件的同一行上有不同的更改，或者如果一个分支删除了一个在另一个分支被编辑过的文件等情况发生的时候，`Git`将不能自己决定该如何合并代码。
+#### Merge Conflicts(合并冲突)
+尽管`Git`擅长如何去合并分支以及向文件中添加更改，但是它不能总是依靠它自己来做出所有的决定🙂。当我们尝试合并的俩个分支在同一个文件的同一行上有不同的更改，或者如果一个分支删除了一个在另一个分支被编辑过的文件等情况发生的时候，`Git`将不能自己决定该如何合并代码。
 
 在这种情况下，`Git`将会询问您来帮助决定我们想要保留俩个选项中的哪一个。比如说在俩个分支上，我们都编辑了`README.MD`中的第一行。
 ![](https://res.cloudinary.com/practicaldev/image/fetch/s--jXqGWUai--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://dev-to-uploads.s3.amazonaws.com/i/m3nxmp67mqof5sa3iik9.png)
 
 如果你想把`dev`合并到`master`，这将会导致合并冲突：您希望标题是`Hello!`还是`Hey!`?
 
-在尝试合并分支的时候，`Git`将会为您显示冲突发生的位置。我们可以手动移除我们不想保留的更改，保存剩余的更改，再次添加文件到暂存区然后提交所有的更改🥳。
+在尝试合并分支的时候，`Git`将会为您显示冲突发生的位置。我们可以手动移除我们不想保留的更改，保存剩余的更改，再次添加文件到暂存区，然后提交所有更改的文件🥳。
 ![](https://res.cloudinary.com/practicaldev/image/fetch/s--7lBksXwA--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_66%2Cw_880/https://dev-to-uploads.s3.amazonaws.com/i/bcd5ajtoc0g5dxzmpfbq.gif)
 
 好极了！尽管解决冲突十分烦人，但是它完全有意义：`Git`不应该只是假设我们想要保留哪些更改。
 
 ### Rebasing
-我们刚刚已经看过如何通过执行一个`git merge`命令将来自于一个分支的更改应用到另一个分支。从一个分支添加更改到另一个分支的另一个方法是执行`git rebase`命令。
+我们刚刚已经看过如何通过执行一个`git merge`命令，将来自于一个分支的更改应用到另一个分支。从一个分支添加更改到另一个分支的另一个方法是执行`git rebase`命令。
 
 `git rebase`会从当前分支拷贝提交，并且将这些拷贝的提交放到指定分支的顶部。
 ![](https://res.cloudinary.com/practicaldev/image/fetch/s--EIY4OOcE--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_66%2Cw_880/https://dev-to-uploads.s3.amazonaws.com/i/dwyukhq8yj2xliq4i50e.gif)
 
 完美，我们现在在`dev`分支上可以找到所有在`master`分支上做出的更改！🎊
 
-`rebase`和`merge`命令一个最大的不同是：`Git`不会尝试去找出哪些文件要保留，哪些文件不需要保留。我们正在`rebase`的分支总是拥有我们想要保留的最新更改！这种方式在合并过程中不会遇到任何冲突，并且可以保持一个很好的线性`Git`历史记录。
+`rebase`和`merge`命令一个最大的不同是：`Git`不会尝试去找出哪些文件要保留，哪些文件不需要保留。我们正在`rebase`的分支总是拥有我们想要保留的最新更改！这种方式在之后合并过程中不会遇到任何冲突，并且可以保持一个很好的直线`Git`历史记录。
+> 译者注：这里指的不会遇到任何冲突的情况如下(还是以上图为例)：
+> * dev$ `git rebase master` 将`dev`的提交拷贝一份复制到`master`的顶部
+> * dev$ `git checkout master` 
+> * master$ `git merge dev` 此时`master`相当于没有做任何额外的提交，会进行`fast-forward-merge`，保持直线提交记录
 
 这个例子展示了在`master`分支上进行`rebase`。然而在更大的项目中，通常不希望这样做。`git rebase`改变了项目的历史记录，因为为拷贝的提交创建了新的哈希值。
 
