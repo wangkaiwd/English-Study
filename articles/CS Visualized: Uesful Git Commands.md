@@ -1,5 +1,8 @@
 ![](https://res.cloudinary.com/practicaldev/image/fetch/s--AS0ya8UC--/c_imagga_scale,f_auto,fl_progressive,h_420,q_auto,w_1000/https://dev-to-uploads.s3.amazonaws.com/i/rixan4h4z8y94eq89som.png)
-## `CS`可视化：有用的`Git`命令
+## [译]`CS`可视化：有用的`Git`命令
+> * 原文地址：[🌳🚀 CS Visualized: Useful Git Commands](https://dev.to/lydiahallie/cs-visualized-useful-git-commands-37p1)
+> * 原文作者：[Lydia Hallie](https://dev.to/lydiahallie)
+
 尽管`Git`是一个非常强力的工具，但如果我说这也可能是一场噩梦😐，我想大多数人也会同意。在使用`Git`的时候，我发现在我的大脑中想象发生了什么是非常有用的：在我执行特定命令的时候，分支之间是如何相互影响的，以及它会如何影响历史日志？当我在`master`分支做了硬重置(`hard reset`),强制推送(`force push`)到`master`分支并且`rimraf` `.git`目录之后，我的同事为什么会哭？
 
 我认为为最常用和最有用的命令创建一些可视化的图例将会成为完美的使用示例！🥳我涉及到的许多命令拥有可选的参数，您可以使用这些参数来更改命令的行为。在示例中，我将会涉及没有添加(太多)配置项命令的默认行为！😄
