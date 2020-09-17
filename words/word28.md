@@ -31,7 +31,6 @@
     vi. 谋划；设法做到  
     contrived: 美 [kənˈtraɪvd]  
     adj. **人为的**；做作的；不自然的；  
-    ![](https://raw.githubusercontent.com/wangkaiwd/drawing-bed/master/20200627220951.png)
     ![](https://raw.githubusercontent.com/wangkaiwd/drawing-bed/master/20200726170333.png)
   </details>
 
